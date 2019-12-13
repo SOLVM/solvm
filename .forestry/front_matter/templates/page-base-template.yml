@@ -12,6 +12,10 @@ fields:
   config:
     required: false
   label: seo title
+- name: image_gallery
+  type: image_gallery
+  config: {}
+  label: Image Gallery
 pages:
 - content/Test1.md
 - content/page-2.md
