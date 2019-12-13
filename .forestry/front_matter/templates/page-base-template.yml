@@ -7,3 +7,5 @@ fields:
   config:
     required: false
   label: seo title
+pages:
+- content/Test1.md
