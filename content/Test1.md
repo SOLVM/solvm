@@ -1,5 +1,4 @@
 +++
-draft = true
 seo_title = ""
 title = "Test1"
 
