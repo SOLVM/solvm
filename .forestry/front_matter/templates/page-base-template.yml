@@ -1,4 +1,9 @@
 ---
 label: page-base-template
 hide_body: false
-fields: []
+fields:
+- name: seo_title
+  type: text
+  config:
+    required: false
+  label: seo title
