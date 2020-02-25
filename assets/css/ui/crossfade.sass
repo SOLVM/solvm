@@ -1,0 +1,106 @@
+.crossfade
+  &__layer
+    background-repeat: no-repeat
+    background-position: center
+    background-size: cover
+
+    display: grid
+    grid-template-columns: 1fr
+    grid-template-rows: 90vh
+
+    align-items: center
+    justify-content: center
+    position: relative
+    overflow: hidden
+
+    padding: 0 3rem
+
+    position: relative
+    transform: translate3d(0,0,0)
+
+    +media('<md')
+      grid-template-rows: 60vh
+
+
+  &__container
+    // align-items: center
+    // flex-direction: column
+    // height: 100vh
+    // max-width: 100vw
+    // width: 100vw
+
+    // max-width: 80vw
+    // padding-bottom: 3rem
+
+    // justify-content: flex-start
+    // text-align: center
+    // display: flex
+    // align-items: center
+    // background-color: transparent
+    // position: absolute
+    z-index: 1
+
+  &__item
+    background-size: cover
+    background-position: center center
+    position: absolute
+    top: 0
+    left: 0
+    height: 100%
+    width: 100%
+    background-repeat: no-repeat
+
+    &:nth-of-type(3)
+      animation: crossfade 12s 0s infinite
+
+    &:nth-of-type(2)
+      animation: crossfade 12s 4s infinite
+
+    &:nth-of-type(1)
+      animation: crossfade 12s 8s infinite
+
+
+@keyframes crossfade
+  0%
+    opacity: 0
+
+  20%
+    opacity: 1
+
+  33%
+    opacity: 1
+
+  53%
+    opacity: 0
+
+  100%
+    opacity: 0
+
+.svg-logo
+  .svg-logo
+  display: grid
+  align-items: center
+  justify-content: center
+  margin-top: 1.5rem
+  width: 100%
+
+  +media('<sm')
+    margin-top: 1.5rem
+
+  svg
+    width: 600px
+    // fill: white
+    // height: 20rem
+    //
+    // +media('<md')
+    //   height: 10rem
+    //
+    // +media('<sm')
+    //   height: 5rem
+    //   margin-top: 0
+
+  // width: 50%
+  // z-index: 1
+
+  // +media('<md')
+  //   width: 100%

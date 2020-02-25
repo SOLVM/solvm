@@ -1,0 +1,18 @@
+<footer>
+
+  <div class="quote__layer">
+    <div class="quote__container">
+      {{ range .Site.Data.quotes }}
+      {{ range . | shuffle | first 1 }}
+        <div class="quote__text">{{ .text }}</div>
+        <div class="quote__name">{{ .name }}</div>         
+      {{ end }}
+      {{ end }}
+      <div class="quote__logobox">
+        {{ partial "logosvg/segl-circle.html" . }}
+      </div>
+    </div>
+  </div>
+
+  <p>{{ .Site.Params.identity }} &copy; 2009 - {{  now.Format "2006" }} | <a href="tel:{{ .Site.Data.segl.phone }}">202-466-7345</a> | <a href="{{ .Site.Data.segl.googlemap }}">{{ .Site.Data.segl.address }}</a></p>
+</footer>

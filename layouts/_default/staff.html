@@ -1,0 +1,58 @@
+{{ define "feature" }}
+
+    <div
+      class="billboard__layer resize"
+      style="background-image: url('{{ .Params.feature_layer.image }}')"
+    >
+      <div class="billboard__container">
+
+        <hgroup class="billboard__hgroup">
+          <h2 class="billboard__heading">
+            {{ .Params.feature_layer.heading }}
+          </h2>
+        </hgroup>
+
+      </div>
+    </div>
+
+{{ end }}
+
+{{ define "main" }}
+
+  <main class="main-content__layer">
+    <div class="main-content__container">
+      {{ .Content }}
+    </div>
+  </main>
+
+  {{ range $.Site.Data.faculty }}
+    {{ range . }}
+
+      <section  class="zipper-full__item resize">
+        <div class="zipper-full__image" style="background-image: url('/uploads/70-DSC_0664.jpg')"></div>
+        <div class="zipper-full__text">
+          <hgroup class="zipper-full__hgroup">
+            <h2 class="zipper-full__heading">{{ .name }}</h2>
+            <h2 class="zipper-full__subheading">
+              {{ range .title }}
+                {{ . }}
+              {{ end }}
+            </h2>
+          </hgroup>
+          <div class="zipper-full__teaser">
+            {{ range .teaches }}
+              {{ . }}
+            {{ end }}
+          </div>
+          <div class="zipper-full__teaser">
+            {{ range .education }}
+              {{ . }}
+            {{ end }}
+          </div>
+        </div>
+      </section>
+
+    {{ end }}
+  {{ end }}
+
+{{ end }}

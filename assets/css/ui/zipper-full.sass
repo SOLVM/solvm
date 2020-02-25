@@ -1,0 +1,119 @@
+.zipperfull
+  &__layer
+    //
+
+  &__container
+    max-width: 100%
+
+  &__item
+    background-color: $grass
+    display: grid
+    grid-template-columns: 50% 50%
+    grid-template-rows: 50vh
+    grid-template-areas: "image text"
+    justify-content: center
+
+    +media('<lg')
+      grid-template-columns: 100%
+      // grid-template-rows: 18rem 1fr
+      grid-template-rows: 40vh 2fr
+      grid-template-areas: "image" "text"
+
+    &:nth-of-type(even)
+      // background-color: $seagreen
+      grid-template-columns: 50% 50%
+      grid-template-areas: "text image"
+
+      +media('<lg')
+        grid-template-columns: 100%
+        grid-template-areas: "image" "text"
+
+      .zipper-full__text
+        // background-color: #12b267
+
+    // &:first-of-type
+    //   grid-template-rows: 80vh
+
+  &__image
+    // background-repeat: no-repeat
+    // background-position: center
+    // background-size: cover
+
+    grid-area: image
+    height: 100%
+
+    +media('<lg')
+      margin: 1.5rem
+      // background-position: center top
+      // height: initial
+      // outline: .5rem solid $charcoal
+
+
+    img
+      height: 100%
+      width: 100%
+      object-fit: cover
+      // height: 300px
+      // padding: 10px
+      // background-color: white
+
+
+  &__text
+    // background-color: #fc0
+    color: white
+    grid-area: text
+    align-self: center
+    // align-self: self-start
+    padding: 3rem
+    // text-shadow: 1px 1px 1px $charcoal
+
+    li
+      //
+
+    p:last-child
+      margin-bottom: 0
+
+    +media('<sm')
+      padding: 1.5rem
+
+  &__type
+    font-size: 3rem
+    font-weight: 100
+    margin: 0
+
+  &__heading 
+    color: white
+    text-align: left
+    // text-shadow: 2px 2px 2px #000
+    // text-transform: uppercase
+
+    padding-bottom: 3rem
+    position: relative
+
+    +media('<lg')
+      font-size: 2rem
+
+    +media('<md')
+      // padding-bottom: 3rem
+
+    a
+      color: white
+      font-size: 2rem
+      font-weight: normal
+      text-decoration: none
+
+      &:hover
+        background-color: transparent
+        text-decoration: underline
+    
+    p
+      margin-bottom: 0
+
+  &__subheading
+    font-weight: bold
+
+  &__teaser
+    //
+
+  &__list
+    list-style: none

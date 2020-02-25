@@ -1,0 +1,30 @@
+{{ define "main" }}
+  <div class="zipper-news__layer">
+    <div class="zipper-news__container">
+
+      {{ range (.Paginator .Site.Params.paginate).Pages }}
+        <div class="zipper-news__item">
+          <div class="zipper-news__image resize">
+            {{ if .Params.featured_image }}
+              <img src="{{ .Params.featured_image }}" alt="">
+            {{ else }}
+              <img src="/segl-board.png" alt="">
+            {{ end }}
+          </div>
+          <div class="zipper-news__text">
+            <h2 class="zipper-news__heading">
+              <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+            </h2>
+            <time class="zipper-news__date">{{ .Date.Format "January 2, 2006" }}</time>
+            <p class="zipper-news__teaser">{{ .Summary }}</p>
+            <p><a class="zipper-news__button" href="{{ .RelPermalink }}">Read more</a></p>
+          </div>
+        </div>
+      {{ end }}
+
+    </div>
+  </div>
+
+    {{ partial "pagination.html" . }}
+
+{{ end }}

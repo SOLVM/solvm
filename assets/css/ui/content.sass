@@ -1,0 +1,185 @@
+.main-content
+  width: 100%
+
+  &__layer
+    // background-color: #f5f5f5
+
+  &__container
+    +media('<md')
+      padding: 0 3rem
+    +media('<xs')
+      padding: 0 2rem
+
+    h2
+      // font-family: $condensed, "Trebuchet MS"
+      font-size: 2rem
+      
+      // line-height: .75
+      padding-top: 1.5rem
+      // margin-bottom: 1.5rem
+    h3
+      font-weight: 100
+      // font-family: $condensed
+      // font-size: 2rem
+      // padding: 1.5rem 0 0 0
+
+    h2 + *,
+    h3 + *
+      padding-top: 1.5rem
+
+    h2 + h3,
+      padding: 1.5rem 0
+
+    // p > img
+    //   max-width: 80%
+    //   display: block
+    //   margin: 0 auto
+      // border: 10px solid red
+
+    p, li
+      // font-family: $condensed
+
+    p a:hover
+      background-color: $grass
+      color: white
+      text-decoration: none
+
+    p.resize
+      text-align: center
+      box-shadow: 0 18.025px 43.775px rgba(0,0,0,.25)
+      // outline: 1px solid #e6e6e6
+
+      & > img
+        // outline: 10px solid #ccc
+        // width: 80%
+
+  &__pullquote,
+    background-color: $brown
+    color: white
+    font-size: 2rem
+    padding: 3rem 6rem
+    text-align: center
+    text-shadow: 1px 1px 1px #000
+
+  &__pullquote + &__pullquote
+    padding-top: 0
+
+  &__feature
+    margin: 3rem 0
+
+    +media('<sm')
+      margin: 3rem 0 1.5rem 0
+
+  
+
+.board
+  &__layer
+    background-color: #f5f5f5
+    width: 100%
+
+  &__container
+    +media('<md')
+      padding: 0 3rem
+    +media('<xs')
+      padding: 0 2rem
+  
+  &__heading
+    // background-color: current
+    font-size: 2rem
+    font-weight: bold
+    position: relative
+    width: max-content
+    padding: 0
+    margin: 3rem auto
+
+    &::after
+      content: ""
+      display: block
+      position: absolute
+      border-top: 1px solid #333
+      border-bottom: 1px solid #333
+      height: 5px
+      top: 50%
+      left: - 2rem
+      width: 1.5rem
+
+    &::before
+      content: ""
+      display: block
+      position: absolute
+      border-top: 1px solid #333
+      border-bottom: 1px solid #333
+      height: 5px
+      top: 50%
+      right: - 2rem
+      width: 1.5rem
+
+
+  &__name
+    font-size: 1rem
+    font-weight: bold
+
+  &__title
+    font-size: 1rem
+    font-weight: normal
+
+  &__protitle li
+    font-size: 1rem
+    font-weight: 100
+    list-style: none
+
+  &__links a
+    
+
+.employment
+  &__layer
+    background-color: #f5f5f5
+    width: 100%
+
+  &__container
+    +media('<md')
+      padding: 0 3rem
+    +media('<xs')
+      padding: 0 2rem
+  
+  &__heading
+    // background-color: current
+    font-size: 2rem
+    font-weight: bold
+    position: relative
+    width: max-content
+    padding: 0
+    margin: 3rem auto
+
+    &::after
+      content: ""
+      display: block
+      position: absolute
+      border-top: 1px solid #333
+      border-bottom: 1px solid #333
+      height: 5px
+      top: 50%
+      left: - 2rem
+      width: 1.5rem
+
+    &::before
+      content: ""
+      display: block
+      position: absolute
+      border-top: 1px solid #333
+      border-bottom: 1px solid #333
+      height: 5px
+      top: 50%
+      right: - 2rem
+      width: 1.5rem
+
+
+  &__name
+    font-size: 1rem
+    font-weight: bold
+
+  &__desc
+    font-size: 1rem
+    font-weight: normal
+
+  &__links a

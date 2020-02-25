@@ -1,0 +1,168 @@
+{{ define "feature" }}
+    <div
+      class="billboard__layer resize"
+      style="background-image: url('{{ .Params.feature_layer.image }}')"
+    >
+      <div class="billboard__container">
+
+        <hgroup class="billboard__hgroup">
+          {{ with .Params.feature_layer.heading }}
+            <h2 class="billboard__heading">{{ . }}</h2>
+          {{ end }}
+
+          {{ with .Params.feature_layer.subheading }}
+            <h3 class="billboard__subhead">{{ . | markdownify }}</h3>
+          {{ end }}
+          <div class="svg-logo">{{ partial "logosvg/segl-rectangle.html" . }}</div>
+        </hgroup>
+
+      </div>
+    </div>
+{{ end }}
+
+{{ define "main" }}
+  <div
+    class="billboard__layer resize"
+    style="background-image: url()"
+  >
+    <div class="billboard__container">
+
+      <hgroup class="billboard__hgroup">
+        <h2 class="billboard__heading" style="color: #524740;">
+         Change yourself change the world
+        </h2>
+      </hgroup>
+      <p><a class="__button" href="/admissions/apply/">Apply Today</a></p>
+    </div>
+  </div>
+
+  <div class="zipper__layer">
+    <div class="zipper__container">
+      <h2 class="zipper__headline">Choose your campus</h2>
+
+        <div class="zipper__item">
+          <div class="zipper__image resize">
+            <img src="/uploads/dc.jpg" alt="">
+          </div>
+          <div class="zipper__text">
+            <h2 class="zipper__heading">
+              <a href="">SEGL in Washington DC</a>
+            </h2>
+            <p class="zipper__teaser">Washington, DC is an exciting, diverse and invigorating city. Yes, DC is our nation’s capitol and the center of our political universe. It is also a vibrant cultural city full of passionate personalities, fascinating neighborhoods, outstanding restaurants, and vibrant artistic offerings.</p>
+            <!-- <p><a class="zipper__button" href="">Learn more</a></p> -->
+          </div>
+        </div>
+
+        <div class="zipper__item">
+          <div class="zipper__image resize">
+            <img src="/uploads/johannesburg.jpg" alt="">
+          </div>
+          <div class="zipper__text">
+            <h2 class="zipper__heading">
+              <a href="">SEGL at African Leadership Academy in Johannesburg, South Africa</a>
+            </h2>
+            <p class="zipper__teaser">Washington, DC is an exciting, diverse and invigorating city. Yes, DC is our nation’s capitol and the center of our political universe.</p>
+            <!-- <p><a class="zipper__button" href="">Learn more</a></p> -->
+          </div>
+        </div>
+
+        <div class="zipper__item">
+          <div class="zipper__image resize">
+            <img src="/uploads/london.jpg" alt="">
+          </div>
+          <div class="zipper__text">
+            <h2 class="zipper__heading">
+              <a href="">SEGL summer in London</a>
+            </h2>
+            <p class="zipper__teaser">Washington, DC is an exciting, diverse and invigorating city. Yes, DC is our nation’s capitol and the center of our political universe. It is also a vibrant cultural city full of passionate personalities, fascinating neighborhoods, outstanding restaurants, and vibrant artistic offerings.</p>
+            <!-- <p><a class="zipper__button" href="">Learn more</a></p> -->
+          </div>
+        </div>
+
+    </div>
+  </div>
+
+  
+  <div class="card__layer">
+    <h2 class="card__title">Latest news</h2>
+    <div class="card__container">
+
+      {{ range first 3 (where .Site.RegularPages "Section" "news") }}
+      <article class="card__article">
+        <p class="card__type">News</p>
+
+        <div class="card__image resize">
+          <img src="{{ .Params.featured_image }}" alt="">
+        </div>
+        
+        <div class="card__box">
+          <h1 class="card__heading">
+            <a href="{{ .Permalink }}">{{ .Title }}</a>
+          </h1>
+          <p class="card__teaser">{{ .Summary }}</p>
+        </div>
+
+      </article>
+      {{ end }}
+
+    </div>
+  </div>
+  
+  <div class="zipperfull__layer">
+    <div class="zipperfull__container">
+    {{ range first 1 (where .Site.RegularPages "Section" "events") }}
+  
+      <div class="zipperfull__item resize">
+        <div class="zipperfull__text">
+          <p class="zipperfull__type">Event</p>
+          <h2 class="zipperfull__heading">
+            <a href="{{ .Permalink }}">{{ .Title }}</a>
+          </h2>
+          <p class="date">{{ .Params.event_data.event_start_date }}</p>
+          <!-- <p class="zipperfull__teaser">{{ .Summary }}</p> -->
+          <!-- <p><a class="zipperfull__button" href="{{ .Permalink }}">Learn more</a></p> -->
+        </div>
+
+        <div class="zipperfull__image">
+          <img src="{{ .Params.featured_image }}" alt="">
+        </div>
+      </div>
+    {{ end }}
+
+    {{ range first 1 (where .Site.RegularPages "Section" "alerts") }}
+    
+      <div class="zipperfull__item resize">
+        <div class="zipperfull__text">
+          <p class="zipperfull__type">Alert</p>
+          <h2 class="zipperfull__heading">
+            <a href="{{ .Permalink }}">{{ .Title }}</a>
+          </h2>
+          <!-- <p class="zipperfull__teaser">{{ .Summary }}</p> -->
+          <!-- <p><a class="zipperfull__button" href="{{ .Permalink }}">Learn more</a></p> -->
+        </div>
+        <div class="zipperfull__image">
+          <img src="{{ .Params.featured_image }}" alt="">
+        </div>
+      </div>
+    
+    {{ end }}
+  </div>
+</div>
+
+  <div class="video__layer">
+    <div class="video__container">
+      <h2 class="video__heading">Make an impact with SEGL</h2>
+      <div class="resize youtube">
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/LtbWTjh16A4"
+          frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+      </div>
+    </div>
+  </div>
+
+{{ end }}

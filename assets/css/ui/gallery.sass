@@ -1,0 +1,78 @@
+.gallery
+  //
+  &__layer
+    // background-color: #e6e6e6
+    padding: 3rem 0
+
+
+    figure
+      background-image: url("/loader.gif")
+      background-position: center
+      margin-bottom: 1.5rem
+
+  &__container
+    margin: 0 auto
+    width: 80vw
+
+// Theme list
+.imageGallery
+  //
+
+  &__layer
+    // background-color: #e6e6e6
+    // padding: 1.5rem 0
+
+    figure
+      background-image: url("/loader.gif")
+      background-position: center
+
+      a
+        color: white
+
+  &__container
+    display: grid
+    grid-gap: 1.5rem
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr))
+    grid-auto-flow: dense
+    margin: 3rem auto
+    max-width: 80vw
+    padding: 0
+    // grid-auto-rows: 200px
+
+    +media('<sm')
+      // grid-template-columns: repeat(auto-fill, minmax(250px, 1fr))
+
+  &__card
+    background-color: white
+
+  &__image
+    img
+      // background-color: #e6e6e6
+      // background-image:
+      object-fit: cover
+      height: 300px
+
+  &__meta
+    background-color: white
+    padding: 1.5rem
+
+  &__heading
+    font-size: 2rem
+    font-weight: bold
+    margin: 0
+    +media('<md')
+      font-size: 1rem
+
+    a
+      font-weight: 100
+      text-decoration: none
+
+  &__tags,
+  &__author
+    font-weight: 300
+    margin: 0
+
+    a
+      // outline: 1px solid #e6e6e6
+      // padding: 0 .5rem
+      text-decoration: none

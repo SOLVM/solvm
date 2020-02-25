@@ -1,0 +1,53 @@
+<meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+{{ with .Params.seo_page_title | default .Site.Title }}
+<title>{{ . }}</title>
+<meta property="og:title" content="{{ . }}" />
+<meta name="twitter:title" content="{{ . | truncate 70 }}" />
+{{- end -}}
+
+{{ with .Params.seo_page_description | default .Site.Params.description }}
+<meta name="description" content="{{ . }}">
+<meta property="og:description" content="{{ . }}">
+<meta name="twitter:description" content="{{ . | truncate 200 }}">
+{{ end }}
+
+<meta property="og:url" content="{{ .Permalink | absLangURL }}" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="{{ .Site.Title }}" />
+<link rel="canonical" href="{{ .Permalink | absLangURL }}" />
+
+{{/* Font */}}
+<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:100,400,900|Roboto:400,400i,900&display=swap" rel="stylesheet">
+
+{{/* {{ with .Site.Params.typekit }}
+  <link rel="stylesheet" href="https://use.typekit.net/{{.}}.css" />
+{{ end }} */}}
+
+{{ if .Site.IsServer }}
+  <!-- DEVELOPMENT -->
+  {{ $options := (dict "targetPath" "style.css" "outputStyle" "compressed" "enableSourceMap" true ) }}
+  {{ $style := resources.Get "css/style.sass" | toCSS $options }}
+  <link rel="stylesheet" href="{{ $style.Permalink }}">
+
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+{{ else }}
+  <!-- PRODUCTION -->
+  {{ $options := (dict "targetPath" "style.css" "outputStyle" "compressed" "enableSourceMap" false ) }}
+  {{ $style := resources.Get "css/style.sass" | toCSS $options | fingerprint }}
+  <link rel="stylesheet" href="{{ $style.Permalink }}" integrity="{{ $style.Data.Integrity }}" crossorigin="anonymous">
+
+  <script type="text/javascript" src="https://www.bugherd.com/sidebarv2.js?apikey=x655mn2ya4ckwfgbi3mdia" async="true"></script>
+
+	<!-- google -->
+  {{ partial "google.html" . }}
+
+  {{ partial "favicons.html" . }}
+
+{{ end }}

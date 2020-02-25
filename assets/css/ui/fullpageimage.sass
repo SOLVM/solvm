@@ -1,0 +1,48 @@
+.fullpageimage
+  //
+  &__layer
+    background-color: $brown
+    background-repeat: no-repeat
+    background-position: 50% -50px
+    background-size: cover
+
+    display: grid
+    grid-template-columns: 1fr
+    grid-template-rows: 100vh
+
+    align-items: center
+    justify-items: center
+    position: relative
+    overflow: hidden
+
+    +media('<sm')
+      background-position: 50% 0px
+
+    ul
+      padding: 1.5rem 4.5rem
+      align-self: flex-end
+      justify-self: flex-start
+
+      +media('<sm')
+        padding: 2rem
+        align-self: flex-end
+        justify-self: flex-start
+
+    li
+      color: white
+    a
+      color: white
+      text-decoration: none
+
+      &:hover
+        text-decoration: underline
+
+    // .centerBlock
+
+.linksBox
+  max-width: 600px
+
+.centerBlock
+  padding: 8rem 8rem 0 2rem
+  // align-self: center
+  // justify-self: flex-start

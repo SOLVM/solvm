@@ -1,0 +1,122 @@
+.zipper
+  &__layer
+    background-color: $brown
+    // background-image: url("/svg/bogolan-geo-04.svg")
+    // background-position: 50%
+    background-repeat: repeat
+    background-size: 50%
+
+  &__container
+    max-width: 80vw
+    margin: 0 auto
+    padding: 3rem 1rem 1.5rem
+
+    +media('<lg')
+      max-width: 98vw
+
+  &__item
+    background-color: transparent
+    display: grid
+    grid-gap: 3rem
+    grid-template-columns: 1fr 1.5fr
+    grid-template-areas: "image text"
+    margin-bottom: 6rem
+    // padding: 3rem
+
+    // +media('<md')
+    //   padding: 1.5rem
+
+    &:nth-of-type(even)
+      grid-template-columns: 1.5fr 1fr
+      grid-template-areas: "text image"
+
+    +media('<md')
+      grid-template-columns: 100%
+      grid-template-rows: 18rem 1fr
+      grid-template-areas: "image" "text"
+      padding: 1.5rem
+
+      &:nth-of-type(even)
+        grid-template-columns: 100%
+        grid-template-rows: 18rem 1fr
+        grid-template-areas: "image" "text"
+        padding: 1.5rem
+
+  &__image
+    grid-area: image
+    height: 400px
+    //box-shadow: 0 2px 2px hsla(0,0,0,.2)
+    box-shadow: 0 18.025px 43.775px rgba(0,0,0,.25)
+    outline: 1px solid #e6e6e6
+
+    +media('<lg')
+      // height: 400px
+
+    img
+      object-fit: cover
+      height: 100%
+      padding: 10px
+      background-color: white
+
+  &__text
+    grid-area: text
+    align-self: center
+
+    +media('<md')
+      padding-top: 1.5rem
+
+  &__headline
+    color: white
+    font-size: 3rem
+    text-align: center
+    padding: 0 0 3rem 0
+
+  &__heading
+    color: white
+    font-size: 2rem
+    padding-bottom: 1.5rem
+    position: relative
+    text-align: left
+
+    +media('<md')
+      font-size: 2rem
+
+    // &::after
+    //   position: absolute
+    //   content: ""
+    //   height: .5rem
+    //   width: 6rem
+    //   background: $charcoal
+    //   bottom: 1.5rem
+    //   left: 0
+
+    a
+      color: $seagreen
+      font-size: inherit
+      // font-weight: 100
+      line-height: 1
+      text-decoration: none
+
+      &:hover
+        background-color: transparent
+        text-decoration: underline
+
+
+  &__teaser
+    color: white
+    
+
+  &__button
+    font-size: 1rem
+    font-weight: 100
+    background-color: transparent
+    color: $seagreen
+    display: inline-block
+    outline: 1px solid $seagreen 
+    padding: 0 1rem
+    margin: .75rem 0
+    text-decoration: none
+
+    &:hover
+      background-color: $slime 
+      color: white 

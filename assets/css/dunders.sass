@@ -1,0 +1,47 @@
+[class*="__container"]
+  max-width: 820px
+  margin: 0 auto
+  padding: 1.5rem 1rem 1.5rem 1rem
+
+  +media('<lg')
+    // padding: 3rem
+
+  +media('<md')
+    padding: 1.5rem 2rem
+
+[class*="__heading"]
+  color: $charcoal
+  // font-family: $condensed, "Trebuchet MS"
+  font-size: 4rem
+  font-weight: normal
+  line-height: .75
+  text-align: center
+  // text-shadow: 2px 2px 2px #000
+  text-transform: uppercase
+
+  padding-bottom: 3rem
+  //
+
+[class*="__heading-noupper"]
+  color: white
+  padding-bottom: 0
+  text-shadow: 1px 1px 1px #000
+
+  +media('<md')
+    font-size: 2rem
+
+[class*="__subheading"]
+  // text-shadow: 2px 2px 2px #000
+
+[class*="__button"]
+  background-color: transparent
+  color: $seagreen
+  display: inline-block
+  outline: 2px solid $seagreen 
+  padding: 0 1rem
+  margin: .75rem 0
+  text-decoration: none
+
+  &:hover
+    background-color: $seagreen 
+    color: white 

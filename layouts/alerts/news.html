@@ -1,0 +1,56 @@
+{{ define "feature" }}
+  {{ if .Params.featured_image }}
+    <div
+      class="newsfeature__layer resize"
+      style="background-image: url('{{ .Params.featured_image  }}')"
+    >
+  {{ else }}
+    <div
+      class="newsfeature__layer resize"
+      style="background-image: url('/segl-board.png')"
+    >
+  {{ end }}
+
+    </div>
+    <div class="newsfeature__container">
+
+      <hgroup class="newsfeature__hgroup">
+        {{ if .Params.feature_layer.heading }}
+           <h2 class="newsfeature__heading">{{ .Params.feature_layer.heading }}</h2>
+        {{ else }}
+          <h2 class="newsfeature__heading">{{ .Params.title }}</h2>
+        {{ end }}
+
+      </hgroup>
+
+    </div>
+
+{{ end }}
+
+{{ define "main" }}
+
+  <main class="main-content__layer">
+    <div class="main-content__container">
+      <p class="meta">
+        {{ with .Params.author }}
+           Author: <span class="author">{{ . }}</span>
+        {{ end }}
+        <span class="date">Date: {{.Date.Format "Jan 2nd, 2006"}}</span>
+      </p>
+      {{ .Content }}
+    </div>
+  </main>
+
+  <section class="imageGallery__layer">
+    <div class="imageGallery__container">
+
+      {{ range .Params.image_gallery }}
+        <figure class='imageGallery__image resize'>
+          <a data-fancybox="gallery" href="{{ . }}"><img src="{{ . }}"></a>
+        </figure>
+      {{ end }}
+
+    </div>
+  </section>
+
+{{ end }}

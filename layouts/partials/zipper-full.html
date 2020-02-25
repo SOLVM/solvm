@@ -1,0 +1,22 @@
+<div class="zipperfull__layer">
+  <div class="zipperfull__container">
+
+    {{ range .zipperfull_group }}
+      <div class="zipperfull__item">
+        <div class="zipperfull__image resize">
+          <img src="{{ relURL .image }}" alt="">
+        </div>
+        <div class="zipperfull__text">
+          <h2 class="zipperfull__heading">
+            <a href="{{ .url }}">{{ .heading }}</a>
+          </h2>
+          <p class="zipperfull__teaser">{{ .teaser }}</p>
+          <p><a class="zipperfull__button" href="{{ .url }}">Learn more</a></p>
+        </div>
+      </div>
+    {{ end }}
+
+  </div>
+</div>
+
+

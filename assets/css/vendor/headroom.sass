@@ -1,0 +1,93 @@
+// set to the height of your header
+html,
+body
+  // scroll-padding-top: 65px
+
+
+/**
+ * Note: I have omitted any vendor-prefixes for clarity.
+ * Adding them is left as an exercise for the reader.
+
+.headroom
+  transition: transform 0.25s ease-in-out
+  will-change: transform
+
+.headroom--pinned
+  transform: translateY(0)
+
+.headroom--unpinned
+  transform: translateY(-100%)
+
+.header--fixed
+  position: fixed
+  z-index: 10
+  right: 0
+  left: 0
+  top: 0
+
+.animated
+  animation-duration: 0.5s
+  animation-fill-mode: both
+  will-change: transform, opacity
+
+  &.slideDown
+    animation-name: slideDown
+
+  &.slideUp
+    animation-name: slideUp
+
+@-moz-keyframes slideDown
+  0%
+    transform: translateY(-100%)
+
+  100%
+    transform: translateY(0)
+
+@-webkit-keyframes slideDown
+  0%
+    transform: translateY(-100%)
+
+  100%
+    transform: translateY(0)
+
+@-o-keyframes slideDown
+  0%
+    transform: translateY(-100%)
+
+  100%
+    transform: translateY(0)
+
+@keyframes slideDown
+  0%
+    transform: translateY(-100%)
+
+  100%
+    transform: translateY(0)
+
+@-moz-keyframes slideUp
+  0%
+    transform: translateY(0)
+
+  100%
+    transform: translateY(-100%)
+
+@-webkit-keyframes slideUp
+  0%
+    transform: translateY(0)
+
+  100%
+    transform: translateY(-100%)
+
+@-o-keyframes slideUp
+  0%
+    transform: translateY(0)
+
+  100%
+    transform: translateY(-100%)
+
+@keyframes slideUp
+  0%
+    transform: translateY(0)
+
+  100%
+    transform: translateY(-100%)

@@ -1,0 +1,28 @@
+<div class="feature__layer resize">
+  {{range .}}
+  <div class="crossfade" style="background-image: url({{.}})"></div>
+  {{ end }}
+
+  <div class="feature__container">
+    <div class="feature__main">
+
+      <div class="biglogo">
+      {{ partial "logo.html" . }}
+      </div>
+
+      <hgroup>
+        {{ with .Params.feature_text }}
+        <h2 class="feature__headline">{{ . }}</h2>
+        {{ end }}
+    
+        {{ if .Params.feature_button_text }}
+        <h3 class="feature__subhead">
+          <a class="feature__button" href="{{ .Params.feature_button_url }}">{{ .Params.feature_button_text }}</a>
+        </h3>
+        {{ end }}
+      </hgroup>
+
+    </div>
+  </div>
+</div>
+

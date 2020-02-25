@@ -1,3 +1,20 @@
-baseURL = "http://solvm.gitlab.io"
+baseurl = "solvm.netlify.com"
 languageCode = "en-us"
-title = "solvm"
+summaryLength = 20
+title = "SOLVM | High-end web design and development"
+[markup.goldmark.renderer]
+unsafe = true
+[params]
+cloudinary = ""
+description = "SOLVM specializes in making high-end websites WITHOUT Wordpress that are easy to manage"
+favicolor = "#FFDC2E"
+favicontext = "solvm"
+google_analytics = "UA-24190198-1"
+identity = "SOLVM"
+paginate = 20
+tagline = "Norwegian for Awesome"
+typekit = ""
+[sitemap]
+changefreq = "monthly"
+filename = "sitemap.xml"
+priority = 0.5

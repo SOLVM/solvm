@@ -1,0 +1,307 @@
+.container
+  padding-top: 90px
+  position: relative
+
+  +media('<690px')
+    padding-top: 60px
+
+  +media('<md')
+    padding-top: 30px
+
+
+header
+  background-color: $gold
+  display: grid
+  grid-template-rows: 60px 30px
+  grid-template-columns: max-content
+  position: relative
+
+  position: fixed
+  top: 0
+  left: 0
+  width: 100vw
+  z-index: 1
+
+  // &::after
+  //   background-color: blue
+  //   content: ""
+  //   display: block
+  //   height: 1px
+  //   width: 100%
+
+  // align-items: center
+  // justify-content: space-between
+
+  +media('<lg')
+    grid-template-columns: 1fr
+    grid-template-rows: 60px 30px
+
+  +media('<md')
+    grid-template-rows: 60px 30px
+
+  +media('<690px')
+    grid-template-rows: 1fr max-content
+    //
+
+.identity
+  background-color: $gold
+  display: grid
+  grid-template-columns: max-content max-content max-content
+  align-items: center
+  justify-items: center
+
+  justify-content: space-between
+  // padding: 0 1rem
+
+  +media('<lg')
+    // background-color: #e6e6e6
+
+  +media('<690px')
+    grid-gap: 0
+
+  +media('<500px')
+    grid-template-columns: max-content max-content
+    // grid-template-columns: 1fr
+    // grid-template-rows: 60px 60px
+
+  p
+    display: inline-block
+    // font-size: 2rem
+    margin-bottom: 0
+    // text-transform: uppercase
+
+  a
+    // color: white
+    text-decoration: none
+
+    &:hover
+      background-color: $gold
+      color: white
+
+.brandmark
+  background-color: $gold
+  color: white
+  display: grid
+  //font-family: $condensed, "Trebuchet MS"
+  font-size: 2rem
+  // font-style: italic
+  font-weight: normal
+  // grid-gap: 1rem
+  grid-template-columns: max-content max-content
+  align-items: center
+  justify-items: center
+  text-transform: uppercase
+
+  padding: 0 1.5rem
+
+  // display: inline-block
+  // display: grid
+  // align-items: center
+  // justify-items: center
+  // grid-template-rows: 60px
+  // grid-template-columns: max-content
+  // padding: .5rem 1rem
+  +media('<690px')
+    font-size: 1.5rem
+    padding: 0 .75rem
+    width: 100%
+
+  svg
+    margin-right: .75rem
+    width: 1.5rem
+    path
+      fill: white
+
+  &:hover
+
+    path
+      // fill: $red
+
+
+p.tagline
+  color: white
+  //font-family $condensed, "Trebuchet MS"
+  //font-style: italic
+  font-size: 1.5rem
+  font-weight: 100
+
+  +media('<690px')
+    font-size: 1.25rem
+
+  +media('<500px')
+    display: none
+
+nav
+  // background-color: $gold
+  width: 100vw
+
+  +media('<lg')
+    text-align: center
+
+  ul
+    display: grid
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr))
+    list-style: none
+    margin-bottom: 0
+
+    +media('<690px')
+      display: none
+
+  ul li > ul
+    display: none
+
+  & > ul > li
+    position: relative
+
+  ul ul a
+    text-align: left
+
+
+  a
+    background-color: $seagreen
+    color: white
+    display: inline-block
+    font-family: $basefont
+    font-weight: 400
+    padding: 0 .75rem
+    text-align: center
+    text-decoration: none
+    width: 100%
+
+    +media('<690px')
+      text-align: left
+
+
+    &:hover
+      background-color: $grass
+      color: white
+
+  ul li:hover > ul
+    background-color: $seagreen
+    display: block
+    z-index: 2
+    position: absolute
+    width: max-content
+    // top: 0
+    left: 0
+
+    +media('<690px')
+      position: relative
+
+  &.nav--active
+
+    //transform translateY(-300%)
+    background-color: $seagreen
+    // overflow-y scroll
+
+    width: 100vw
+    position: fixed
+
+    padding-top: 70px
+
+    overflow: scroll
+    z-index: -1
+
+    +media('<690px')
+      height: 87vh
+
+    &:after
+      content: ''
+      display: block
+      height: 0px
+      width: 100%
+
+    ul
+      grid-template-columns: 1fr
+      display: block
+      padding: 1.5rem
+
+      ul
+        padding: 0 0 0 1.5rem
+
+.links
+  // a
+  //   color: $red
+  //   margin-left: 1rem
+
+
+.social
+  display: grid
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr
+  height: 100%
+  align-items: center
+  padding-right: 1.5rem
+
+  +media('<690px')
+    // grid-template-columns: 1fr 1fr 1fr 1fr
+    grid-template-columns: max-content max-content max-content 35px
+    padding-right: 0
+
+  svg
+    display: block
+    fill: white
+
+  a
+    display: block
+    height: 100%
+    padding: 1rem .25rem
+
+    +media('<690px')
+      padding: .5rem .25rem
+
+
+    &:hover
+      background-color: transparent
+
+      svg
+        fill: $grass
+
+
+  .hamburger
+    display: none
+    z-index: 100
+    background-color: $charcoal
+
+    svg
+      fill: white
+
+    &:hover
+      background-color: $charcoal
+
+      svg
+        fill: white
+
+    +media('<690px')
+      display: inline-block
+
+.hidemenu
+  display: none
+
+.manageScroll
+  // this wrapper is here to prevent the site from scrolling
+  // when the nav overlay is showing
+  +media('<690px')
+    height: 100vh
+    overflow: auto
+
+
+// Current Page styling
+
+.current-page
+  [href="/about"],
+  [href="/admissions"],
+  [href="/semester"],
+  [href="/summer"],
+  [href="/news/"],
+  [href="/events/"],
+  [href="/support"],
+  [href="/contact/"]
+    background-color: $grass
+    color: white
+
+    &:hover
+      color: white
+
+    +media('<md')
+      color: $seagreen
+      text-decoration: underline

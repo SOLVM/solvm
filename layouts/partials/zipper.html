@@ -1,0 +1,20 @@
+<div class="zipper__layer">
+  <div class="zipper__container">
+
+    {{ range .zipper_group }}
+      <div class="zipper__item">
+        <div class="zipper__image resize">
+          <img src="{{ relURL .image }}" alt="">
+        </div>
+        <div class="zipper__text">
+          <h2 class="zipper__heading">
+            <a href="{{ .url }}">{{ .heading }}</a>
+          </h2>
+          <p class="zipper__teaser">{{ .teaser }}</p>
+          <p><a class="zipper__button" href="{{ .url }}">Learn more</a></p>
+        </div>
+      </div>
+    {{ end }}
+
+  </div>
+</div>

@@ -1,0 +1,19 @@
+<header>
+  <div class="identity">
+    <a class="ml-logo" href="/">Afriky Lolo</a>
+    <p class="tagline">West African Dance Compnay</p>
+  </div>
+
+  <nav>
+    {{ $currentPage := . }}
+    {{ range .Site.Menus.main }}
+    <a
+      class="sidebar-nav-item{{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} active{{end}}"
+      href="{{ .URL }}"
+      title="{{ .Title }}"
+    >{{ .Name }}</a>
+
+    {{ end }}
+    {{ partial "social.html" .}}
+  </nav>
+</header>

@@ -1,0 +1,107 @@
+.billboard
+  &__layer
+    background-color: #fff
+    //background-image: url("/svg/bogolan-geo-03.svg")
+    background-repeat: no-repeat
+    background-position: center
+    background-size: cover
+
+    display: grid
+    grid-template-columns: 1fr
+    grid-template-rows: 80vh
+
+    align-items: center
+    justify-items: center
+    position: relative
+    overflow: hidden
+
+    // font-family: klavika-web-disp-cond
+    // padding: 6rem 3rem
+
+    +media('<sm')
+      grid-template-rows: 50vh
+      padding: 3rem 1.5rem
+
+  &__container
+    max-width: 80vw
+    padding-bottom: 3rem
+
+    p
+      margin-top: 1.5rem
+      text-align: center
+
+    a
+      display: inline-block
+      font-size: 2rem
+      font-weight: normal
+      outline: 3px solid $grass
+      padding: .5rem .75rem
+
+  &__hgroup
+    //
+
+
+  &__heading
+    color: $brown
+    font-size: 6rem
+    font-weight: 100
+    line-height: 1
+    text-align: center
+    text-shadow: 3px 3px 3px hsla(0,0,0,0.2)
+    text-transform: uppercase
+    // margin-bottom: 1.5rem
+    padding: 0
+
+    +media('<lg')
+      font-size: 5rem
+
+    +media('<sm')
+      font-size: 3rem
+      padding-bottom: 0
+
+    +media('<xs')
+      font-size: 2rem
+      margin-bottom: 0
+      padding-bottom: 1.5rem
+
+  &__subhead
+    color: $heading
+    // color: $charcoal
+    font-family: $condensed
+    font-size: 4rem
+    // font-style: italic
+    font-weight: 100
+    text-align: center
+    text-shadow: 3px 3px 3px hsla(0,0,0,0.2)
+    // text-shadow: 1px 1px 1px #000
+    // text-shadow: 3px 3px 0 #333
+    // text-transform: uppercase
+
+    +media('<md')
+      font-size: 2rem
+
+    +media('<xs')
+      font-size: 2rem
+
+// watch this
+.svg-logo
+  display: grid
+  align-items: center
+  justify-content: center
+  margin-top: 1.5rem
+  width: 100%
+
+  +media('<sm')
+    margin-top: 1.5rem
+
+  svg
+    width: 600px
+    // fill: white
+    // height: 20rem
+    //
+    // +media('<md')
+    //   height: 10rem
+    //
+    // +media('<sm')
+    //   height: 5rem
+    //   margin-top: 0

@@ -1,0 +1,17 @@
+{{ $baseurl := .Site.BaseURL }}
+{{ $pag := .Paginator }}
+
+{{ if gt $pag.TotalPages 1 }}
+
+<nav class="pagination__layer">
+  {{ range $pag.Pagers }}
+    {{ if eq . $pag }}
+      <span class="pagination__button--disabled">{{ .PageNumber }}</span>
+    {{ else }}
+      <a class="pagination__button" href='{{ $baseurl }}{{ .URL }}'>{{ .PageNumber }}</a>
+    {{ end }}
+  {{ end }}
+
+</nav>
+
+{{ end }}

@@ -1,0 +1,15 @@
+{{ define "feature" }}
+
+    {{ partial "billboard.html" . }}
+
+{{ end }}
+
+{{ define "main" }}
+
+  <main class="main-content__layer">
+    <div class="main-content__container">
+      {{ .Content }}
+    </div>
+  </main>
+
+{{ end }}

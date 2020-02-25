@@ -1,0 +1,52 @@
+<header>
+  <div class="identity">
+    <a class="brandmark" href="/">SOLVM</a>
+    <p class="tagline">{{ .Site.Params.tagline}}</p>
+    <div class="social">
+      {{ partial "socialsvg/phone.html" (dict "url" .Site.Data.segl.phone) }}
+
+
+      <a href="#" class=" hamburger" aria-label="Open the menu">
+  			<div aria-hidden="true">
+  				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M0 0h24v4.8H0zM0 9.6h24v4.8H0zM0 19.2h24V24H0z"/></svg>
+  			</div>
+  			<div class="hidemenu">
+  				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M.333 20.273L20.343.263l3.395 3.393L3.727 23.667z"/><path d="M20.273 23.667L.263 3.657 3.655.261l20.011 20.011z"/></svg>
+  			</div>
+  		</a>
+
+    </div>
+  </div>
+
+  <nav class="nav__layer">
+    <ul class="" id="menu-mainnav">
+      {{ $currentPage := . }}
+      {{ range .Site.Menus.main }}
+        {{ $isMain := $currentPage.IsMenuCurrent "main" . }}
+        {{ $hasMain := $currentPage.HasMenuCurrent "main" . }}
+
+        {{ if .HasChildren }}
+        {{/* Top leve nav item WITH nested nav items */}}
+          <li class="{{ if or ($isMain ) ($hasMain ) }}current-page{{ end }}">
+            <a href="/{{ .Name | urlize}}">{{ .Name }}</a>
+            <ul class="sub-menu">
+              {{ range .Children }}
+                <li class="{{ if or ($isMain ) ($hasMain ) }}current-page{{ end }}">
+                  <a href="{{ .URL }}">{{ .Name }}</a>
+                </li>
+              {{ end }}
+            </ul>
+          </li>
+
+        {{ else }}
+        {{/* Top level nav item without any children */}}
+          <li class="{{ if or ($isMain ) ($hasMain ) }}current-page{{ end }}">
+            <a href="{{ .URL }}">{{ .Name }}</a>
+          </li>
+
+        {{ end }}
+      {{ end }}
+
+    </ul>
+  </nav>
+</header>

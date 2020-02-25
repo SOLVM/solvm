@@ -1,0 +1,74 @@
+{{ define "feature" }}
+
+  {{ partial "billboard.html" . }}
+
+{{ end }}
+
+{{ define "main" }}
+
+  <main class="main-content__layer">
+    <div class="main-content__container">
+      {{ .Content }}
+    </div>
+  </main>
+
+  <div class="zipper-faculty__layer">
+    <div class="zipper-faculty__container">
+
+      {{ range $.Site.Data.faculty }}
+        {{ range . }}
+
+          <div class="zipper-faculty__item">
+            
+            <div class="zipper-faculty__image">
+              {{ if .image }}
+                <img src="{{ .image }}" alt="">
+              {{ else }}
+                <img src="/segl-board.png" alt="">
+              {{ end }}
+            </div>
+            <div class="zipper-faculty__text">
+              
+              <h2 class="zipper-faculty__heading">{{ .name }}</h2>
+
+              {{ with .title }}
+                {{ if gt (len .) 1 }}
+                  <h3>Titles</h3>
+                {{ else}}
+                  <h3>Title</h3>
+                {{ end }}
+                <ul class="zipper-faculty__meta">
+                  {{ range . }}
+                    <li>{{.}}</li>
+                  {{ end }}
+                </ul>
+              {{ end }}
+
+              {{ with .teaches }}
+                <h3>Teaches</h3>
+                <ul class="zipper-faculty__meta">
+                  {{ range . }}
+                    <li>{{.}}</li>
+                  {{ end }}
+                </ul>
+              {{ end }}
+
+              {{ with .education }}
+                <h3>Education</h3>
+                <ul class="zipper-faculty__meta">
+                  {{ range . }}
+                    <li>{{.}}</li>
+                  {{ end }}
+                </ul>
+              {{ end }}
+
+
+            </div>
+          </div>
+        
+        {{ end }}
+      {{ end }}
+    </div>
+  </div>
+
+{{ end }}

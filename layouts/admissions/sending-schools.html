@@ -1,0 +1,30 @@
+{{ define "feature" }}
+
+  {{ partial "billboard.html" . }}
+
+{{ end }}
+
+{{ define "main" }}
+
+  <main class="main-content__layer">
+    <div class="main-content__container">
+      {{ .Content }}
+    </div>
+  </main>
+
+  <main class="board__layer">
+    <div class="board__container">
+  
+      <h2 class="board__heading">Sending schools</h2>
+      {{ range $.Site.Data.sendingschools }}
+        {{ range . }}
+      
+          <h2 class="board__name">{{ .name }}</h2>
+          <h3 class="board__title">{{ .city }}, {{ .state}}</h3>
+
+        {{ end }}
+      {{ end }}
+
+    </div>
+
+{{ end }}

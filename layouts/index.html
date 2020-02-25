@@ -1,0 +1,172 @@
+{{ define "feature" }}
+
+
+{{ end }}
+
+
+{{ define "main" }}
+
+{{ range .Params.layers }}
+  {{ if eq "layer-home-photo-logo" .template }}
+    {{ if eq .visibility "Show" }}
+      <div class="crossfade__layer resize">
+
+        {{range .image }}
+          <div class="crossfade__item" style="background-image: url({{ . }})"></div>
+        {{ end }}
+
+        <div class="crossfade__container">
+          <div class="svg-logo">{{ partial "logosvg/segl-rectangle.html" (dict "color" "white") }}</div>
+        </div>
+
+      </div>
+    {{ end }}
+  {{ end }}
+
+  {{ if eq "layer-home-large-text-call-to-action" .template }}
+    {{ if eq .visibility "Show" }}
+      <div
+        class="billboard__layer resize"
+        style="background-image: url()"
+      >
+        <div class="billboard__container">
+          <hgroup class="billboard__hgroup">
+            <h2 class="billboard__heading" style="color: #524740;">{{ .text }}</h2>
+          </hgroup>
+          <!-- <p><a class="__button" href="{{ .button_url }}">{{ .button_text }}</a></p> -->
+        </div>
+      </div>
+    {{ end }}
+  {{ end }}
+
+  {{ if eq "layer-home-campus" .template }}
+    {{ if eq .visibility "Show" }}
+      <div class="zipper__layer">
+        <div class="zipper__container">
+          <h2 class="zipper__headline">{{ .layer_heading }}</h2>
+            {{ range .campus_list}}
+            <div class="zipper__item">
+              <div class="zipper__image resize">
+                <img src="{{ .image }}" alt="">
+              </div>
+              <div class="zipper__text">
+                <h2 class="zipper__heading">
+                  <a href="{{ .url }}">{{ .heading }}</a>
+                </h2>
+                <p class="zipper__teaser">{{ .teaser }}</p>
+                <!-- <p><a class="zipper__button" href="">Learn more</a></p> -->
+              </div>
+            </div>
+            {{ end }}
+        </div>
+      </div>
+    {{ end }}
+  {{ end }}
+
+  {{ if eq "layer-home-news" .template }}
+    {{ if eq .visibility "Show" }}
+      <div class="card__layer">
+        <h2 class="card__title">Latest news</h2>
+        <div class="card__container">
+
+          {{ range first 3 (where $.Site.RegularPages "Section" "news") }}
+          <article class="card__article">
+            <p class="card__type">News</p>
+
+            <div class="card__image resize">
+              <img src="{{ .Params.featured_image }}" alt="">
+            </div>
+
+            <div class="card__box">
+              <h1 class="card__heading">
+                <a href="{{ .Permalink }}">{{ .Title }}</a>
+              </h1>
+              <p class="card__teaser">{{ .Summary }}</p>
+            </div>
+
+          </article>
+          {{ end }}
+
+        </div>
+      </div>
+    {{ end }}
+  {{ end }}
+
+  {{ if eq "layer-home-event-or-alert" .template }}
+    {{ if eq .visibility "Show" }}
+      <div class="zipperfull__layer">
+        <div class="zipperfull__container">
+        {{ range first 1 (where $.Site.RegularPages "Section" "events") }}
+
+          <div class="zipperfull__item resize">
+            <div class="zipperfull__text">
+              <p class="zipperfull__type">Event</p>
+              <h2 class="zipperfull__heading">
+                <a href="{{ .Permalink }}">{{ .Title }}</a>
+              </h2>
+              <p class="date">{{ .Params.event_data.event_start_date }}</p>
+              <!-- <p class="zipperfull__teaser">{{ .Summary }}</p> -->
+              <!-- <p><a class="zipperfull__button" href="{{ .Permalink }}">Learn more</a></p> -->
+            </div>
+
+            <div class="zipperfull__image">
+              <img src="{{ .Params.featured_image }}" alt="">
+            </div>
+          </div>
+        {{ end }}
+      </div>
+    </div>
+    {{ end }}
+  {{ end }}
+
+  {{ if eq "layer-home-events" .template }}
+    {{ if eq .visibility "Show" }}
+      <div class="zipperfull__layer">
+        <div class="zipperfull__container">
+
+        {{ range first 1 (where $.Site.RegularPages "Section" "alerts") }}
+
+          <div class="zipperfull__item resize">
+            <div class="zipperfull__text">
+              <p class="zipperfull__type">Alert</p>
+              <h2 class="zipperfull__heading">
+                <a href="{{ .Permalink }}">{{ .Title }}</a>
+              </h2>
+              <!-- <p class="zipperfull__teaser">{{ .Summary }}</p> -->
+              <!-- <p><a class="zipperfull__button" href="{{ .Permalink }}">Learn more</a></p> -->
+            </div>
+            <div class="zipperfull__image">
+              <img src="{{ .Params.featured_image }}" alt="">
+            </div>
+          </div>
+
+        {{ end }}
+      </div>
+    </div>
+    {{ end }}
+  {{ end }}
+
+  {{ if eq "layer-home-video" .template }}
+    {{ if eq .visibility "Show" }}
+      <div class="video__layer">
+        <div class="video__container">
+          <h2 class="video__heading">Make an impact with SEGL</h2>
+          <div class="resize youtube">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/LtbWTjh16A4"
+              frameborder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen>
+            </iframe>
+          </div>
+        </div>
+      </div>
+    {{ end }}
+  {{ end }}
+
+{{ end }}
+
+
+{{ end }}

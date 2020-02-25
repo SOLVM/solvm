@@ -1,0 +1,60 @@
+{{ define "feature" }}
+
+  {{ partial "billboard.html" . }}
+
+{{ end }}
+
+{{ define "main" }}
+
+  <main class="main-content__layer">
+    <div class="main-content__container">
+      {{ .Content }}
+    </div>
+  </main>
+
+  <main class="board__layer">
+    <div class="board__container">
+  
+      <h2 class="board__heading">Student FAQs</h2>
+      {{ range $.Site.Data.faq.students }}
+        {{ range . }}
+      
+          <h2 class="board__name">{{ .q }}</h2>
+          <p class="board__title">{{ .a }}</p>
+
+        {{ end }}
+      {{ end }}
+
+      <h2 class="board__heading">Parent FAQs</h2>
+      {{ range $.Site.Data.faq.parents }}
+        {{ range . }}
+      
+          <h2 class="board__name">{{ .q }}</h2>
+          <p class="board__title">{{ .a }}</p>
+
+        {{ end }}
+      {{ end }}
+
+      <h2 class="board__heading">Donors FAQs</h2>
+      {{ range $.Site.Data.faq.donors }}
+        {{ range . }}
+      
+          <h2 class="board__name">{{ .q }}</h2>
+          <p class="board__title">{{ .a }}</p>
+
+        {{ end }}
+      {{ end }}
+
+      <h2 class="board__heading">Sending Schools FAQs</h2>
+      {{ range $.Site.Data.faq.sendingschools }}
+        {{ range . }}
+      
+          <h2 class="board__name">{{ .q }}</h2>
+          <p class="board__title">{{ .a }}</p>
+
+        {{ end }}
+      {{ end }}
+
+    </div>
+
+{{ end }}

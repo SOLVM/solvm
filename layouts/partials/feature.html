@@ -1,0 +1,18 @@
+{{$img := relURL .Params.feature_image}}
+<div
+  class="feature__layer resize"
+  style="background-image: url({{$img}});"
+>
+
+  <hgroup>
+    {{ with .Params.feature_text }}
+    <h2 class="feature__headline">{{ . }}</h2>
+    {{ end }}
+
+    {{ if .Params.feature_button_text }}
+    <h3 class="feature__subhead">
+      <a class="feature__button" href="{{ .Params.feature_button_url }}">{{ .Params.feature_button_text }}</a>
+    </h3>
+    {{ end }}
+  </hgroup>
+</div>

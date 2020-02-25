@@ -1,0 +1,25 @@
+{{ define "main" }}
+<main>
+	<div>
+		<h2 class="theme__heading">{{ .Title }}</h2>
+		<p>{{ .Params.themeDescription }}</p>
+	</div>
+</main>
+
+{{ with .Resources.ByType "image" }}
+<div class="gallery">
+	{{ range . }}
+		<figure class='gallery__item resize'>
+			<img src="{{ .RelPermalink }}" />
+		</figure>
+	{{ end }}
+</div>
+{{ end }}
+
+<main>
+	<div>
+		{{ .Content }}
+	</div>
+
+</main>
+{{ end }}
