@@ -1,0 +1,37 @@
+{{ define "main" }}
+<main>
+	<div>
+		<h2 class="theme__heading">{{ .Title }}</h2>
+		<p>{{ .Params.themeDescription }}</p>
+	</div>
+</main>
+
+{{ with .Resources.ByType "image" }}
+<div class="gallery">
+	{{ range . }}
+		<figure class='gallery__item resize'>
+			<img src="{{ .RelPermalink }}" />
+		</figure>
+	{{ end }}
+</div>
+{{ end }}
+
+<main>
+	<div>
+		{{ .Content }}
+	</div>
+
+</main>
+
+{{ if .Params.youtubeid }}
+	<div class="youtube__layer">
+	  <div class="youtube__container">
+	    <div class="youtube resize">
+	      <iframe width="560" height="315" src="https://www.youtube.com/embed/{{.Params.youtubeid}}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	    </div>
+	  </div>
+	</div>
+{{ else }}
+{{ end }}
+
+{{ end }}

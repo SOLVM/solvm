@@ -6,7 +6,7 @@ seo_page_title = "Contact SEGL"
 subtitle = ""
 title = "Contact"
 [menu.main]
-weight = 20
+weight = 100
 
 +++
 

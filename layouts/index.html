@@ -6,167 +6,162 @@
 
 {{ define "main" }}
 
-{{ range .Params.layers }}
-  {{ if eq "layer-home-photo-logo" .template }}
-    {{ if eq .visibility "Show" }}
-      <div class="crossfade__layer resize">
 
-        {{range .image }}
-          <div class="crossfade__item" style="background-image: url({{ . }})"></div>
-        {{ end }}
+  <div class="crossfade__layer resize">
 
-        <div class="crossfade__container">
-          <div class="svg-logo">{{ partial "logosvg/segl-rectangle.html" (dict "color" "white") }}</div>
-        </div>
+    <div class="crossfade__item" style="background-image: url('ny.jpg')"></div>
+    <div class="crossfade__item" style="background-image: url('clayton.jpg')"></div>
+    <div class="crossfade__item" style="background-image: url('skyscrapers.jpg')"></div>
 
-      </div>
-    {{ end }}
-  {{ end }}
-
-  {{ if eq "layer-home-large-text-call-to-action" .template }}
-    {{ if eq .visibility "Show" }}
-      <div
-        class="billboard__layer resize"
-        style="background-image: url()"
-      >
-        <div class="billboard__container">
-          <hgroup class="billboard__hgroup">
-            <h2 class="billboard__heading" style="color: #524740;">{{ .text }}</h2>
-          </hgroup>
-          <!-- <p><a class="__button" href="{{ .button_url }}">{{ .button_text }}</a></p> -->
-        </div>
-      </div>
-    {{ end }}
-  {{ end }}
-
-  {{ if eq "layer-home-campus" .template }}
-    {{ if eq .visibility "Show" }}
-      <div class="zipper__layer">
-        <div class="zipper__container">
-          <h2 class="zipper__headline">{{ .layer_heading }}</h2>
-            {{ range .campus_list}}
-            <div class="zipper__item">
-              <div class="zipper__image resize">
-                <img src="{{ .image }}" alt="">
-              </div>
-              <div class="zipper__text">
-                <h2 class="zipper__heading">
-                  <a href="{{ .url }}">{{ .heading }}</a>
-                </h2>
-                <p class="zipper__teaser">{{ .teaser }}</p>
-                <!-- <p><a class="zipper__button" href="">Learn more</a></p> -->
-              </div>
-            </div>
-            {{ end }}
-        </div>
-      </div>
-    {{ end }}
-  {{ end }}
-
-  {{ if eq "layer-home-news" .template }}
-    {{ if eq .visibility "Show" }}
-      <div class="card__layer">
-        <h2 class="card__title">Latest news</h2>
-        <div class="card__container">
-
-          {{ range first 3 (where $.Site.RegularPages "Section" "news") }}
-          <article class="card__article">
-            <p class="card__type">News</p>
-
-            <div class="card__image resize">
-              <img src="{{ .Params.featured_image }}" alt="">
-            </div>
-
-            <div class="card__box">
-              <h1 class="card__heading">
-                <a href="{{ .Permalink }}">{{ .Title }}</a>
-              </h1>
-              <p class="card__teaser">{{ .Summary }}</p>
-            </div>
-
-          </article>
-          {{ end }}
-
-        </div>
-      </div>
-    {{ end }}
-  {{ end }}
-
-  {{ if eq "layer-home-event-or-alert" .template }}
-    {{ if eq .visibility "Show" }}
-      <div class="zipperfull__layer">
-        <div class="zipperfull__container">
-        {{ range first 1 (where $.Site.RegularPages "Section" "events") }}
-
-          <div class="zipperfull__item resize">
-            <div class="zipperfull__text">
-              <p class="zipperfull__type">Event</p>
-              <h2 class="zipperfull__heading">
-                <a href="{{ .Permalink }}">{{ .Title }}</a>
-              </h2>
-              <p class="date">{{ .Params.event_data.event_start_date }}</p>
-              <!-- <p class="zipperfull__teaser">{{ .Summary }}</p> -->
-              <!-- <p><a class="zipperfull__button" href="{{ .Permalink }}">Learn more</a></p> -->
-            </div>
-
-            <div class="zipperfull__image">
-              <img src="{{ .Params.featured_image }}" alt="">
-            </div>
-          </div>
-        {{ end }}
-      </div>
+    <div class="crossfade__container">
+      <h2 class="crossfade__heading">Websites age more like bread than wine.</h2>
+      <div class="svg-logo">{{ partial "logosvg/solvm-logo-1.html" (dict "color" "#FFDC2E") }}</div>
     </div>
-    {{ end }}
-  {{ end }}
 
-  {{ if eq "layer-home-events" .template }}
-    {{ if eq .visibility "Show" }}
-      <div class="zipperfull__layer">
-        <div class="zipperfull__container">
+  </div>
 
-        {{ range first 1 (where $.Site.RegularPages "Section" "alerts") }}
+  <div
+    class="billboard__layer resize"
+    style="background-image: url()"
+  >
+    <div class="billboard__container">
 
-          <div class="zipperfull__item resize">
-            <div class="zipperfull__text">
-              <p class="zipperfull__type">Alert</p>
-              <h2 class="zipperfull__heading">
-                <a href="{{ .Permalink }}">{{ .Title }}</a>
-              </h2>
-              <!-- <p class="zipperfull__teaser">{{ .Summary }}</p> -->
-              <!-- <p><a class="zipperfull__button" href="{{ .Permalink }}">Learn more</a></p> -->
-            </div>
-            <div class="zipperfull__image">
-              <img src="{{ .Params.featured_image }}" alt="">
-            </div>
-          </div>
-
-        {{ end }}
-      </div>
+      <hgroup class="billboard__hgroup">
+        <h2 class="billboard__heading">So throw out that stale, gross website!</h2>
+      </hgroup>
+      <!-- <p><a class="__button" href="/admissions/apply/">Apply Today</a></p> -->
     </div>
-    {{ end }}
-  {{ end }}
+  </div>
 
-  {{ if eq "layer-home-video" .template }}
-    {{ if eq .visibility "Show" }}
-      <div class="video__layer">
-        <div class="video__container">
-          <h2 class="video__heading">Make an impact with SEGL</h2>
-          <div class="resize youtube">
-            <iframe
-              width="560"
-              height="315"
-              src="https://www.youtube.com/embed/LtbWTjh16A4"
-              frameborder="0"
-              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen>
-            </iframe>
-          </div>
+  <div class="zipper__layer">
+    <div class="zipper__container">
+      <h2 class="zipper__headline">Here's why...</h2>
+
+      {{ range .Params.reasons }}
+      <div class="zipper__item">
+        <div class="zipper__image resize">
+          <img src="{{ .image }}" alt="" />
+        </div>
+        <div class="zipper__text">
+          <h2 class="zipper__heading">{{ .title }}</h2>
+          <p class="zipper__teaser">{{ .text }}</p>
+          <p><a class="zipper__button" href="">{{ .anchortext }}</a></p>
         </div>
       </div>
-    {{ end }}
-  {{ end }}
+      {{ end }}
 
-{{ end }}
+      <h2 class="zipper__headline">All of these issues must get fixed</h2>
+
+    </div>
+  </div>
+
+  <div
+    class="billboard__layer resize"
+    style="background-image: url()"
+  >
+    <div class="billboard__container">
+
+      <hgroup class="billboard__hgroup">
+        <h2 class="billboard__heading">It's time to level up! Like these peeps have</h2>
+      </hgroup>
+      <!-- <p><a class="__button" href="/admissions/apply/">Apply Today</a></p> -->
+    </div>
+  </div>
+
+
+
+  <div class="imageGallery__layer">
+
+    {{/* <h2 class="imageGallery__headline">Like these peeps</h2> */}}
+
+    <div class="imageGallery__container">
+
+      {{ range .Params.clients }}
+        {{ if .featured }}
+        <a
+          class="imageGallery__card"
+          style="background-image: url('{{ .image }}')"
+          href="{{ .url }}"
+        >
+          <div class="imageGallery__image">
+            {{/* <img src="{{ .svg }}" alt=""> */}}
+            <h2 class="imageGallery__heading">{{ .name }}</h2>
+            <p class="imageGallery__meta">{{ .meta }}</p>
+          </div>
+        </a>
+        {{ end }}
+      {{ end }}
+
+    </div>
+  </div>
+
+  <div class="logogallery__layer">
+    <div class="logogallery__container">
+
+      {{ $url := "/logos/" }}
+      {{ $files := readDir "/content/logos/" }}
+      {{ range $files }}
+      {{ if ne (substr .Name 0 -4) ".DS_S" }}
+        <figure>
+          <img src="{{$url}}/{{.Name | urlize }}">
+        </figure>
+        {{ end }}
+      {{ end }}
+
+    </div>
+  </div>
+
+  <div class="zipper__layer">
+    <div class="zipper__container">
+      <h2 class="zipper__headline">I'd love to help, but...</h2>
+
+      <div class="zipper__item">
+        <div class="zipper__image resize">
+          <img src="/uploads/dc.jpg" alt="" />
+        </div>
+        <div class="zipper__text">
+          <h2 class="zipper__heading">It might be too late.</h2>
+          <p class="zipper__teaser">I only take on a few clients each year. I'm a one-man-show, and I only work on one project at a time. This means you get my full attention with no middle (mis)management. But if I'm booked up, then I don't have the bandwidth to be of service. Sorry.</p>
+          <!-- <p><a class="zipper__button" href="">Learn more</a></p> -->
+        </div>
+      </div>
+
+      <div class="zipper__item">
+        <div class="zipper__image resize">
+          <img src="/uploads/dc.jpg" alt="" />
+        </div>
+        <div class="zipper__text">
+          <h2 class="zipper__heading">I'm picky.</h2>
+          <p class="zipper__teaser">There's also a probability that we wont be a good fit. As much as you are looking for an expert that can deliver on your project, I am also looking for a client where my expertice can create value. If I can't help you create value, then I'm not a good fit for you. If you aren't looking to create value, then you're not a good fit for me either.</p>
+          <!-- <p><a class="zipper__button" href="">Learn more</a></p> -->
+        </div>
+      </div>
+
+      <div class="zipper__item">
+        <div class="zipper__image resize">
+          <img src="/uploads/dc.jpg" alt="" />
+        </div>
+        <div class="zipper__text">
+          <h2 class="zipper__heading">I don't do deadlines. I don't bill hourly, and I require 100% down to start the project.</h2>
+          <p class="zipper__teaser">That was a lot at once. As I have all day to work on your project, you and your team have a full-time job on top of this project. Thus, you will be my bottleck as this project requires our communication to complete. I can't give you a deadline because I can't control your time and responsibilities. Furthermore, deadlines mostly exist to keep hourly billing in check. I give fixed rates so you don't have to worry about projects ever going over budget. However, for the risk I take on giving you a fixed price, I require 100% upfront.</p>
+          <!-- <p><a class="zipper__button" href="">Learn more</a></p> -->
+        </div>
+      </div>
+
+      <div class="zipper__item">
+        <div class="zipper__image resize">
+          <img src="/uploads/dc.jpg" alt="" />
+        </div>
+        <div class="zipper__text">
+          <h2 class="zipper__heading">I'm expensive.</h2>
+          <p class="zipper__teaser">Like 10,000 to +100,000 expensive.</p>
+          <!-- <p><a class="zipper__button" href="">Learn more</a></p> -->
+        </div>
+      </div>
+
+    </div>
+  </div>
+
 
 
 {{ end }}

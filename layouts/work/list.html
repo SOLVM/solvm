@@ -1,0 +1,47 @@
+{{ define "main" }}
+    <main>
+      <h1 class="theme__heading">UUU Themes</h1>
+    </main>
+
+    <section class="themeGallery__layer">
+      <div class="themeGallery__container">
+      <!-- Ranges through content/blog/*.md -->
+      {{ range (.Paginator 100).Pages }}
+        <article class="themeGallery__card">
+            <a href="{{.RelPermalink}}">
+              <figure class="resize">
+                <img src="{{.Permalink}}{{ .Params.featuredImage }}" alt="">
+              </figure>
+            </a>
+            <div class="themeGallery__meta">
+              <h2 class="themeGallery__heading"><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+              {{ $taxonomy := "tags" }}
+              {{ with .Param $taxonomy }}
+                <p class="themeGallery__tags">
+                  {{ range $index, $tag := . }}
+                    {{ with $.Site.GetPage (printf "/%s/%s" $taxonomy $tag) -}}
+                      <a href="{{ .Permalink }}">{{ $tag | urlize }}</a>
+                    {{- end -}}
+                  {{- end -}}
+                </p>
+              {{ end }}
+
+              {{ $taxonomy := "authors" }}
+              {{ with .Param $taxonomy }}
+                <p class="themeGallery__author">
+                  {{ range $index, $author := . }}
+                    {{ with $.Site.GetPage (printf "/%s/%s" $taxonomy $author) -}}
+                      <a href="{{ .Permalink }}">{{ $author | urlize }}</a>
+                    {{- end -}}
+                  {{- end -}}
+                </p>
+              {{ end }}
+            </div>
+        </article>
+    {{ end }}
+  </div>
+  </section>
+
+  {{ partial "pagination.html" . }}
+
+{{ end }}

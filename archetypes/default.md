@@ -1,5 +1,5 @@
 +++
-date = ""
+date = {{ .Date }}
 layout = ""
 seo_page_description = ""
 seo_page_title = "{{ replace .Name "-" " " | title }} | ..."

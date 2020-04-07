@@ -80,12 +80,13 @@ header
 
 .brandmark
   background-color: $gold
-  color: white
+  color: $charcoal
   display: grid
-  //font-family: $condensed, "Trebuchet MS"
-  font-size: 2rem
+  font-family: $detail
+  letter-spacing: 5px
+  font-size: 1.5rem
   // font-style: italic
-  font-weight: normal
+  font-weight: bold
   // grid-gap: 1rem
   grid-template-columns: max-content max-content
   align-items: center
@@ -110,7 +111,7 @@ header
     margin-right: .75rem
     width: 1.5rem
     path
-      fill: white
+      // fill: white
 
   &:hover
 
@@ -119,8 +120,8 @@ header
 
 
 p.tagline
-  color: white
-  //font-family $condensed, "Trebuchet MS"
+  color: $charcoal
+  font-family: $detail
   //font-style: italic
   font-size: 1.5rem
   font-weight: 100
@@ -158,7 +159,7 @@ nav
 
 
   a
-    background-color: $seagreen
+    background-color: $butter
     color: white
     display: inline-block
     font-family: $basefont
@@ -177,7 +178,7 @@ nav
       color: white
 
   ul li:hover > ul
-    background-color: $seagreen
+    background-color: $butter
     display: block
     z-index: 2
     position: absolute
@@ -191,7 +192,7 @@ nav
   &.nav--active
 
     //transform translateY(-300%)
-    background-color: $seagreen
+    background-color: $butter
     // overflow-y scroll
 
     width: 100vw
@@ -303,5 +304,5 @@ nav
       color: white
 
     +media('<md')
-      color: $seagreen
+      color: $butter
       text-decoration: underline

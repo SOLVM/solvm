@@ -5,11 +5,11 @@
       {{ range .Site.Data.quotes }}
       {{ range . | shuffle | first 1 }}
         <div class="quote__text">{{ .text }}</div>
-        <div class="quote__name">{{ .name }}</div>         
+        <div class="quote__name">{{ .name }}</div>
       {{ end }}
       {{ end }}
       <div class="quote__logobox">
-        {{ partial "logosvg/segl-circle.html" . }}
+        {{partial "logosvg/solvm-logo-1.html"}}
       </div>
     </div>
   </div>

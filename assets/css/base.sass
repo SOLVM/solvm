@@ -2,7 +2,7 @@
 
 \:root
   box-sizing: border-box
-  color: $brown
+  color: $charcoal
   font-family: $basefont
   font-size: 20px
   line-height: 1.5
@@ -90,7 +90,7 @@ p, ul, ol
 //   +media('<md')
 //     padding: 1.5rem 2rem
 
-  
+
 // .normal
 //   font-size: 3rem
 //   font-weight: normal
@@ -186,3 +186,46 @@ a
 .blackText
   color: $charcoal
   font-style: italic
+
+
+// Browser bar
+
+// .containe
+//   .frame
+//     .bar
+//       .circles
+//
+//   img(src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/5530/stock-6.jpg", alt="")
+
+.browserbar
+  background-color: #dfe1e5
+  border-radius: 5px 5px 0 0
+  height: 2rem
+  display: flex
+  align-items: center
+
+  &-circles
+    background-color: #ff5f57
+    margin-left: 1rem
+    height: 1rem
+    width: 1rem
+    border-radius: 50%
+    text-align: center
+
+    &::after
+      content: ""
+      display: block
+      background-color: #febf2e
+      height: 1rem
+      width: 1rem
+      border-radius: 50%
+      transform: translate(1.5rem, -1rem)
+
+    &::before
+      content: ""
+      display: block
+      background-color: #24ca3f
+      height: 1rem
+      width: 1rem
+      border-radius: 50%
+      transform: translatex(3rem)
