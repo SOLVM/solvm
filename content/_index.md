@@ -9,7 +9,7 @@ title = "Home"
 title = "It's making your visitors choose your competitors"
 text = "Vision is decision. If your site looks like a stale mess, then you are making it easy for your visitors to choose a competitor that looks more put together. Does your site convey your worth or does it convey your worthlessness? How could making an amazing website help you do better business?"
 image = "/uploads/metriclab-old.png"
-url = "/metriclab-old.png"
+url = "/work/metriclab"
 anchortext = "See how I fixed this stale website"
 
 [[reasons]]

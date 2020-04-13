@@ -9,9 +9,9 @@
 
   <div class="crossfade__layer resize">
 
-    <div class="crossfade__item" style="background-image: url('ny.jpg')"></div>
-    <div class="crossfade__item" style="background-image: url('clayton.jpg')"></div>
-    <div class="crossfade__item" style="background-image: url('skyscrapers.jpg')"></div>
+    <div class="crossfade__item" style="background-image: url('/uploads/ny.jpg')"></div>
+    <div class="crossfade__item" style="background-image: url('/uploads/clayton.jpg')"></div>
+    <div class="crossfade__item" style="background-image: url('/uploads/skyscrapers.jpg')"></div>
 
     <div class="crossfade__container">
       <h2 class="crossfade__heading">Websites age more like bread than wine.</h2>
@@ -45,7 +45,7 @@
         <div class="zipper__text">
           <h2 class="zipper__heading">{{ .title }}</h2>
           <p class="zipper__teaser">{{ .text }}</p>
-          <p><a class="zipper__button" href="">{{ .anchortext }}</a></p>
+          <p><a class="zipper__button" href="{{ .url }}">{{ .anchortext }}</a></p>
         </div>
       </div>
       {{ end }}
@@ -117,7 +117,7 @@
 
       <div class="zipper__item">
         <div class="zipper__image resize">
-          <img src="/uploads/dc.jpg" alt="" />
+          <img src="/uploads/egypt.jpg" alt="" />
         </div>
         <div class="zipper__text">
           <h2 class="zipper__heading">It might be too late.</h2>
@@ -128,7 +128,7 @@
 
       <div class="zipper__item">
         <div class="zipper__image resize">
-          <img src="/uploads/dc.jpg" alt="" />
+          <img src="/uploads/obama.jpg" alt="" />
         </div>
         <div class="zipper__text">
           <h2 class="zipper__heading">I'm picky.</h2>
@@ -139,7 +139,7 @@
 
       <div class="zipper__item">
         <div class="zipper__image resize">
-          <img src="/uploads/dc.jpg" alt="" />
+          <img src="/uploads/funny.jpg" alt="" />
         </div>
         <div class="zipper__text">
           <h2 class="zipper__heading">I don't do deadlines. I don't bill hourly, and I require 100% down to start the project.</h2>
@@ -150,15 +150,28 @@
 
       <div class="zipper__item">
         <div class="zipper__image resize">
-          <img src="/uploads/dc.jpg" alt="" />
+          <img src="/uploads/biz.jpg" alt="" />
         </div>
         <div class="zipper__text">
           <h2 class="zipper__heading">I'm expensive.</h2>
-          <p class="zipper__teaser">Like 10,000 to +100,000 expensive.</p>
+          <p class="zipper__teaser">Like 10,000 to +100,000.</p>
           <!-- <p><a class="zipper__button" href="">Learn more</a></p> -->
         </div>
       </div>
 
+    </div>
+  </div>
+
+  <div
+    class="billboard__layer resize"
+    style="background-image: url()"
+  >
+    <div class="billboard__container">
+
+      <hgroup class="billboard__hgroup">
+        <h2 class="billboard__heading">Go kick tires. Do your research. </h2>
+      </hgroup>
+      <!-- <p><a class="__button" href="/admissions/apply/">Apply Today</a></p> -->
     </div>
   </div>
 

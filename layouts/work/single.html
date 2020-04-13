@@ -1,20 +1,139 @@
 {{ define "main" }}
-<main>
-	<div>
-		<h2 class="theme__heading">{{ .Title }}</h2>
-		<p>{{ .Params.themeDescription }}</p>
-	</div>
-</main>
 
-{{ with .Resources.ByType "image" }}
-<div class="gallery">
-	{{ range . }}
-		<figure class='gallery__item resize'>
-			<img src="{{ .RelPermalink }}" />
-		</figure>
-	{{ end }}
+<div class="intro__layer">
+  <div class="intro__container">
+    <hgroup class="intro__hgroup">
+      <h1 class="intro__title"><span class="intro__mask">{{ .Title }}</span></h1>
+      <h2 class="intro__meta"><span class="intro__mask">{{ .Params.business_type }} {{ .Params.business_location }}</span></h2>
+    </hgroup>
+  </div>
 </div>
-{{ end }}
+
+<div class="work__layer resize">
+  <div class="work__billboard" style="background-image: url({{ .Params.featured_image }});">
+    <div class="work__logo">
+      <img src="{{ .Params.featured_logo }}" alt="{{ .Title }} logo">
+    </div>
+  </div>
+</div>
+
+<div class="headline__layer">
+  <div class="headline__container">
+    <h2 class="headline__text">{{ .Params.featured_headline }}</h2>
+  </div>
+</div>
+
+<div class="work__layer">
+  <div class="work__container">
+
+    <div class="work__content">
+      <h3 class="work__sidehead">Stale</h3>
+
+      <div class="work__text">
+        <p>Metric Lab was starting to have identity problems. One half of the problem was that clients weren't clear about what they did. The other half of the problem was that they didn't look as cutting-edge as they said they were.</p>
+
+
+        <p>As you can see below, their old site was quite stale. Their website and identity were stuck back in the days when we used to call the internet "cyber space." The value that they offered was not being refelcted in their old website. And they wanted to be more clear with their message.</p>
+
+        <p>You know the deal—time for a redesign.</p>
+
+        <p class="resize"><img src="active-com.jpg" alt="old website"></p>
+
+      </div>
+
+    </div>
+
+  </div>
+</div>
+
+<div class="quote__layer bgx">
+  <div class="quote__container">
+    <h2 class="quote__text">“We need a complete make over”</h2>
+  </div>
+</div>
+
+<div class="work__layer">
+  <div class="work__container">
+
+    <div class="work__content">
+      <h3 class="work__sidehead">Redesign</h3>
+
+      <div class="work__text">
+
+        <p>We all agreed that it was time for a complete makeover. Together, we came up with:</p>
+
+        <ul>
+          <li>a new business name</li>
+          <li>a new logo</li>
+          <li>a new website</li>
+        </ul>
+
+        <p>We all worked together and bounced ideas off of each other until we arrived at the results that we wanted. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu.</p>
+
+        <h3 class="work__subhead">Logo time</h3>
+        <p class="resize"><img src="ml-logos.png" alt=""></p>
+
+        <h3 class="work__subhead">Logo time</h3>
+        <p>Bushwick fanny pack high life wolf single-origin coffee american apparel, cred twee gluten-free mixtape mlkshk ethical carles Austin direct trade. Etsy banksy biodiesel ethnic, cardigan chambray lomo four loko single-origin coffee. Wes anderson dreamcatcher chillwave whatever, before they sold out master cleanse polaroid fixie skateboard yr. Mcsweeney's PBR typewriter banksy wes anderson helvetica. Synth sriracha salvia, selvage pour-over 3 wolf moon 8-bit cosby sweater street art swag. Artisan echo park shoreditch, semiotics iphone dreamcatcher farm-to-table pinterest flexitarian cred ennui irony bicycle rights. Narwhal whatever etsy retro, kogi yr salvia fixie pork belly master cleanse wolf ethical PBR VHS.</p>
+
+      </div>
+
+    </div>
+
+  </div>
+</div>
+
+<div class="browser__layer">
+  <div class="browser__container">
+    <div class="browser__bar">
+      <div class="browser__circles"></div>
+    </div>
+    <div class="browser__image resize">
+      <img src="ml-site.jpg" alt="{{ .Title }} logo">
+    </div>
+  </div>
+</div>
+
+<div class="work__layer">
+  <div class="work__container">
+
+    <div class="work__content">
+      <h3 class="work__sidehead">Gains</h3>
+
+      <div class="work__text">
+
+        <p>We all agreed that it was time for a complete makeover. Together, we came up with:</p>
+
+        <ul>
+          <li>a new business name</li>
+          <li>a new logo</li>
+          <li>a new website</li>
+        </ul>
+
+        <p>We all worked together and bounced ideas off of each other until we arrived at the results that we wanted. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu.</p>
+
+        <p class="resize"><img src="ml-logos.png" alt=""></p>
+
+      </div>
+
+    </div>
+
+  </div>
+</div>
+
+<div class="work__layer resize">
+  <div class="work__billboard" style="background-image: url(bryan-mcclain-metriclab.jpg);">
+    <h2 class="work__quote">Dude, you nailed it!</h2>
+  </div>
+</div>
+
+<div class="quote__layer bgx">
+  <div class="quote__container">
+    <h2 class="quote__text">“ES6 webpack json express moment underscore NODE.”</h2>
+  </div>
+</div>
+
+
 
 <main>
 	<div>
@@ -23,15 +142,5 @@
 
 </main>
 
-{{ if .Params.youtubeid }}
-	<div class="youtube__layer">
-	  <div class="youtube__container">
-	    <div class="youtube resize">
-	      <iframe width="560" height="315" src="https://www.youtube.com/embed/{{.Params.youtubeid}}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-	    </div>
-	  </div>
-	</div>
-{{ else }}
-{{ end }}
 
 {{ end }}

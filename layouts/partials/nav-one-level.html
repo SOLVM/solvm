@@ -1,19 +1,19 @@
 <header>
-  <div class="identity">
-    <a class="ml-logo" href="/">Afriky Lolo</a>
-    <p class="tagline">West African Dance Compnay</p>
-  </div>
+  <a class="brandmark" href="/">{{partial "logosvg/solvm-logo-1.html"}} SOLVM</a>
+  <p class="tagline">Website and logo redesign</p>
 
-  <nav>
-    {{ $currentPage := . }}
-    {{ range .Site.Menus.main }}
-    <a
-      class="sidebar-nav-item{{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} active{{end}}"
-      href="{{ .URL }}"
-      title="{{ .Title }}"
-    >{{ .Name }}</a>
+  <nav class="nav__layer">
+  {{ $currentPage := . }}
+  {{ range .Site.Menus.main }}
 
-    {{ end }}
-    {{ partial "social.html" .}}
+    {{ $isMain := $currentPage.IsMenuCurrent "main" . }}
+    {{ $hasMain := $currentPage.HasMenuCurrent "main" . }}
+
+    {{/* Top level nav item without any children */}}
+      <a
+        class="{{ if or ($isMain ) ($hasMain ) }}current-page{{ end }}"
+        href="{{ .URL }}"
+      >{{ .Name }}</a>
+  {{ end }}
   </nav>
 </header>

@@ -1,3 +1,15 @@
+{{ with .Resources.ByType "image" }}
+<div class="gallery">
+	{{ range . }}
+		<figure class='gallery__item resize'>
+			<img src="{{ .RelPermalink }}" />
+		</figure>
+	{{ end }}
+</div>
+{{ end }}
+
+
+
   <div
     class="billboard__layer resize"
     style="background-image: url()"

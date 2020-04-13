@@ -8,7 +8,7 @@
 
 <body class="{{ .Kind }} {{ printf "%s-page" (anchorize .Title) }} {{ printf "%s-section" .Section }}">
 	<div class="container" id="manageScroll">
-		{{ partial "nav-multi-level.html" . }}
+		{{ partial "nav-one-level.html" . }}
 
 		{{ block "feature" . }}
 		{{ end }}

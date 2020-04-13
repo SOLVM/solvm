@@ -1,129 +1,203 @@
 // $breakpoints: (small: 400px, medium: 500px, large: 1024px)
 
+.container
+  padding-top: 60px
+  position: relative
+
+  +media('<690px')
+    padding-top: 60px
+
+  +media('<md')
+    padding-top: 30px
+
+
 header
-  background-color: $bgc
+  background-color: $gold
   display: grid
   grid-template-rows: 60px
-  grid-template-columns: 1fr max-content
+  grid-template-columns: max-content auto  max-content
+
   align-items: center
+  // justify-items: center
   justify-content: space-between
 
   position: relative
+  padding: 0 0 0 1.5rem
+
+  position: fixed
+  top: 0
+  left: 0
+  width: 100vw
+  z-index: 1
+
+  // &::after
+  //   background-color: blue
+  //   content: ""
+  //   display: block
+  //   height: 1px
+  //   width: 100%
+
+  // align-items: center
+  // justify-content: space-between
 
   +media('<lg')
     grid-template-columns: 1fr
-    grid-template-rows: 60px 60px
-
-  // +media('<md')
-  //   grid-template-rows: 120px 90px
-  //
-  +media('<sm')
-    grid-template-rows: 60px 90px
-
-  // &::after
-  //   background-color: red
-  //   box-shadow: 0 4px 4px #000
-  //   content: ""
-  //   display: block
-  //   height: 10px
-  //   width: 100%
-  //   position: absolute
-  //   bottom: 0
-
-.identity
-  display: grid
-  grid-gap: 1rem
-  grid-template-columns: max-content max-content
-  align-items: center
-
-  +media('<lg')
-    // justify-content: space-between
-    background-color: $red
+    grid-template-rows: 60px 30px
 
   +media('<md')
-    // grid-gap: 0
+    grid-template-rows: 60px 30px
+
+  +media('<690px')
+    grid-template-rows: 1fr max-content
+    //
+
+.identity
+  background-color: $gold
+  display: grid
+  grid-template-columns: max-content max-content max-content
+  align-items: center
+  justify-items: center
+
+  justify-content: space-between
+  // padding: 0 1rem
+
+  +media('<lg')
+    // background-color: #e6e6e6
+
+  +media('<690px')
+    grid-gap: 0
+
+  +media('<500px')
+    grid-template-columns: max-content max-content
     // grid-template-columns: 1fr
     // grid-template-rows: 60px 60px
 
   p
+    display: inline-block
+    // font-size: 2rem
     margin-bottom: 0
+    // text-transform: uppercase
 
-a.ml-logo
-  background-color: $link
-  color: white
 
+.brandmark
+  background-color: $gold
+  color: $charcoal
   display: grid
+  font-family: $detail
+  letter-spacing: 5px
+  font-size: 1.5rem
+  // font-style: italic
+  font-weight: bold
+  // grid-gap: 1rem
+  grid-template-columns: max-content max-content
   align-items: center
   justify-items: center
-  grid-template-rows: 60px
-  grid-template-columns: 6rem
+  text-transform: uppercase
 
-  font-size: 3rem
+
   text-decoration: none
-  text-shadow: 1px 1px 1px #666
-  font-weight: 900
-  // padding: .5rem 1rem
 
   &:hover
-    background-color: $hover
+    background-color: $gold
     color: white
 
-  +media('<md')
+  // padding: 0 1.5rem
+
+  // display: inline-block
+  // display: grid
+  // align-items: center
+  // justify-items: center
+  // grid-template-rows: 60px
+  // grid-template-columns: max-content
+  // padding: .5rem 1rem
+  +media('<690px')
+    font-size: 1.5rem
+    padding: 0 .75rem
     width: 100%
 
   svg
-    width: 80%
+    margin-right: .75rem
+    width: 1.5rem
     path
-      fill: $link
+      // fill: white
 
-.tagline
-  color: $text
-  font-style: italic
+  &:hover
 
-  +media('<lg')
-    color: white
+    path
+      // fill: $red
 
-.tagline-words
-  +media('<sm')
+
+p.tagline
+  color: $charcoal
+  font-family: $detail
+  //font-style: italic
+  // font-size: 1.5rem
+  font-weight: 100
+
+  margin:  0
+
+  +media('<690px')
+    font-size: 1.25rem
+
+  +media('<500px')
     display: none
 
 nav
-  padding: 0 1rem
+  // padding: 0 1rem
+  display: grid
+  grid-template-columns: repeat(5, max-content)
 
   +media('<lg')
     text-align: center
 
   a
-    color: $link
+    color: $charcoal
     font-weight: bold
-    padding: 0 .5rem
+    // padding: 0 .5rem
     text-decoration: none
 
+    padding: .75rem 1.5rem
+
     &:hover
-      color: $blue
+      background-color: $charcoal
+      color: white
 
       svg
-        fill: $blue
+        fill: white
 
-.ml
-  font-style: normal
-  font-weight: bold
-
-.social
-  display: inline-block
-
-
-.social-svg svg
-  fill: $link
-  transform: translateY(5px)
-
+// .ml
+//   font-style: normal
+//   font-weight: bold
+//
+// .social
+//   display: inline-block
+//
+//
+// .social-svg svg
+//   fill: $link
+//   transform: translateY(5px)
+//
 
 // Page nav
-.music-page,
-.press-kit-page,
-.videos-page,
-.photos-page,
-.shows-page,
+.work-seciton,
 .contact-page
    .active
     color: $charcoal
+
+// Current ssection
+.work-section a[href="/work/"]
+  background-color: $charcoal
+  color: white
+
+// Current Page styling
+
+.current-page
+  background-color: $charcoal
+  color: white
+
+  &:hover
+    color: white
+
+  +media('<md')
+    color: $butter
+    text-decoration: underline
