@@ -1,4 +1,14 @@
 ---
 label: fm_layer_browser
 hide_body: true
-fields: []
+fields:
+- name: image
+  type: file
+  config:
+    maxSize: 1
+  label: Image
+- name: alt
+  type: text
+  config:
+    required: false
+  label: Alt
