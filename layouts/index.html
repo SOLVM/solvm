@@ -98,8 +98,8 @@
   <div class="logogallery__layer">
     <div class="logogallery__container">
 
-      {{ $url := "/logos/" }}
-      {{ $files := readDir "/content/logos/" }}
+      {{ $url := "/uploads/clients/logos/" }}
+      {{ $files := readDir "/static/uploads/clients/logos/" }}
       {{ range $files }}
       {{ if ne (substr .Name 0 -4) ".DS_S" }}
         <figure>

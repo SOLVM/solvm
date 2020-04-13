@@ -28,88 +28,88 @@ anchortext = "And worst of all—you've grown complacent"
 
 
 [[clients]]
-image = "/work/metriclab/bryan-mcclain-metriclab.jpg"
-svg = "/logos/logo_metriclab.svg"
+image = "/uploads/clients/metriclab/bryan-mcclain-metriclab.jpg"
+svg = "/uploads/clients/logos/logo_metriclab.svg"
 name = "Metriclab"
 meta = "User Research / Bay Area"
 url = ""
 featured = true
 
 [[clients]]
-image = "/work/segl/students8.jpg"
-svg = "/logos/logo_segl-rectangle.svg"
+image = "/uploads/clients/segl/students8.jpg"
+svg = "/uploads/clients/logos/logo_segl-rectangle.svg"
 name = "School for Ethics and Global Leadership"
 meta = "Education / Washington D.C."
 url = ""
 featured = true
 
 [[clients]]
-image = "/work/slaw/artwork-006.jpg"
-svg = "/logos/logo_artworks.svg"
+image = "/uploads/clients/slaw/artwork-006.jpg"
+svg = "/uploads/clients/logos/logo_artworks.svg"
 name = "St. Louis Artworks"
 meta = "Job Training / STL"
 url = ""
 featured = true
 
 [[clients]]
-image = "/work/nato-caliph/nato-03.jpg"
-svg = "/logos/logo_nato-caliph.svg"
+image = "/uploads/clients/nato-caliph/nato-03.jpg"
+svg = "/uploads/clients/logos/logo_nato-caliph.svg"
 name = "Nato Caliph"
 meta = "Musician / STL"
 url = ""
 featured = true
 
 [[clients]]
-image = "/work/paul-shank/figure-160.jpg"
-svg = "/logos/logo_paul-shank.svg"
+image = "/uploads/clients/paul-shank/figure-160.jpg"
+svg = "/uploads/clients/logos/logo_paul-shank.svg"
 name = "Paul Shank"
 meta = "Artist / STL"
 url = ""
 featured = true
 
 [[clients]]
-image = "/work/earthdance/shed.jpg"
-svg = "/logos/logo_earthdance.svg"
+image = "/uploads/clients/earthdance/shed.jpg"
+svg = "/uploads/clients/logos/logo_earthdance.svg"
 name = "Earthdance"
 meta = "Organic Farm / Ferguson"
 url = ""
 featured = true
 
 [[clients]]
-image = "/work/masala/chicken.jpg"
-svg = "/logos/logo_masala.svg"
+image = "/uploads/clients/masala/chicken.jpg"
+svg = "/uploads/clients/logos/logo_masala.svg"
 name = "Masala"
 meta = "Restaurant / STL"
 url = ""
 featured = true
 
 [[clients]]
-image = "/work/regards/river-city-chicago.jpg"
-svg = "/logos/logo_regards.svg"
+image = "/uploads/clients/regards/river-city-chicago.jpg"
+svg = "/uploads/clients/logos/logo_regards.svg"
 name = "Regards"
 meta = "Art Gallery / Chicago"
 url = ""
 featured = true
 
 [[clients]]
-image = "/work/segl/dc.jpg"
-svg = "/logos/logo_uuu.svg"
+image = "/uploads/clients/segl/dc.jpg"
+svg = "/uploads/clients/logos/logo_uuu.svg"
 name = "UUU"
 meta = "ATOM Package / Github"
 url = ""
 featured = false
 
 [[clients]]
-image = "/work/segl/dc.jpg"
-svg = "/logos/logo_uuu.svg"
+image = "/uploads/clients/segl/dc.jpg"
+svg = "/uploads/clients/logos/logo_uuu.svg"
 name = "CSS Weather"
 meta = "Brownerd / Weather"
 url = ""
 featured = false
 
 [[clients]]
-image = "/work/museum-gateway/youth.jpg"
-svg = "/logos/logo_uuu.svg"
+image = "/uploads/clients/museum-gateway/youth.jpg"
+svg = "/uploads/clients/logos/logo_uuu.svg"
 name = "Museum Gateway"
 meta = "Art Museum / STL"
 url = ""
