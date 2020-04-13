@@ -1,4 +1,18 @@
 ---
 label: fm_layer_content
 hide_body: true
-fields: []
+fields:
+- name: head
+  type: text
+  config:
+    required: false
+  label: head
+- name: text
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: true
+    schema:
+      format: markdown
+  label: text
