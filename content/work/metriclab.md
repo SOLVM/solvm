@@ -13,7 +13,7 @@ title = "MetricLab"
 [[layers]]
 head = "Stale"
 template = "fm_layer_content"
-text = "Metric Lab was starting to have identity problems. One half of the problem was that clients weren't clear about what they did. The other half of the problem was that they didn't look as cutting-edge as they said they were.\n\nAs you can see below, their old site was quite stale. Their website and identity were stuck back in the days when we used to call the internet \"cyber space.\" The value that they offered was not being refelcted in their old website. And they wanted to be more clear with their message.\n\nYou know the deal—time for a redesign.\n\n!\\[Image of an old website\\](/uploads/clients/metriclab/active-com.jpg)"
+text = "Metric Lab was starting to have identity problems. One half of the problem was that clients weren't clear about what they did. The other half of the problem was that they didn't look as cutting-edge as they said they were.\n\nAs you can see below, their old site was quite stale. Their website and identity were stuck back in the days when we used to call the internet \"cyber space.\" The value that they offered was not being refelcted in their old website. And they wanted to be more clear with their message.\n\nYou know the deal—time for a redesign.\n\n![](/uploads/clients/metriclab/active-com.jpg)"
 [[layers]]
 template = "fm_layer_quote"
 text = "We need a complete make over"
