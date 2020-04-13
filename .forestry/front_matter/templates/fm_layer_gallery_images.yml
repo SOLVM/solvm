@@ -1,4 +1,8 @@
 ---
 label: fm_layer_gallery_images
 hide_body: true
-fields: []
+fields:
+- name: images
+  type: image_gallery
+  config: {}
+  label: Images
