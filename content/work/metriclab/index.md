@@ -1,7 +1,9 @@
 +++
-featured_headline = "Relentless research and innovation"
-featured_image = "crowd.jpg"
-featured_logo ="/logos/logo_metriclab.svg"
+client_heading = "Relentless research and innovation"
+client_image = "crowd.jpg"
+client_logo ="/logos/logo_metriclab.svg"
+client_location = "Bay Area"
+client_type = "User Research"
 
 layout = "work/single"
 seo_page_description = "MetricLab and SOLVM"
@@ -9,8 +11,7 @@ seo_page_title = ""
 subtitle = ""
 title = "MetricLab"
 
-business_location = "Bay Area"
-business_type = "User Research"
+
 
 
 
