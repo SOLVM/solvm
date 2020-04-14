@@ -13,38 +13,64 @@
 // Base styles for the site
 @import base.sass
 
-@import ui/nav-one-level.sass
-
-@import ui/fullpageimage.sass
-
-@import ui/articles.sass
-@import ui/content.sass
-
-// @import ui/crossfade.sass
-@import ui/feature.sass
+// Basic Sections
+@import ui/navigation/nav-one-level.sass
+@import ui/pagination.sass
 @import ui/footer.sass
 
-@import ui/gallery.sass
-@import ui/logogallery.sass
-// @import ui/gallery-client.sass
 
-@import ui/billboard.sass
-@import ui/crossfade.sass
-@import ui/card.sass
-@import ui/hoverboard.sass
-@import ui/quote.sass
-@import ui/work.sass
+// Layers
 
-// @import ui/music.sass
+@import ui/layers/crossfade/crossfade.sass
 
-@import ui/pagination.sass
+@import ui/layers/gallery/imageGallery.sass
+@import ui/layers/gallery/logoGallery.sass
+
+@import ui/layers/image/billboard.sass
+@import ui/layers/image/browser.sass
+
+// Intro page styles
+@import ui/layers/intro/workIntro.sass
+
+// Page content styles
+@import ui/layers/text/workContent.sass
+@import ui/layers/text/quote.sass
+
+@import ui/layers/zipper/zipper.sass
+
+
+
+
+// @import ui/fullpageimage.sass
+//
+// @import ui/articles.sass
+// @import ui/content.sass
+//
+// // @import ui/crossfade.sass
+// @import ui/feature.sass
+//
+//
+// @import ui/gallery.sass
+// @import ui/logogallery.sass
+// // @import ui/gallery-client.sass
+//
+// @import ui/billboard.sass
+// @import ui/crossfade.sass
+// @import ui/card.sass
+// @import ui/hoverboard.sass
+// @import ui/quote.sass
+// @import ui/work.sass
+//
+// // @import ui/music.sass
+
+
 // @import ui/photobox.sass
-@import ui/video.sass
+// @import ui/video.sass
 
-@import ui/zipper.sass
-@import ui/zipper-news.sass
-@import ui/zipper-faculty.sass
-@import ui/zipper-full.sass
+// @import ui/zipper.sass
+// @import ui/zipper-news.sass
+// @import ui/zipper-faculty.sass
+// @import ui/zipper-full.sass
 
 // Keep last
 // @import vendor/photoswipe.sass

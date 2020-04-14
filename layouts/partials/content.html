@@ -1,0 +1,14 @@
+
+
+<div class="work__layer">
+  <div class="work__container">
+
+    <div class="work__content">
+      <h3 class="work__sidehead">{{ index .context "head" }}</h3>
+
+      <div class="work__text">{{ (index .context "text") | .Page.RenderString }}</div>
+
+    </div>
+
+  </div>
+</div>

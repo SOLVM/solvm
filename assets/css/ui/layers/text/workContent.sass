@@ -1,0 +1,70 @@
+.workContent
+  &__layer
+
+  &__container
+    max-width: 1200px
+    padding: 3rem 1rem
+
+  &__box
+    display: grid
+    grid-template-columns: 1fr 3fr
+    grid-gap: 1.5rem
+    padding: 0
+
+    & + .work__content
+      margin-bottom: 6rem
+
+  &__sidehead
+    font-size: 2rem
+    font-weight: bold
+    line-height: 0
+    text-transform: uppercase
+
+  &__text
+    padding-top: 3rem
+    position: relative
+
+    img
+      // outline: 1.5rem solid white
+      // outline-offset: -1.5rem
+
+    &::before
+      content: ""
+      display: block
+      height: 5px
+      width: 3rem
+      background-color: currentcolor
+      position: absolute
+      transform: translateY(-2.5rem)
+
+    // Heading inside markdown field
+    h2
+      font-size: 2rem
+      // font-style: italic
+      font-weight: bold
+      // text-align: center
+      text-shadow: 1px 1px 1px hsla(0,0,0,0.2)
+      // text-shadow: 1px 1px 1px #000
+      // text-shadow: 3px 3px 0 #333
+      // text-transform: uppercase
+
+      padding: 2rem 0 1rem 0
+
+    h3
+      font-weight: 100
+      // font-family: $condensed
+      // font-size: 2rem
+      // padding: 1.5rem 0 0 0
+
+    // h2 + *,
+    // h3 + *
+    //   padding-top: 1.5rem
+
+    h2 + h3,
+      padding: 1.5rem 0
+
+    // p > img
+    //   max-width: 80%
+    //   display: block
+    //   margin: 0 auto
+      // border: 10px solid red
