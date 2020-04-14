@@ -32,6 +32,9 @@ text = "### \n\nWe all agreed that it was time for a complete makeover. Together
 [[layers]]
 image = "/uploads/clients/metriclab/bryan-mcclain-metriclab.jpg"
 template = "fm_layer_image"
+[[layers]]
+code = "\\`\\`\\` html\n\n{{ with .Params.seo_page_title | default .Site.Title }}\n\n  <title>{{ . }}</title>\n\n  <meta property=\"og:title\" content=\"{{ . }}\" />\n\n  <meta name=\"twitter:title\" content=\"{{ . | truncate 70 }}\" />\n\n{{- end -}}\n\n{{ with .Params.seo_page_description | default .Site.Params.description }}\n\n  <meta name=\"description\" content=\"{{ . }}\">\n\n  <meta property=\"og:description\" content=\"{{ . }}\">\n\n  <meta name=\"twitter:description\" content=\"{{ . | truncate 200 }}\">\n\n{{ end }}\n\n  <meta property=\"og:url\" content=\"{{ .Permalink | absLangURL }}\" />\n\n  <meta property=\"og:type\" content=\"website\" />\n\n  <meta property=\"og:site_name\" content=\"{{ .Site.Title }}\" />\n\n  <link rel=\"canonical\" href=\"{{ .Permalink | absLangURL }}\" />\n\n\\`\\`\\`"
+template = "fm_layer_code"
 
 +++
 # How stale?
