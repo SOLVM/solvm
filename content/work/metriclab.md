@@ -34,6 +34,7 @@ image = "/uploads/clients/metriclab/bryan-mcclain-metriclab.jpg"
 template = "fm_layer_image"
 [[layers]]
 code = "{{ with .Params.seo_page_title | default .Site.Title }}  \n<title>{{ . }}</title>  \n<meta property=\"og:title\" content=\"{{ . }}\" />  \n<meta name=\"twitter:title\" content=\"{{ . | truncate 70 }}\" />  \n{{- end -}}\n\n{{ with .Params.seo_page_description | default .Site.Params.description }}  \n<meta name=\"description\" content=\"{{ . }}\">  \n<meta property=\"og:description\" content=\"{{ . }}\">  \n<meta name=\"twitter:description\" content=\"{{ . | truncate 200 }}\">  \n{{ end }}\n\n<meta property=\"og:url\" content=\"{{ .Permalink | absLangURL }}\" />  \n<meta property=\"og:type\" content=\"website\" />  \n<meta property=\"og:site_name\" content=\"{{ .Site.Title }}\" />\n\n<link rel=\"canonical\" href=\"{{ .Permalink | absLangURL }}\" />"
+code_type = "html"
 template = "fm_layer_code"
 
 +++
