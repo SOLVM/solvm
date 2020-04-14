@@ -65,7 +65,7 @@
       <div class="code__layer">
         <div class="code__container">
 
-          {{ .code | $.Page.RenderString }}
+          {{ .code | markdownify }}
 
         </div>
       </div>
