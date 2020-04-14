@@ -65,7 +65,8 @@
       <div class="code__layer">
         <div class="code__container">
 
-          {{ .code | $.Page.RenderString }}
+          {{ $codez := printf "``` %s %s ```" .code_type .code }}
+          {{ $codez | $.Page.RenderString }}
 
         </div>
       </div>
