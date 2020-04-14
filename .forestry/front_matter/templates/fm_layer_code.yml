@@ -2,6 +2,11 @@
 label: fm_layer_code
 hide_body: true
 fields:
+- name: code_type
+  type: text
+  config:
+    required: false
+  label: Code type
 - name: code
   type: textarea
   default: ''
