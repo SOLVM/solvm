@@ -1,3 +1,5 @@
+// Messing with SHort codes
+
 {{/* {{< content sidehead="stale" >}}
   {{% marked text=`
     Lorem ipsum dolor sit amet, **consectetuer** adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
@@ -13,6 +15,32 @@
 
 
 
+
+
+
+
+
+
+
+
+// CODE LAyer
+
+
+[[layers]]
+code = "{{ with .Params.seo_page_title | default .Site.Title }}  \n<title>{{ . }}</title>  \n<meta property=\"og:title\" content=\"{{ . }}\" />  \n<meta name=\"twitter:title\" content=\"{{ . | truncate 70 }}\" />  \n{{- end -}}\n\n{{ with .Params.seo_page_description | default .Site.Params.description }}  \n<meta name=\"description\" content=\"{{ . }}\">  \n<meta property=\"og:description\" content=\"{{ . }}\">  \n<meta name=\"twitter:description\" content=\"{{ . | truncate 200 }}\">  \n{{ end }}\n\n<meta property=\"og:url\" content=\"{{ .Permalink | absLangURL }}\" />  \n<meta property=\"og:type\" content=\"website\" />  \n<meta property=\"og:site_name\" content=\"{{ .Site.Title }}\" />\n\n<link rel=\"canonical\" href=\"{{ .Permalink | absLangURL }}\" />"
+code_type = "html"
+template = "fm_layer_code"
+
+
+
+
+
+
+
+
+
+
+// Code snippet to test with Syntax highlighting
 
 {{ with .Params.seo_page_title | default .Site.Title }}
 
@@ -41,7 +69,7 @@
 
 
 
-
+// Old work page
 
 {{ define "main" }}
 
@@ -178,7 +206,7 @@
 
 
 
-
+// Range over Images in a content folder
 
 
 {{ with .Resources.ByType "image" }}
@@ -192,6 +220,20 @@
 {{ end }}
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Billboard scrap
 
   <div
     class="billboard__layer resize"
@@ -210,7 +252,7 @@
 
 
 
-
+// Zipper scrap
 
   <div class="zipperfull__layer">
     <div class="zipperfull__container">
@@ -234,6 +276,10 @@
 
     </div>
   </div>
+
+
+
+  // Card layer scrap
 
   <!-- <div class="card__layer">
     <h2 class="card__title">If none of this is bad news to you, then I guess we could potentially make good news.</h2>
@@ -262,6 +308,9 @@
 
     </div>
   </div> -->
+
+
+  // Video layer scrap
 
 
     <div class="video__layer">

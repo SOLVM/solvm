@@ -45,6 +45,11 @@ https://toolkit.site/format.html
 - FancyBox
 - RDMKIT
 
+
+## Issues
+- [] RenderHooks are a bit of a pain during local development. After resaving a MD page that uses RenderHooks, the reload doesn't rerender the Hooks. Yoou have to make a change to a different file to get the RenderHooks to get rerendered.
+
+
 ## Authors
 
 - SOLVM

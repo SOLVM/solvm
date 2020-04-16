@@ -1,9 +1,10 @@
 +++
-client_heading = "Relentless research and innovation"
+client_heading = "Rebranding a User Research firm"
 client_image = "/uploads/clients/metriclab/crowd.jpg"
 client_location = "Bay Area"
 client_logo = "/uploads/clients/logos/logo_metriclab.svg"
 client_type = "User Research"
+client_website = "https://metriclab.com"
 date = "2019-01-16T23:28:00-06:00"
 layout = "work/single"
 seo_page_description = "MetricLab and SOLVM"
@@ -11,41 +12,29 @@ seo_page_title = ""
 subtitle = ""
 title = "MetricLab"
 [[layers]]
-head = "Stale"
+head = "Issues"
 template = "fm_layer_content"
-text = "Metric Lab was starting to have identity problems. One half of the problem was that clients weren't clear about what they did. The other half of the problem was that they didn't look as cutting-edge as they said they were.\n\nAs you can see below, their old site was quite stale. Their website and identity were stuck back in the days when we used to call the internet \"cyber space.\" The value that they offered was not being refelcted in their old website. And they wanted to be more clear with their message.\n\nYou know the deal—time for a redesign.\n\n![](/uploads/clients/metriclab/active-com.jpg)"
+text = "MetricLab was starting to have identity problems. One half of the problem was that clients weren't clear about what they did. The other half of the problem was that they didn't look as cutting-edge as they said they were.\n\nAs you can see below, their old site was quite stale. Their website and identity were stuck back in the days when we used to call the internet \"cyber space.\" The value that they offered was not being refelcted in their identity nor their website. \n\nYou know the deal—time for a redesign.\n\n![](/uploads/clients/metriclab/active-com.jpg)"
 [[layers]]
 template = "fm_layer_quote"
 text = "We need a complete make over"
 [[layers]]
-head = "Overhaul"
+head = "Rebrand"
 template = "fm_layer_content"
-text = "We all agreed that it was time for a complete makeover. Together, we came up with:\n\n* a new business name\n* a new logo\n* a new website\n\nWe all worked together and bounced ideas off of each other until we arrived at the results that we wanted. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu.\n\n![](/uploads/clients/metriclab/ml-logos.png)\n\n## Heading here\n\nBushwick fanny pack high life wolf single-origin coffee american apparel, cred twee gluten-free mixtape mlkshk ethical carles Austin direct trade. Etsy banksy biodiesel ethnic, cardigan chambray lomo four loko single-origin coffee. Wes anderson dreamcatcher chillwave whatever, before they sold out master cleanse polaroid fixie skateboard yr. Mcsweeney's PBR typewriter banksy wes anderson helvetica. Synth sriracha salvia, selvage pour-over 3 wolf moon 8-bit cosby sweater street art swag. Artisan echo park shoreditch, semiotics iphone dreamcatcher farm-to-table pinterest flexitarian cred ennui irony bicycle rights. Narwhal whatever etsy retro, kogi yr salvia fixie pork belly master cleanse wolf ethical PBR VHS."
+text = "We came up with a new name, logo and website. Most beginnings are humble—so are the designs that accompaines them. It's important to get in the game with your best foot forward. However, with success, it's important to keep your identity in line with your growth.  MetricLab had grown substantially since they opened. They decided it was time to level up. They wanted their identity to match their high quality services. They also wanted a look that appealed to them and their potential clients.\n\n## New name\n\nWe changed the name to **MeticLab**. The old name, ActiveCommLabs LLC sufferend in many ways. First off, it wasn't memorable. Second, it was very generic sounding. Thrid, the LLC part made their business sound like a law firm. So we chose a [suggestive naming style](https://www.liquidagency.com/brand-exchange/sti-6-naming-styles/) to keep their name aligned with what they did, but with a much [stronger name](https://www.martyneumeier.com/strong-vs-weak-names).\n\n![](/uploads/clients/metriclab/Business-Card.jpg)\n\n## New logo\n\nWe redesigned the logo. The old logo had a lot of bad things going for it. First, it's design was sending conflicting messages. The circle with arrows was sending a message that implied recycling, which they didn't do. Next, the AC monogram looked like something you'd see on towels at your grandparents house. It was a style of lettering that rooted them in looking old instead of new.\n\nWe created a better logo by using a square shape to related it visually to a unit of measurement. Also, a square is a stable and timeless shape. A square doesn't look old or new. It just looks stable and balanced.\n\n![](/uploads/clients/metriclab/ml-logos.png)\n\n## New website\n\nWe designed and developed a brand new website. The old website had bad design, layout and imagery. The image of the girl with the laptop was bad, but the fact that the laptop screen wasn't even turned on made the image even painful. We wanted the new website to fix all of these problems.\n\nWe wanted the new website to take it's time to introduce itself to the viewer. We started with a strong and clear statement about what they did, “Relentless Research and Innovation”. We then took the time to slowly intoduce what they did, and we ended on a strong client list to reinforce their authority and experience in the field."
 [[layers]]
-alt = "Screen shot of new Metric Lab website"
+alt = "Screen shot of new MetricLab website"
 image = "/uploads/clients/metriclab/ml-site.jpg"
 template = "fm_layer_browser"
 [[layers]]
-head = "Gains"
+head = "Nerdy"
 template = "fm_layer_content"
-text = "### \n\nWe all agreed that it was time for a complete makeover. Together, we came up with:\n\n* a new business name\n* a new logo\n* a new website\n\nWe all worked together and bounced ideas off of each other until we arrived at the results that we wanted. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu."
+text = "We had a lot of nerdy goals to accomplish as well. MetricLab wanted their site to load fast and to be a secure as possible. To accomplis this, we traded in WordPress for Hugo. WordPress, although popular, is notoriously slow to load and happens to be the most [hacked content management system in the world](https://cyberforces.com/en/wordpress-most-hacked-cms). We instead opted for Hugo, which is insanely fast and 100% secure. This eanbled us to focus on speed and security while delivering a platform that MetricLab could manage on their own.\n\n![](/uploads/clients/metriclab/performance.jpg)."
+[[layers]]
+head = "Outtro"
+template = "fm_layer_content"
+text = "MetricLab was a blast to work with. The rebrand has been treating them well. They are no long embarrassed to have anyone visit their website or to judge them by their identity alone. The rebrand has helped them clarify their services to new clients and they love handing out thier cool square business cards."
 [[layers]]
 image = "/uploads/clients/metriclab/bryan-mcclain-metriclab.jpg"
 template = "fm_layer_image"
-[[layers]]
-code = "{{ with .Params.seo_page_title | default .Site.Title }}  \n<title>{{ . }}</title>  \n<meta property=\"og:title\" content=\"{{ . }}\" />  \n<meta name=\"twitter:title\" content=\"{{ . | truncate 70 }}\" />  \n{{- end -}}\n\n{{ with .Params.seo_page_description | default .Site.Params.description }}  \n<meta name=\"description\" content=\"{{ . }}\">  \n<meta property=\"og:description\" content=\"{{ . }}\">  \n<meta name=\"twitter:description\" content=\"{{ . | truncate 200 }}\">  \n{{ end }}\n\n<meta property=\"og:url\" content=\"{{ .Permalink | absLangURL }}\" />  \n<meta property=\"og:type\" content=\"website\" />  \n<meta property=\"og:site_name\" content=\"{{ .Site.Title }}\" />\n\n<link rel=\"canonical\" href=\"{{ .Permalink | absLangURL }}\" />"
-code_type = "html"
-template = "fm_layer_code"
-
 +++
-# How stale?
-Very stale.
-
-
-
-three things matter, what you want, what the internet wants, what your market wants
-
-
-![](/uploads/clients/metriclab/active-com.jpg)
-
-I'm a redesigner who turns busted, stale websites into awesome websites. Unlike my competitors, I don't use beginner solutions like WordPress, Wix and Squarespace. I use more powerful and flexible solutions.

@@ -1,7 +1,7 @@
 .quote
 
   &__layer
-    // background-color: red
+    background-color: $gray
     display: grid
     // grid-template-rows: 80vh
 
@@ -11,9 +11,11 @@
 
   &__container
     max-width: 1200px
+    padding: 10rem 0
+    text-align: center
 
   &__text
-    background-color: $gold
+    background-color: $gray
     color: $charcoal
     font-family: georgia
     font-size: 6rem
@@ -25,13 +27,18 @@
 
     padding: 0
 
+    box-shadow: 50px 0 0 0 $gray, -50px 0 0 0 $gray
+    display: inline
+    // margin 2px 0
+    // padding 5px 0
+    // text-transform uppercase
+
     // max-width: 80vw
 
 
 .bgx
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'%3E%3Cline stroke='%23000000' stroke-width='1' x1='0' y1='100%25' x2='100%25' y2='0' /%3E%3Cline stroke='%23000000' stroke-width='1' x1='0' y1='0' x2='100%25' y2='100%25' /%3E%3C/svg%3E")
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'%3E%3Cline stroke='%23aaaaaa' stroke-width='1' x1='0' y1='100%25' x2='100%25' y2='0' /%3E%3Cline stroke='%23aaaaaa' stroke-width='1' x1='0' y1='0' x2='100%25' y2='100%25' /%3E%3C/svg%3E")
 
-  background-color: $gold
   // background-image: url("../images/alive.jpg")
   background-repeat: no-repeat
   background-position: center

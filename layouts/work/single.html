@@ -11,9 +11,7 @@
 
   <div class="workIntro__layer resize">
     <div class="workIntro__billboard" style="background-image: url({{ .Params.client_image }});">
-      <div class="workIntro__logo">
-        <img src="{{ .Params.client_logo }}" alt="{{ .Title }} logo">
-      </div>
+      <img src="{{ .Params.client_logo }}" alt="{{ .Title }} logo">
     </div>
   </div>
 
@@ -52,6 +50,9 @@
           </div>
           <div class="browser__image resize">
             <img src="{{ .image }}" alt="Screenshot of a website">
+          </div>
+          <div class="">
+            <a class="browser__button" href="{{ $.Params.client_website }}">Goto {{ $.Params.client_website }} </a>
           </div>
         </div>
       </div>

@@ -32,7 +32,7 @@ image = "/uploads/clients/metriclab/bryan-mcclain-metriclab.jpg"
 svg = "/uploads/clients/logos/logo_metriclab.svg"
 name = "Metriclab"
 meta = "User Research / Bay Area"
-url = ""
+url = "/work/metriclab"
 featured = true
 
 [[clients]]
@@ -40,7 +40,7 @@ image = "/uploads/clients/segl/students8.jpg"
 svg = "/uploads/clients/logos/logo_segl-rectangle.svg"
 name = "School for Ethics and Global Leadership"
 meta = "Education / Washington D.C."
-url = ""
+url = "/work/segl"
 featured = true
 
 [[clients]]
@@ -48,7 +48,7 @@ image = "/uploads/clients/slaw/artwork-006.jpg"
 svg = "/uploads/clients/logos/logo_artworks.svg"
 name = "St. Louis Artworks"
 meta = "Job Training / STL"
-url = ""
+url = "/work/slaw"
 featured = true
 
 [[clients]]
@@ -56,7 +56,7 @@ image = "/uploads/clients/nato-caliph/nato-03.jpg"
 svg = "/uploads/clients/logos/logo_nato-caliph.svg"
 name = "Nato Caliph"
 meta = "Musician / STL"
-url = ""
+url = "/work/nato-caliph"
 featured = true
 
 [[clients]]
@@ -64,7 +64,7 @@ image = "/uploads/clients/paul-shank/figure-160.jpg"
 svg = "/uploads/clients/logos/logo_paul-shank.svg"
 name = "Paul Shank"
 meta = "Artist / STL"
-url = ""
+url = "/work/paul-shank"
 featured = true
 
 [[clients]]
@@ -72,7 +72,7 @@ image = "/uploads/clients/earthdance/shed.jpg"
 svg = "/uploads/clients/logos/logo_earthdance.svg"
 name = "Earthdance"
 meta = "Organic Farm / Ferguson"
-url = ""
+url = "/work/earthdance"
 featured = true
 
 [[clients]]
@@ -80,7 +80,7 @@ image = "/uploads/clients/masala/chicken.jpg"
 svg = "/uploads/clients/logos/logo_masala.svg"
 name = "Masala"
 meta = "Restaurant / STL"
-url = ""
+url = "/work/masala"
 featured = true
 
 [[clients]]
@@ -88,7 +88,7 @@ image = "/uploads/clients/regards/river-city-chicago.jpg"
 svg = "/uploads/clients/logos/logo_regards.svg"
 name = "Regards"
 meta = "Art Gallery / Chicago"
-url = ""
+url = "/work/regards"
 featured = true
 
 [[clients]]
@@ -96,7 +96,7 @@ image = "/uploads/clients/segl/dc.jpg"
 svg = "/uploads/clients/logos/logo_uuu.svg"
 name = "UUU"
 meta = "ATOM Package / Github"
-url = ""
+url = "/work/uuu"
 featured = false
 
 [[clients]]
@@ -104,7 +104,7 @@ image = "/uploads/clients/segl/dc.jpg"
 svg = "/uploads/clients/logos/logo_uuu.svg"
 name = "CSS Weather"
 meta = "Brownerd / Weather"
-url = ""
+url = "/cwork/css-weather"
 featured = false
 
 [[clients]]
@@ -112,7 +112,7 @@ image = "/uploads/clients/museum-gateway/youth.jpg"
 svg = "/uploads/clients/logos/logo_uuu.svg"
 name = "Museum Gateway"
 meta = "Art Museum / STL"
-url = ""
+url = "/work/museum-gateway"
 featured = true
 
 +++

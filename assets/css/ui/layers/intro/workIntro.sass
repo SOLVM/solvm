@@ -44,18 +44,22 @@
     background-size: cover
 
     display: grid
-    grid-template-columns: 1fr
-    grid-template-rows: 85vh
+    grid-template-columns: minmax(200px, 500px)
+    grid-template-rows: 1fr
 
     align-items: center
-    justify-items: center
+    // justify-items: center
+    justify-content: center
+
+    height: 85vh
 
   &__logo
-    width: 200px
-
+    // width: 300px
+    height: 100px
+    width: 300px
     img
       width: 100%
-      max-height: 200px
+      // max-height: 200px
       // object-fit: contain
 
 
@@ -69,7 +73,7 @@
 
     text-transform: uppercase
     // margin-bottom: 1.5rem
-    padding: 6.25rem 0 5rem 0
+    padding: 6rem 0 5rem 0
 
     // +media('<lg')
     //   font-size: 5rem
