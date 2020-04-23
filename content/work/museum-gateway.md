@@ -1,9 +1,10 @@
 +++
-client_heading = "Relentless research and innovation"
+client_heading = "Designing a museum website"
 client_image = "/uploads/clients/museum-gateway/youth.jpg"
-client_location = "Bay Area"
+client_location = "STL"
 client_logo = "/uploads/clients/logos/white/museum-gateway-white.svg"
-client_type = "User Research"
+client_type = "Museum Employment"
+client_website = "http://museumgateway.com/"
 date = "2019-01-16T23:28:00-06:00"
 layout = "work/single"
 seo_page_description = "Museum Gateway and SOLVM"

@@ -43,17 +43,19 @@
     {{ end }}
 
     {{ if eq "fm_layer_browser" .template }}
-      <div class="browser__layer">
+      <div class="browser__layer resize">
         <div class="browser__container">
           <div class="browser__bar">
             <div class="browser__circles"></div>
           </div>
-          <div class="browser__image resize">
+          <div class="browser__image">
             <img src="{{ .image }}" alt="Screenshot of a website">
           </div>
-          <div class="">
-            <a class="browser__button" href="{{ $.Params.client_website }}">Goto {{ $.Params.client_website }} </a>
-          </div>
+          {{ with $.Params.client_website }}
+            <div class="">
+              <a class="browser__button" href="{{ . }}">Goto {{ . }} </a>
+            </div>
+          {{ end }}
         </div>
       </div>
     {{ end }}
