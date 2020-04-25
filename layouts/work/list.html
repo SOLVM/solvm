@@ -8,8 +8,9 @@
       {{/* <h2 class="imageGallery__headline">Like these peeps</h2> */}}
 
       <div class="imageGallery__container">
+        {{ $pages :=  where .Site.Pages "Section" "work" }}
 
-        {{ range (.Paginator 100).Pages.ByDate }}
+        {{ range sort $pages "Params.date" "desc" }}
 
           <a
             class="imageGallery__card"

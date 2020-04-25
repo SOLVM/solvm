@@ -1,36 +1,29 @@
 +++
-client_heading = "Designing a museum website"
+client_heading = "The last piece of the puzzle"
 client_image = "/uploads/clients/museum-gateway/youth.jpg"
 client_location = "STL"
 client_logo = "/uploads/clients/logos/white/museum-gateway-white.svg"
 client_type = "Museum Employment"
 client_website = "http://museumgateway.com/"
-date = "2019-01-16T23:28:00-06:00"
+date = "2017-01-16T23:28:00-06:00"
 layout = "work/single"
 seo_page_description = "Museum Gateway and SOLVM"
 seo_page_title = ""
 subtitle = ""
 title = "Museum Gateway"
 [[layers]]
-head = "Problem"
+head = "Endgame"
 template = "fm_layer_content"
-text = "Metric Lab was starting to have identity problems. One half of the problem was that clients weren't clear about what they did. The other half of the problem was that they didn't look as cutting-edge as they said they were.\n\nAs you can see below, their old site was quite stale. Their website and identity were stuck back in the days when we used to call the internet \"cyber space.\" The value that they offered was not being refelcted in their old website. And they wanted to be more clear with their message.\n\nYou know the deal—time for a redesign.\n\n![](/uploads/clients/metriclab/active-com.jpg)"
+text = "The Contemporary Art Museum of St. Louis came to me for help completing their Museum Gateway project. This project aimed to inform students, parents and teachers that museums offered many careers. Museum Gateway worked with Maplewood Richmond Heights School District and the American Alliance of Museums to create a video and a book to convey these careers options. They need me to create the final part, the website."
 [[layers]]
-template = "fm_layer_quote"
-text = "We need a complete make over"
-[[layers]]
-head = "Solution"
-template = "fm_layer_content"
-text = "We all agreed that it was time for a complete makeover. Together, we came up with:\n\n* a new business name\n* a new logo\n* a new website\n\nWe all worked together and bounced ideas off of each other until we arrived at the results that we wanted. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu.\n\n![](/uploads/clients/metriclab/ml-logos.png)\n\n## Heading here\n\nBushwick fanny pack high life wolf single-origin coffee american apparel, cred twee gluten-free mixtape mlkshk ethical carles Austin direct trade. Etsy banksy biodiesel ethnic, cardigan chambray lomo four loko single-origin coffee. Wes anderson dreamcatcher chillwave whatever, before they sold out master cleanse polaroid fixie skateboard yr. Mcsweeney's PBR typewriter banksy wes anderson helvetica. Synth sriracha salvia, selvage pour-over 3 wolf moon 8-bit cosby sweater street art swag. Artisan echo park shoreditch, semiotics iphone dreamcatcher farm-to-table pinterest flexitarian cred ennui irony bicycle rights. Narwhal whatever etsy retro, kogi yr salvia fixie pork belly master cleanse wolf ethical PBR VHS."
-[[layers]]
-alt = "Screen shot of new Metric Lab website"
-image = "/uploads/clients/metriclab/ml-site.jpg"
+alt = "Screen shot of new Museum Gateway website"
+image = "/uploads/clients/museum-gateway/museum-gateway-website.jpg"
 template = "fm_layer_browser"
 [[layers]]
-head = "Results"
+head = "Kind words"
 template = "fm_layer_content"
-text = "### \n\nWe all agreed that it was time for a complete makeover. Together, we came up with:\n\n* a new business name\n* a new logo\n* a new website\n\nWe all worked together and bounced ideas off of each other until we arrived at the results that we wanted. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu."
+text = "Thank you for patience, short-term/fast-track work, and many/many voices. You have been really impressive in the work, design, and execution of the project. Overall, really appreciated!\n\n## Quickness\n\nThe site happens to be super fast BTW!\n\n![](/uploads/clients/museum-gateway/museum-gateway-performance.png)"
 [[layers]]
-image = "/uploads/clients/metriclab/bryan-mcclain-metriclab.jpg"
+image = "/uploads/clients/museum-gateway/teachers.jpg"
 template = "fm_layer_image"
 +++

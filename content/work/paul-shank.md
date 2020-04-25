@@ -1,39 +1,32 @@
 +++
-client_heading = "Let's make it happen"
+client_heading = "You have a vision? Cool, let's build it."
 client_image = "/uploads/clients/paul-shank/figure-160.jpg"
 client_location = "Bay Area"
 client_logo = "/uploads/clients/logos/white/paul-shank-white.svg"
 client_type = "User Research"
 client_website = "https://paulshankstudio.com/"
-date = "2019-01-16T23:28:00-06:00"
+date = "2020-01-15T23:28:00-06:00"
 layout = "work/single"
 seo_page_description = "Paul Shank and SOLVM"
 seo_page_title = ""
 subtitle = ""
 title = "Paul Shank"
 [[layers]]
-head = "Opportunity"
+head = "Vision"
 template = "fm_layer_content"
-text = "Metric Lab was starting to have identity problems. One half of the problem was that clients weren't clear about what they did. The other half of the problem was that they didn't look as cutting-edge as they said they were.\n\nAs you can see below, their old site was quite stale. Their website and identity were stuck back in the days when we used to call the internet \"cyber space.\" The value that they offered was not being refelcted in their old website. And they wanted to be more clear with their message.\n\nYou know the deal—time for a redesign."
+text = "Paul Shank, an amazing artist, contacted me with a vision he had for building a website to display his life's work. He said that he had a strong idea for how he wanted it designed and mentioned that he would be very detail oriented. I said cool, this isn't about me, so let's get started on building your dream site.\n\n## Paul's sketches.\n\n![](/uploads/clients/paul-shank/sketch.jpg)"
 [[layers]]
-template = "fm_layer_quote"
-text = "Shank’s still lifes are so expertly and lovingly rendered"
-[[layers]]
-head = "Solution"
-template = "fm_layer_content"
-text = "We all agreed that it was time for a complete makeover. Together, we came up with:\n\n* a new business name\n* a new logo\n* a new website\n\nWe all worked together and bounced ideas off of each other until we arrived at the results that we wanted. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu.\n\n![](/uploads/clients/paul-shank/figure-420.jpg)\n\n## Heading here\n\nBushwick fanny pack high life wolf single-origin coffee american apparel, cred twee gluten-free mixtape mlkshk ethical carles Austin direct trade. Etsy banksy biodiesel ethnic, cardigan chambray lomo four loko single-origin coffee. Wes anderson dreamcatcher chillwave whatever, before they sold out master cleanse polaroid fixie skateboard yr. Mcsweeney's PBR typewriter banksy wes anderson helvetica. Synth sriracha salvia, selvage pour-over 3 wolf moon 8-bit cosby sweater street art swag. Artisan echo park shoreditch, semiotics iphone dreamcatcher farm-to-table pinterest flexitarian cred ennui irony bicycle rights. Narwhal whatever etsy retro, kogi yr salvia fixie pork belly master cleanse wolf ethical PBR VHS."
-[[layers]]
-alt = "Screen shot of new Metric Lab website"
+alt = "Screen shot of new Paul Shank website"
 image = "/uploads/clients/paul-shank/paul-shank-homepage.jpg"
 template = "fm_layer_browser"
 [[layers]]
-alt = "Screen shot of new Metric Lab website"
+alt = "Screen shot of new Paul Shank website"
 image = "/uploads/clients/paul-shank/paul-shank-website.jpg"
 template = "fm_layer_browser"
 [[layers]]
 head = "Results"
 template = "fm_layer_content"
-text = "### \n\nWe all agreed that it was time for a complete makeover. Together, we came up with:\n\n* a new business name\n* a new logo\n* a new website\n\nWe all worked together and bounced ideas off of each other until we arrived at the results that we wanted. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu."
+text = "Paul Shank has been proud and confident in using this site to represent his work. Paul informed me that he was able to use this site to help secure a book deal. Many times Paul apologized for being so detail oriented, but I was fine with it. In all honesty, Paul's attention to detail allowed us to get the site done super fast. He knew exactly what he wanted and guided the project to a swift and accurate completion.\n\n## Also...\n\nThe site happens to be crazy fast!\n\n![](/uploads/clients/museum-gateway/museum-gateway-performance.png)\n\nMuch respect!"
 [[layers]]
 image = "/uploads/clients/paul-shank/still-050.jpg"
 template = "fm_layer_image"
