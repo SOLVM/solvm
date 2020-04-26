@@ -1,9 +1,9 @@
 +++
 client_heading = "Think this is hard enough? Try winnin'"
 client_image = "/uploads/clients/nato-caliph/nato-12.jpg"
-client_location = "Bay Area"
+client_location = "STL"
 client_logo = "/uploads/clients/logos/white/nato-caliph-white.svg"
-client_type = "User Research"
+client_type = "Emcee and Activist"
 client_website = "https://natocaliph.com/"
 date = "2019-01-16T23:28:00-06:00"
 layout = "work/single"

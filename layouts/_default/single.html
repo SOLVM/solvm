@@ -1,15 +1,84 @@
-{{ define "feature" }}
-
-    {{ partial "billboard.html" . }}
-
-{{ end }}
-
 {{ define "main" }}
 
-  <main class="main-content__layer">
-    <div class="main-content__container">
-      {{ .Content }}
+  <div class="workIntro__layer">
+    <div class="workIntro__container">
+      <hgroup class="workIntro__hgroup">
+        <h1 class="workIntro__title"><span class="workIntro__mask">{{ .Title }}</span></h1>
+        <h2 class="workIntro__meta"><span class="workIntro__mask">{{ .Params.client_type }} {{ .Params.client_location }}</span></h2>
+      </hgroup>
     </div>
-  </main>
+  </div>
+
+  <div class="workIntro__layer resize">
+    <div class="workIntro__billboard" style="background-image: url({{ .Params.client_image }});">
+      <img style="width:100px" src="{{ .Params.client_logo }}" alt="{{ .Title }} logo">
+    </div>
+  </div>
+
+  <div class="workIntro__layer">
+    <div class="workIntro__container">
+      <h2 class="workIntro__headline resize">{{ .Params.client_heading }}</h2>
+    </div>
+  </div>
+
+  {{ range .Params.layers }}
+    {{ if eq "fm_layer_content" .template }}
+      <div class="workContent__layer">
+        <div class="workContent__container">
+          <div class="workContent__box">
+            <h3 class="workContent__sidehead">{{ .head }}</h3>
+            <div class="workContent__text">{{ .text | $.Page.RenderString }}</div>
+          </div>
+
+        </div>
+      </div>
+    {{ end }}
+
+    {{ if eq "fm_layer_quote" .template }}
+      <div class="quote__layer resize bgx">
+        <div class="quote__container">
+          <h2 class="quote__text">“{{ .text }}”</h2>
+        </div>
+      </div>
+    {{ end }}
+
+    {{ if eq "fm_layer_browser" .template }}
+      <div class="browser__layer resize">
+        <div class="browser__container">
+          <div class="browser__bar">
+            <div class="browser__circles"></div>
+          </div>
+          <div class="browser__image">
+            <img src="{{ .image }}" alt="Screenshot of a website">
+          </div>
+          {{ with $.Params.client_website }}
+            <div class="">
+              <a class="browser__button" href="{{ . }}">Goto {{ . }} </a>
+            </div>
+          {{ end }}
+        </div>
+      </div>
+    {{ end }}
+
+    {{ if eq "fm_layer_image" .template }}
+      <div class="billboard__layer resize" style="background-image: url({{ .image }});"></div>
+    {{ end }}
+
+    {{ if eq "fm_layer_code" .template }}
+      <div class="code__layer">
+        <div class="code__container">
+
+          {{ $codez := printf "``` %s %s ```" .code_type .code }}
+          {{ $codez | $.Page.RenderString }}
+
+        </div>
+      </div>
+    {{ end }}
+
+  {{ end }}
+
+  <div class="">
+    {{ .Content }}
+  </div>
 
 {{ end }}

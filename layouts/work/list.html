@@ -1,6 +1,6 @@
 {{ define "main" }}
     <main>
-      <h1 class="theme__heading">UUU Themes</h1>
+      <h1 class="theme__heading">Worky work</h1>
     </main>
 
     <div class="imageGallery__layer">
@@ -8,7 +8,7 @@
       {{/* <h2 class="imageGallery__headline">Like these peeps</h2> */}}
 
       <div class="imageGallery__container">
-        {{ $pages :=  where .Site.Pages "Section" "work" }}
+        {{ $pages :=  where .Site.RegularPages "Section" "work" }}
 
         {{ range sort $pages "Params.date" "desc" }}
 
@@ -20,7 +20,7 @@
             <div class="imageGallery__image">
               {{/* <img src="{{ .Params.client_logo }}" alt=""> */}}
               <h2 class="imageGallery__heading">{{ .Title }}</h2>
-              <p class="imageGallery__meta">{{ .Params.client_location }} {{ .Params.client_type }}</p>
+              <p class="imageGallery__meta">{{ .Params.client_type }} | {{ .Params.client_location }}</p>
             </div>
           </a>
 
@@ -29,6 +29,23 @@
       </div>
     </div>
 
-  {{ partial "pagination.html" . }}
+
+    <div class="logoGallery__layer">
+      <div class="logoGallery__container">
+
+        {{ $url := "/uploads/clients/logos/" }}
+        {{ $files := readDir "/static/uploads/clients/logos/" }}
+        {{ range $files }}
+        {{ if ne (substr .Name 0 -4) ".DS_S" }}
+          <figure>
+            <img src="{{$url}}/{{.Name | urlize }}">
+          </figure>
+          {{ end }}
+        {{ end }}
+
+      </div>
+    </div>
+
+  {{/* partial "pagination.html" . */}}
 
 {{ end }}

@@ -1,9 +1,9 @@
 +++
 client_heading = "You have a vision? Cool, let's build it."
 client_image = "/uploads/clients/paul-shank/figure-160.jpg"
-client_location = "Bay Area"
+client_location = "STL"
 client_logo = "/uploads/clients/logos/white/paul-shank-white.svg"
-client_type = "User Research"
+client_type = "Fine Artist"
 client_website = "https://paulshankstudio.com/"
 date = "2020-01-15T23:28:00-06:00"
 layout = "work/single"

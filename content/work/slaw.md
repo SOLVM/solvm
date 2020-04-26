@@ -1,7 +1,7 @@
 +++
 client_heading = "Relentless research and innovation"
 client_image = "/uploads/clients/slaw/background-001.jpg"
-client_location = "Bay Area"
+client_location = "STL"
 client_logo = "/uploads/clients/logos/logo_artworks.svg"
 client_type = "Job Training in the arts"
 client_website = "http://stlartworks.org/"
