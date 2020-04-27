@@ -40,7 +40,7 @@
       {{ range .Params.reasons }}
       <div class="zipper__item">
         <div class="zipper__image resize">
-          <img src="{{ .image }}" alt="" />
+          <img src="{{ .image }}" alt="{{ .alt }}" loading="lazy"/>
         </div>
         <div class="zipper__text">
           <h2 class="zipper__heading">{{ .title }}</h2>
@@ -117,7 +117,7 @@
 
       <div class="zipper__item">
         <div class="zipper__image resize">
-          <img src="/uploads/egypt.jpg" alt="" />
+          <img src="/uploads/egypt.jpg" alt="Benjamin Gandhi-Sheaprd at the Spynx in Egypt" loading="lazy" />
         </div>
         <div class="zipper__text">
           <h2 class="zipper__heading">It might be too late.</h2>
@@ -128,7 +128,7 @@
 
       <div class="zipper__item">
         <div class="zipper__image resize">
-          <img src="/uploads/obama.jpg" alt="" />
+          <img src="/uploads/obama.jpg" alt="Meeting Obama" loading="lazy" />
         </div>
         <div class="zipper__text">
           <h2 class="zipper__heading">I'm picky.</h2>
@@ -139,7 +139,7 @@
 
       <div class="zipper__item">
         <div class="zipper__image resize">
-          <img src="/uploads/funny.jpg" alt="" />
+          <img src="/uploads/funny.jpg" alt="funny faces" loading="lazy" />
         </div>
         <div class="zipper__text">
           <h2 class="zipper__heading">I don't do deadlines. I don't bill hourly, and I require 100% down to start the project.</h2>
@@ -150,7 +150,7 @@
 
       <div class="zipper__item">
         <div class="zipper__image resize">
-          <img src="/uploads/biz.jpg" alt="" />
+          <img src="/uploads/biz.jpg" alt="Benjamin Gandhi-Shepard" loading="lazy" />
         </div>
         <div class="zipper__text">
           <h2 class="zipper__heading">I'm expensive.</h2>
