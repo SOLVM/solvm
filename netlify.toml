@@ -64,7 +64,7 @@ HUGO_VERSION = "0.69.2"
 
     Referrer-Policy = "no-referrer-when-downgrade; same-origin;"
     Server = "yomama"
-    Strict-Transport-Security  "max-age=63072000; includeSubDomains; preload"
+    Strict-Transport-Security = "max-age=63072000; includeSubDomains; preload"
 
     X-Frame-Options = "SAMEORIGIN"
     X-XSS-Protection = "1; mode=block"
