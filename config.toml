@@ -1,4 +1,5 @@
-baseurl = "https://solvm.com/"
+#baseurl = "https://solvm.com/"
+baseurl = "/"
 languageCode = "en-us"
 summaryLength = 20
 title = "SOLVM | High-end web design and development"
