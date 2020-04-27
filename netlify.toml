@@ -1,7 +1,13 @@
+# Production build commands
+
 [build]
+# public is the default hugo build folder
 publish = "public"
+# --gc runs cleanup tasks (remove unused cache files) after the build
+# --minify obviously minifies html, css and js files
 command = "hugo --gc --minify"
 
+# Production context ENVIRONMENT variable settings
 [context.production.environment]
 HUGO_VERSION = "0.69.2"
 HUGO_ENV = "production"
@@ -10,22 +16,56 @@ HUGO_ENABLEGITINFO = "true"
 [context.split1]
 command = "hugo --gc --minify --enableGitInfo"
 
-[context.split1.environment]
-HUGO_VERSION = "0.69.2"
-HUGO_ENV = "production"
+# Split1 Context ENVIRONMENT variable settings
+# [context.split1.environment]
+# HUGO_VERSION = "0.69.2"
+# HUGO_ENV = "production"
 
+# Deploy Preview context: all deploys generated from a pull/merge request will inherit these settings.
 [context.deploy-preview]
 command = "hugo --gc --minify --buildFuture -b $DEPLOY_PRIME_URL"
 
+# Deploy Preview ENVIRONMENT variable settings
 [context.deploy-preview.environment]
 HUGO_VERSION = "0.69.2"
 
+# Branch Deploy context: all deploys that are not from a pull/merge request or from the Production branch will inherit these settings.
 [context.branch-deploy]
 command = "hugo --gc --minify -b $DEPLOY_PRIME_URL"
 
+# Branch Deploy ENVIRONMENT variable settings
 [context.branch-deploy.environment]
 HUGO_VERSION = "0.69.2"
 
-[context.next.environment]
-HUGO_ENABLEGITINFO = "true"
+# Next ENVIRONMENT variable settings
+# I might be able to delete this
+# [context.next.environment]
+# HUGO_ENABLEGITINFO = "true"
 
+# Redirects
+[[redirects]]
+  from = "/work/dare-to-be-square"
+  to = "/work/metric-lab"
+
+[[headers]]
+  # Define which paths this specific [[headers]] block will cover.
+  for = "/*"
+
+  # CSP checker https://csp-evaluator.withgoogle.com/
+  [headers.values]
+    # Multi-value headers are expressed with multi-line strings.
+    cache-control = "max-age=31536000"
+
+    Content-Security-Policy = "default-src 'none'; img-src 'self'; script-src 'self' https://www.googletagmanager.com; style-src 'self' https://use.typekit.net https://fonts.googleapis.com; object-src 'none'; font-src 'self' https://use.typekit.net https://fonts.googleapis.com;"
+
+    # Craft the Feature Policy params based on your needs.
+    # The settings below are very restrictive and might produce undesiderable results
+    Feature-Policy = "geolocation 'none'; midi 'none'; sync-xhr 'none'; microphone 'none'; camera 'none'; magnetometer 'none'; gyroscope 'none'; speaker 'self'; fullscreen 'self'; payment 'none';"
+
+    Referrer-Policy = "no-referrer-when-downgrade; same-origin;"
+    Server: "yomama"
+    Strict-Transport-Security  "max-age=63072000; includeSubDomains; preload"
+
+    X-Frame-Options = "SAMEORIGIN"
+    X-XSS-Protection = "1; mode=block"
+    X-Content-Type-Options = "nosniff"
