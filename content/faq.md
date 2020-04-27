@@ -5,8 +5,6 @@ seo_page_description = "Frequently asked questions"
 seo_page_title = "FAQ"
 subtitle = ""
 title = "FAQ"
-[menu.main]
-weight = 30
 
 +++
 
