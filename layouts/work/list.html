@@ -36,7 +36,8 @@
         {{ $url := "/uploads/clients/logos/" }}
         {{ $files := readDir "/static/uploads/clients/logos/" }}
         {{ range $files }}
-        {{ if ne (substr .Name 0 -4) ".DS_S" }}
+        {{/* do not include .DS_Store file NOR the directory named white */}}
+        {{ if not (eq .Name ".DS_Store") | and (ne .Name "white") }}
           <figure>
             <img src="{{$url}}/{{.Name | urlize }}">
           </figure>

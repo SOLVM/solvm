@@ -28,11 +28,13 @@ identifier = "about"
 
 - [] Text Highlight color
 - [] SEO title and descriptions are working
+- [] CSP Test - https://securityheaders.com/  and https://csp-evaluator.withgoogle.com/
 - [] Webmaster tools setup
 - [] Google Tracking code working
 - [] iPhone Landscape look
-- [] 1080 screen look
+- [] 1080 screen look - check look for screens with short height like CEAMTEAM does
 - [] Email contact working
+- [] Lighthouse Performance test - https://web.dev/measure/
 
 
 ## Tools

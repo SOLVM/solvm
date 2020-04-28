@@ -70,7 +70,7 @@ HUGO_VERSION = "0.69.2"
     Feature-Policy = "geolocation 'none'; midi 'none'; sync-xhr 'none'; microphone 'none'; camera 'none'; magnetometer 'none'; gyroscope 'none'; speaker 'self'; fullscreen 'self'; payment 'none';"
 
     Referrer-Policy = "no-referrer-when-downgrade; same-origin;"
-    Server = "yomama"
+    # Server = "yomama"
     Strict-Transport-Security = "max-age=63072000; includeSubDomains; preload"
 
     X-Frame-Options = "SAMEORIGIN"

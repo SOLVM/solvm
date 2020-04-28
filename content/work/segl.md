@@ -16,7 +16,7 @@ head = "Change"
 template = "fm_layer_content"
 text = "The School for Ethics and Global Leadership (SEGL) has been a great client throughout the years. But more importantly, they have been doing some serious GOOD in the world. After the 911 bombing, SEGL Founder, Noah Bopp decided that he could help make a change in the world. SEGL is a semester school for high school students that want to learn how to become ethical leaders that create positive change in the world. SEGL is awesome and it’s been an honor to work with them.\n\nBack in 2008, SEGL came to me for help with building a lasting idntity and website for their school. So we did that. Now, they were ready for their next big change. They wanted a new fresh look to thier website and they wanted to touch up the logo if possible. Here’s the thing about logos, when they are bad and no one know you, then you just need to tear it down and start fresh. However, when poeple have lived with and embraced your identity, it’s best to make little steps forward. [Remeber how bad the Gap’s massive rebranding went](https://medium.com/@gfraikin/gap-worse-rebrand-ever-even-6-years-later-4a883d0cc736u)? So here’s what we did below."
 [[layers]]
-image = "/uploads/clients/segl/segl-trio.png"
+image = "/uploads/clients/segl/segl-trio-green.png"
 template = "fm_layer_image"
 [[layers]]
 head = "Solution"
