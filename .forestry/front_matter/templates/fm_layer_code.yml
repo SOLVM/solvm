@@ -1,6 +1,7 @@
 ---
 label: fm_layer_code
 hide_body: true
+display_field: code
 fields:
 - name: code_type
   type: text
