@@ -1,6 +1,7 @@
 ---
 label: fm_layer_image_w_text
 hide_body: true
+display_field: text
 fields:
 - name: image
   type: file
