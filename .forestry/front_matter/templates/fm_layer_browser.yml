@@ -1,6 +1,7 @@
 ---
 label: fm_layer_browser
 hide_body: true
+display_field: alt
 fields:
 - name: image
   type: file
