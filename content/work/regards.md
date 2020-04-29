@@ -19,7 +19,4 @@ text = "Keep It Simple Stupid. This was the whole plan. It’s all about the art
 alt = "Screen shot of new Regards website"
 image = "/uploads/clients/regards/regards-website.jpg"
 template = "fm_layer_browser"
-[[layers]]
-template = "fm_layer_quote"
-text = "Psyched to see this coming together!"
 +++

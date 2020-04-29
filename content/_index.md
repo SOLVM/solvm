@@ -30,92 +30,25 @@ url = ""
 anchortext = "And worst of all—you've grown complacent"
 
 
-[[clients]]
-image = "/uploads/clients/metriclab/bryan-mcclain-metriclab.jpg"
-svg = "/uploads/clients/logos/logo_metriclab.svg"
-name = "Metriclab"
-meta = "User Research / Bay Area"
-url = "/work/metriclab"
-featured = true
+[[message]]
+title = "It might be too late."
+text = "I only take on a few clients each year. I'm a one-man-show, and I only work on one project at a time. This means you get my full attention with no middle (mis)management. But if I'm booked up, then I don't have the bandwidth to be of service. Sorry."
+image = "/uploads/egypt.jpg"
+alt = "Benjamin Gandhi-Sheaprd at the Spynx in Egypt"
 
-[[clients]]
-image = "/uploads/clients/segl/students8.jpg"
-svg = "/uploads/clients/logos/logo_segl-rectangle.svg"
-name = "School for Ethics and Global Leadership"
-meta = "Education / Washington D.C."
-url = "/work/segl"
-featured = true
-
-[[clients]]
-image = "/uploads/clients/slaw/artwork-006.jpg"
-svg = "/uploads/clients/logos/logo_artworks.svg"
-name = "St. Louis Artworks"
-meta = "Job Training / STL"
-url = "/work/slaw"
-featured = true
-
-[[clients]]
-image = "/uploads/clients/nato-caliph/nato-03.jpg"
-svg = "/uploads/clients/logos/logo_nato-caliph.svg"
-name = "Nato Caliph"
-meta = "Musician / STL"
-url = "/work/nato-caliph"
-featured = true
-
-[[clients]]
-image = "/uploads/clients/paul-shank/figure-160.jpg"
-svg = "/uploads/clients/logos/logo_paul-shank.svg"
-name = "Paul Shank"
-meta = "Artist / STL"
-url = "/work/paul-shank"
-featured = true
-
-[[clients]]
-image = "/uploads/clients/earthdance/shed.jpg"
-svg = "/uploads/clients/logos/logo_earthdance.svg"
-name = "Earthdance"
-meta = "Organic Farm / Ferguson"
-url = "/work/earthdance"
-featured = true
-
-[[clients]]
-image = "/uploads/clients/masala/chicken.jpg"
-svg = "/uploads/clients/logos/logo_masala.svg"
-name = "Masala"
-meta = "Restaurant / STL"
-url = "/work/masala"
-featured = true
-
-[[clients]]
-image = "/uploads/clients/regards/river-city-chicago.jpg"
-svg = "/uploads/clients/logos/logo_regards.svg"
-name = "Regards"
-meta = "Art Gallery / Chicago"
-url = "/work/regards"
-featured = true
-
-[[clients]]
-image = "/uploads/clients/segl/dc.jpg"
-svg = "/uploads/clients/logos/logo_uuu.svg"
-name = "UUU"
-meta = "ATOM Package / Github"
-url = "/work/uuu"
-featured = false
-
-[[clients]]
-image = "/uploads/clients/segl/dc.jpg"
-svg = "/uploads/clients/logos/logo_uuu.svg"
-name = "CSS Weather"
-meta = "Brownerd / Weather"
-url = "/cwork/css-weather"
-featured = false
-
-[[clients]]
-image = "/uploads/clients/museum-gateway/youth.jpg"
-svg = "/uploads/clients/logos/logo_uuu.svg"
-name = "Museum Gateway"
-meta = "Art Museum / STL"
-url = "/work/museum-gateway"
-featured = true
-
+[[message]]
+title = "I'm picky"
+text = "There's also a probability that we wont be a good fit. As much as you are looking for an expert that can deliver on your project, I am also looking for a client where my expertice can create value. If I can't help you create value, then I'm not a good fit for you."
+image = "/uploads/obama.jpg"
+alt = "Meting Obama"
+[[message]]
+title = "I don't do deadlines. I don't bill hourly, and I require 100% down to start the project."
+text = "That was a lot at once. As I have all day to work on your project, you and your team have a full-time job on top of this project. Thus, you will be my bottleck as this project requires our communication to complete. I can't give you a deadline because I can't control your time and responsibilities. Furthermore, deadlines mostly exist to keep hourly billing in check. I give fixed rates so you don't have to worry about projects ever going over budget. However, for the risk I take on giving you a fixed price, I require 100% upfront."
+image = "/uploads/funny.jpg"
+alt = "Funny faces"
+[[message]]
+title = "I'm expensive"
+text = "Like 15,000 to +150,000."
+image = "/uploads/biz.jpg"
+alt = "Benjamin Gandhi-Sheaprd"
 +++

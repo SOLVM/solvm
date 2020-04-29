@@ -14,7 +14,7 @@ title = "Earthdance"
 [[layers]]
 head = "Issue"
 template = "fm_layer_content"
-text = "Earthdance had an old, stale website with layout and content issues. They wanted a fresh new look, and they wanted to better organize the information.\n\n## The old site\n\nAs you can see, the old site has some major issues. First, there is a big pothole under the navigation where their featured image section had broken. Second, the page is broken into several columns. This creates a an unfortunate phenomenon called info barf. When you make colums you actually making each column fight for attention. It's like having multiple people talking to you at once. Thus, you have to ignore every column but the one you want. Since the main column is the one you focus on, you contition your viewers to ALWAYS ignore your side columns. Now, that extra info you provide is NEVER viewed.\n\n![](/uploads/clients/earthdance/website.jpg)"
+text = "Earthdance had an old, stale website with layout and content issues. They wanted a fresh new look, and they wanted to better organize the information.\n\n## The old site\n\nAs you can see, the old site has some major issues. First, there is a big pothole under the navigation where their featured image section had broken. Second, the page is broken into several columns. This creates a an unfortunate phenomenon called info barf. When you make colums you actual make each column fight for attention. It's like having multiple people talking to you at once. Thus, you have to ignore every column but the one you want. Since the main column is the one you focus on, you contition your viewers to ALWAYS ignore your side columns. Now, that extra info you provide is NEVER viewed.\n\n![](/uploads/clients/earthdance/old-website.jpg)"
 [[layers]]
 head = "Solution"
 template = "fm_layer_content"
@@ -32,6 +32,6 @@ head = "Kind words"
 template = "fm_layer_content"
 text = "I am pleased to recommend Ben Gandhi-Shepard for whatever your website design needs may be. I was fortunate to work with him on the redesign of EarthDance’s website in 2017. He went above and beyond what I would have expected in creativity and customer service. He explained technical issues related to the design process in language I could understand, and was patient when he needed to explain things a second or third time. I love the design he developed for our website.\n\nSincerely,\n\nRachel Levi\n\nActing Executive Director"
 [[layers]]
-image = "/uploads/clients/earthdance/kid.jpg"
+image = "/uploads/clients/earthdance/carry.jpg"
 template = "fm_layer_image"
 +++

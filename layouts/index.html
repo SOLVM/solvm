@@ -69,31 +69,32 @@
   </div>
 
 
-
   <div class="imageGallery__layer">
 
     {{/* <h2 class="imageGallery__headline">Like these peeps</h2> */}}
 
     <div class="imageGallery__container">
+      {{ $pages :=  where .Site.RegularPages "Section" "work" }}
 
-      {{ range .Params.clients }}
-        {{ if .featured }}
+      {{ range sort $pages "Params.date" "desc" }}
+
         <a
           class="imageGallery__card"
-          style="background-image: url('{{ .image }}')"
-          href="{{ .url }}"
+          style="background-image: url('{{ .Params.client_image }}')"
+          href="{{ .Permalink }}"
         >
           <div class="imageGallery__image">
-            {{/* <img src="{{ .svg }}" alt=""> */}}
-            <h2 class="imageGallery__heading">{{ .name }}</h2>
-            <p class="imageGallery__meta">{{ .meta }}</p>
+            {{/* <img src="{{ .Params.client_logo }}" alt=""> */}}
+            <h2 class="imageGallery__heading">{{ .Title }}</h2>
+            <p class="imageGallery__meta">{{ .Params.client_type }} | {{ .Params.client_location }}</p>
           </div>
         </a>
-        {{ end }}
+
       {{ end }}
 
     </div>
   </div>
+
 
   <div class="logoGallery__layer">
     <div class="logoGallery__container">
@@ -116,49 +117,20 @@
     <div class="zipper__container">
       <h2 class="zipper__headline">I'd love to help, but...</h2>
 
+      {{ range .Params.message }}
       <div class="zipper__item">
         <div class="zipper__image resize">
-          <img src="/uploads/egypt.jpg" alt="Benjamin Gandhi-Sheaprd at the Spynx in Egypt" loading="lazy" />
+          <img src="{{ .image }}" alt="{{ .alt }}" loading="lazy"/>
         </div>
         <div class="zipper__text">
-          <h2 class="zipper__heading">It might be too late.</h2>
-          <p class="zipper__teaser">I only take on a few clients each year. I'm a one-man-show, and I only work on one project at a time. This means you get my full attention with no middle (mis)management. But if I'm booked up, then I don't have the bandwidth to be of service. Sorry.</p>
-          <!-- <p><a class="zipper__button" href="">Learn more</a></p> -->
+          <h2 class="zipper__heading">{{ .title }}</h2>
+          <p class="zipper__teaser">{{ .text }}</p>
+          <p><a class="zipper__button" href="{{ .url }}">{{ .anchortext }}</a></p>
         </div>
       </div>
+      {{ end }}
 
-      <div class="zipper__item">
-        <div class="zipper__image resize">
-          <img src="/uploads/obama.jpg" alt="Meeting Obama" loading="lazy" />
-        </div>
-        <div class="zipper__text">
-          <h2 class="zipper__heading">I'm picky.</h2>
-          <p class="zipper__teaser">There's also a probability that we wont be a good fit. As much as you are looking for an expert that can deliver on your project, I am also looking for a client where my expertice can create value. If I can't help you create value, then I'm not a good fit for you. If you aren't looking to create value, then you're not a good fit for me either.</p>
-          <!-- <p><a class="zipper__button" href="">Learn more</a></p> -->
-        </div>
-      </div>
-
-      <div class="zipper__item">
-        <div class="zipper__image resize">
-          <img src="/uploads/funny.jpg" alt="funny faces" loading="lazy" />
-        </div>
-        <div class="zipper__text">
-          <h2 class="zipper__heading">I don't do deadlines. I don't bill hourly, and I require 100% down to start the project.</h2>
-          <p class="zipper__teaser">That was a lot at once. As I have all day to work on your project, you and your team have a full-time job on top of this project. Thus, you will be my bottleck as this project requires our communication to complete. I can't give you a deadline because I can't control your time and responsibilities. Furthermore, deadlines mostly exist to keep hourly billing in check. I give fixed rates so you don't have to worry about projects ever going over budget. However, for the risk I take on giving you a fixed price, I require 100% upfront.</p>
-          <!-- <p><a class="zipper__button" href="">Learn more</a></p> -->
-        </div>
-      </div>
-
-      <div class="zipper__item">
-        <div class="zipper__image resize">
-          <img src="/uploads/biz.jpg" alt="Benjamin Gandhi-Shepard" loading="lazy" />
-        </div>
-        <div class="zipper__text">
-          <h2 class="zipper__heading">I'm expensive.</h2>
-          <p class="zipper__teaser">Like 10,000 to +100,000.</p>
-          <!-- <p><a class="zipper__button" href="">Learn more</a></p> -->
-        </div>
-      </div>
+      <h2 class="zipper__headline">All of these issues must get fixed</h2>
 
     </div>
   </div>
