@@ -14,7 +14,7 @@ title = "Paul Shank"
 [[layers]]
 head = "Vision"
 template = "fm_layer_content"
-text = "Paul Shank, an amazing artist, contacted me with a vision he had for building a website to display his life's work. He said that he had a strong idea for how he wanted it designed and mentioned that he would be very detail oriented. I said cool, this isn't about me, so let's get started on building your dream site.\n\n## Paul's sketches.\n\n![](/uploads/clients/paul-shank/sketch.jpg)"
+text = "Paul Shank, an amazing artist, contacted me with a vision he had for building a website to display his life's work. He said that he had a strong idea for how he wanted it designed and mentioned that he would be very detail oriented. I said cool, be has picky as you like. Let's get started on building your dream site.\n\n## Paul's sketches.\n\n![](/uploads/clients/paul-shank/sketch.jpg)"
 [[layers]]
 alt = "Screen shot of new Paul Shank website"
 image = "/uploads/clients/paul-shank/paul-shank-homepage.jpg"

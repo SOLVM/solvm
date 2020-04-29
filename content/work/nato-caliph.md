@@ -17,19 +17,30 @@ template = "fm_layer_content"
 text = "The heading above is my favorite lyric from STL Emcee and activist Nato Caliph. This is what it means, if you think this work is hard—then you have no idea how hard it is to work to be the best. And making it in the music business is not for the faint of heart. And let's be real here, building your own career and running your own business is no small challenge.\n\n## The Build\n\nNato Caliph was releasing a new album and need a full refresh: new logo, photos and website. It was time to build."
 [[layers]]
 template = "fm_layer_quote"
-text = "We need a complete make over"
+text = "Ben FTW!"
 [[layers]]
-head = "Solution"
+head = "Handwritten"
 template = "fm_layer_content"
-text = "We all agreed that it was time for a complete makeover. Together, we came up with:\n\n* a new business name\n* a new logo\n* a new website\n\nWe all worked together and bounced ideas off of each other until we arrived at the results that we wanted. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu.\n\n## Heading here\n\nBushwick fanny pack high life wolf single-origin coffee american apparel, cred twee gluten-free mixtape mlkshk ethical carles Austin direct trade. Etsy banksy biodiesel ethnic, cardigan chambray lomo four loko single-origin coffee. Wes anderson dreamcatcher chillwave whatever, before they sold out master cleanse polaroid fixie skateboard yr. Mcsweeney's PBR typewriter banksy wes anderson helvetica. Synth sriracha salvia, selvage pour-over 3 wolf moon 8-bit cosby sweater street art swag. Artisan echo park shoreditch, semiotics iphone dreamcatcher farm-to-table pinterest flexitarian cred ennui irony bicycle rights. Narwhal whatever etsy retro, kogi yr salvia fixie pork belly master cleanse wolf ethical PBR VHS."
+text = "We started by creating a handwritten signature style logo.\n\n![](/uploads/clients/nato-caliph/nato-signature.jpg)"
 [[layers]]
-alt = "Screen shot of new Metric Lab website"
+head = "Photography"
+template = "fm_layer_content"
+text = "It was then time to get some bangin photos. I am a photographer as well, I just don't like to advertise my services. For other photo nerds out there, all photos were taken with the amazing Fuji X-T3 with the gorgeous 56mm f1.2 and 90mm f2 lenses."
+[[layers]]
+image = "/uploads/clients/nato-caliph/nato-13.jpg"
+template = "fm_layer_image"
+[[layers]]
+head = "CD"
+template = "fm_layer_content"
+text = "The next phase was to design and layout the album.\n\n![](/uploads/clients/nato-caliph/cover.jpg)\n\n![](/uploads/clients/nato-caliph/disc.jpg)\n\n![](/uploads/clients/nato-caliph/back-cover.jpg)"
+[[layers]]
+head = "Website"
+template = "fm_layer_content"
+text = "We used the photos and new logos and music to create a new website."
+[[layers]]
+alt = "Screen shot of new Nato Caliph website"
 image = "/uploads/clients/nato-caliph/nato-caliph-website.jpg"
 template = "fm_layer_browser"
-[[layers]]
-head = "Results"
-template = "fm_layer_content"
-text = "### \n\nWe all agreed that it was time for a complete makeover. Together, we came up with:\n\n* a new business name\n* a new logo\n* a new website\n\nWe all worked together and bounced ideas off of each other until we arrived at the results that we wanted. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu."
 [[layers]]
 image = "/uploads/clients/nato-caliph/nato-9.jpg"
 template = "fm_layer_image"
