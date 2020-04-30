@@ -1,13 +1,24 @@
 .contact
   &__layer
    background-color: $gold
+
   &__container
-    //
+    display: grid
+    align-items: center
+    justify-content: center
+
   &__text
+    margin: 0
 
     a
       color: $charcoal
 
+      &:hover
+        background-color: $charcoal
+        color: $gold
+        text-decoration: none
+        box-shadow:
+        box-shadow: 5px 0 0 0 $charcoal, -5px 0 0 0 $charcoal
 
 .footer
 

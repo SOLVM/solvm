@@ -1,4 +1,7 @@
-#baseurl = "https://solvm.com/"
+# baseurl = "https://solvm.com/"
+# Set base URL to "/" for developement
+# Use real URL when hosting with GitLab
+# Better yet, we can use ENV variables in Netlify to set this on the fly. :)
 baseurl = "/"
 languageCode = "en-us"
 summaryLength = 20
@@ -24,7 +27,7 @@ favicolor = "#FFDC2E"
 favicontext = "solvm"
 google_analytics = "UA-24190198-1"
 identity = "SOLVM"
-paginate = 20
+paginate = 100
 tagline = "Norwegian for Awesome"
 typekit = ""
 [sitemap]
