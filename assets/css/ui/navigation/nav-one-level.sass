@@ -14,7 +14,8 @@
 header
   background-color: $gold
   display: grid
-  grid-template-rows: 60px
+  grid-template-areas: "brandmark tagline nav"
+  grid-template-rows: 3rem
   grid-template-columns: max-content auto  max-content
 
   align-items: center
@@ -40,49 +41,57 @@ header
   // align-items: center
   // justify-content: space-between
 
-  +media('<lg')
-    grid-template-columns: 1fr
-    grid-template-rows: 60px 30px
+  +media('<850px')
+    grid-template-areas: "brandmark tagline" "nav nav"
 
-  +media('<md')
-    grid-template-rows: 60px 30px
+    grid-template-columns: 1fr auto
+    grid-template-rows: 3rem 3rem
+    padding: 0
+    text-align: center
+    justify-content: center
 
-  +media('<690px')
-    grid-template-rows: 1fr max-content
-    //
+  // +media('<md')
+  //   grid-template-rows: 60px 30px
 
-.identity
-  background-color: $gold
-  display: grid
-  grid-template-columns: max-content max-content max-content
-  align-items: center
-  justify-items: center
+  // +media('<690px')
+  //   grid-template-rows: 1fr max-content
 
-  justify-content: space-between
-  // padding: 0 1rem
+// .identity
+//   background-color: $gold
+//   display: grid
+//   grid-area: identity
+//   grid-template-columns: max-content max-content max-content
+//   align-items: center
+//   justify-items: center
 
-  +media('<lg')
-    // background-color: #e6e6e6
+//   justify-content: space-between
+//   // padding: 0 1rem
 
-  +media('<690px')
-    grid-gap: 0
+//   +media('<lg')
+//     // background-color: #e6e6e6
 
-  +media('<500px')
-    grid-template-columns: max-content max-content
-    // grid-template-columns: 1fr
-    // grid-template-rows: 60px 60px
+//   +media('<690px')
+//     grid-gap: 0
 
-  p
-    display: inline-block
-    // font-size: 2rem
-    margin-bottom: 0
-    // text-transform: uppercase
+//   +media('<500px')
+//     grid-template-columns: max-content max-content
+//     // grid-template-columns: 1fr
+//     // grid-template-rows: 60px 60px
+
+  // p
+  //   display: inline-block
+  //   // font-size: 2rem
+  //   margin-bottom: 0
+  //   // text-transform: uppercase
 
 
 .brandmark
   background-color: $gold
   color: $charcoal
+
   display: grid
+  grid-area: brandmark
+
   font-family: $detail
   letter-spacing: 5px
   font-size: 1.5rem
@@ -110,10 +119,11 @@ header
   // grid-template-rows: 60px
   // grid-template-columns: max-content
   // padding: .5rem 1rem
-  +media('<690px')
-    font-size: 1.5rem
-    padding: 0 .75rem
-    width: 100%
+  +media('<850px')
+    // font-size: 1.5rem
+    // padding: 0 .75rem
+    // width: 100%
+    padding-left: 1.5rem
 
   svg
     margin-right: .75rem
@@ -128,6 +138,8 @@ header
 
 
 p.tagline
+  grid-area: tagline
+
   color: $charcoal
   font-family: $detail
   //font-style: italic
@@ -136,8 +148,8 @@ p.tagline
 
   margin:  0
 
-  +media('<690px')
-    font-size: 1.25rem
+  +media('<850px')
+    padding-right: 1.5rem
 
   +media('<500px')
     display: none
@@ -145,10 +157,13 @@ p.tagline
 nav
   // padding: 0 1rem
   display: grid
-  grid-template-columns: repeat(5, max-content)
+  grid-area: nav
+
+  grid-template-columns: repeat(3, max-content)
 
   +media('<lg')
     text-align: center
+    grid-template-columns: repeat(3, 1fr)
 
   a
     color: $charcoal
@@ -165,6 +180,8 @@ nav
       svg
         fill: white
 
+    +media('<850px')
+      background-color: $butter
 // .ml
 //   font-style: normal
 //   font-weight: bold
