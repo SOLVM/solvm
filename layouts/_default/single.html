@@ -1,5 +1,12 @@
 {{ define "main" }}
 
+{{/*
+  - This is totally a hack to force RenderHooks to fire
+  - I have nothing written in the .Content area
+  - So their shouldn't be any output
+*/}}
+  {{ .Content }}
+
   <div class="workIntro__layer">
     <div class="workIntro__container">
       <hgroup class="workIntro__hgroup">

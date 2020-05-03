@@ -2,6 +2,12 @@
 
   &__layer
 
+    +media('<1080px')
+      padding: 0 6rem
+
+    +media('<850px')
+      padding: 0 1.5rem
+
   &__container
     max-width: 1200px
     padding: 3rem 0
@@ -14,6 +20,9 @@
 
     & + .work__content
       margin-bottom: 6rem
+
+    +media('<1024px')
+      grid-template-columns: 1fr
 
   &__sidehead
     font-size: 2rem

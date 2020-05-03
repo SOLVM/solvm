@@ -65,7 +65,16 @@ function rdm(elements) {
   // Function used for finding nearest multiple
   function newHeight(h, lh) {
     var result = Math.ceil(h / lh) * lh - lh;
+    // Pad the result with one unit of line height.
+    //    I'm doing this because I want to start using this on headings too.
+    //    To space large headings correctly, the line height usaully needs
+    //    to be reduced to 1. But that jacks up the vertical rhythm when
+    //    one heading in one line long, yet the other is multiple lines long.
+    //    I'm going to give this a try.
+    //    I might want to make a separate Resize function for this one day.
+    var padResult = result + lh;
     return result + "px";
+    // return padResult + "px";
   }
 
   // Lets debounce the resize event

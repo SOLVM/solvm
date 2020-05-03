@@ -71,8 +71,20 @@
     // line-height: 1.5/
     padding-bottom: 0
 
+    +media('<1024px')
+      font-size: 4rem
+
+    +media('<750px')
+      font-size: 3rem
+
+    +media('<400px')
+      font-size: 2.5rem
+
   &__logobox
     max-width: 100px
+
+    +media('<400px')
+      max-width: 50px
 
     .svg-logo
       display: grid

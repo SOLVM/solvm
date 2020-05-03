@@ -1,14 +1,11 @@
 // $breakpoints: (small: 400px, medium: 500px, large: 1024px)
 
 .container
-  padding-top: 60px
+  padding-top: 3rem
   position: relative
 
-  +media('<690px')
-    padding-top: 60px
-
-  +media('<md')
-    padding-top: 30px
+  +media('<850px')
+    padding-top: 6rem
 
 
 header
@@ -119,11 +116,16 @@ header
   // grid-template-rows: 60px
   // grid-template-columns: max-content
   // padding: .5rem 1rem
+
   +media('<850px')
     // font-size: 1.5rem
     // padding: 0 .75rem
     // width: 100%
     padding-left: 1.5rem
+
+  +media('<500px')
+    margin: 0 auto
+    padding: 0
 
   svg
     margin-right: .75rem
