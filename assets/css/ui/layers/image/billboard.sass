@@ -53,17 +53,17 @@
     // margin-bottom: 1.5rem
     padding: 0
 
-    +media('<lg')
-      font-size: 5rem
+    +media('<1200px')
+      font-size: 6rem
 
-    +media('<sm')
+    +media('<1024px')
+      font-size: 4rem
+
+    +media('<750px')
       font-size: 3rem
-      padding-bottom: 0
 
-    +media('<xs')
-      font-size: 2rem
-      margin-bottom: 0
-      padding-bottom: 1.5rem
+    +media('<400px')
+      font-size: 2.5rem
 
   &__subhead
     // color: $heading

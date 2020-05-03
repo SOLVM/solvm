@@ -9,8 +9,13 @@
     grid-template-columns: max-content max-content
     grid-gap: .5rem
 
+    +media('<550px')
+      grid-template-columns: max-content
+      grid-template-rows: 1fr 1fr
+
   &__text
     margin: 0
+    text-align: center
 
     // a
     //   color: $charcoal
