@@ -29,7 +29,7 @@ template = "fm_layer_browser"
 [[layers]]
 head = "Posters"
 template = "fm_layer_content"
-text = "We also needed to design posters for propmoting their upcoming show, The Goddess Zaouli.\n\n![](/uploads/clients/afriky-lolo/afriky-lolo-99.jpg)"
+text = "We also needed to design posters for propmoting their upcoming show, The Goddess Zaouli. Fortunately, I was able to photograph their performance from the year before, so we had many awesome photos to use for the posters.\n\n![](/uploads/clients/afriky-lolo/zaouli-1.jpg)\n\n![](/uploads/clients/afriky-lolo/zaouli-2.jpg)\n\n![](/uploads/clients/afriky-lolo/zaouli-3.jpg)\n\n![](/uploads/clients/afriky-lolo/zaouli-4.jpg)\n\n![](/uploads/clients/afriky-lolo/zaouli-5.jpg)"
 [[layers]]
 image = "/uploads/clients/afriky-lolo/diadie-1-full.jpg"
 template = "fm_layer_image"
