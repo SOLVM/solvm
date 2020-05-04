@@ -72,9 +72,9 @@ function rdm(elements) {
     //    one heading in one line long, yet the other is multiple lines long.
     //    I'm going to give this a try.
     //    I might want to make a separate Resize function for this one day.
-    var padResult = result + lh;
+    // var padResult = result + lh;
+    // // return padResult + "px";
     return result + "px";
-    // return padResult + "px";
   }
 
   // Lets debounce the resize event
