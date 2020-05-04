@@ -21,20 +21,16 @@ template = "fm_layer_image"
 [[layers]]
 head = "Website"
 template = "fm_layer_content"
-text = ""
+text = "We wanted to carry the energy and culture of Afriky Lolo into the site as well. We used a geometric backgound derived from West African bogolan patterns thoughout the site to achieve this. We also used as many images as we could to help visitors feel the culture of Afriky Lolo."
 [[layers]]
 alt = "Screen shot of new Afriky Lolo website"
 image = "/uploads/clients/afriky-lolo/afriky-lolo-website.jpg"
 template = "fm_layer_browser"
 [[layers]]
-head = "Nerdy"
+head = "Posters"
 template = "fm_layer_content"
-text = "We had a lot of nerdy goals to accomplish as well. MetricLab wanted their site to load fast and to be a secure as possible. To accomplis this, we traded in WordPress for Hugo. WordPress, although popular, is notoriously slow to load and happens to be the most [hacked content management system in the world](https://cyberforces.com/en/wordpress-most-hacked-cms). We instead opted for Hugo, which is insanely fast and secure. This eanbled us to focus on speed and security while delivering a platform that MetricLab could manage on their own.\n\n![](/uploads/clients/metriclab/performance.jpg)."
+text = "We also needed to design posters for propmoting their upcoming show, The Goddess Zaouli.\n\n![](/uploads/clients/afriky-lolo/afriky-lolo-99.jpg)"
 [[layers]]
-head = "Outtro"
-template = "fm_layer_content"
-text = "MetricLab was a blast to work with. The rebrand has been treating them well. They are no longer embarrassed to have anyone visit their website or to judge them by their identity alone. The rebrand has helped them clarify their services to new clients and they love handing out thier cool square business cards."
-[[layers]]
-image = "/uploads/clients/afriky-lolo/afriky-lolo-jump-logo.png"
+image = "/uploads/clients/afriky-lolo/diadie-1-full.jpg"
 template = "fm_layer_image"
 +++
