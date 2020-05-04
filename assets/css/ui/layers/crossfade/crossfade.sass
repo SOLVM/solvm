@@ -7,7 +7,7 @@
 
     display: grid
     grid-template-columns: 1fr
-    grid-template-rows: 100vh
+    grid-template-rows: calc(100vh - 3rem)
 
     align-items: center
     justify-content: center
@@ -19,8 +19,8 @@
     position: relative
     transform: translate3d(0,0,0)
 
-    // +media('<md')
-    //   grid-template-rows: 60vh
+    +media('<660px')
+      grid-template-rows: calc(100vh - 6rem)
 
 
   &__container
