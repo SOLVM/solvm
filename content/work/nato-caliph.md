@@ -14,7 +14,7 @@ title = "Nato Caliph"
 [[layers]]
 head = "Lyrics"
 template = "fm_layer_content"
-text = "The heading above is my favorite lyric from STL Emcee and activist Nato Caliph. This is what it means, if you think this work is hard—then you have no idea how hard it is to work to be the best. And making it in the music business is not for the faint of heart. And let's be real here, building your own career and running your own business is no small challenge.\n\n## The Build\n\nNato Caliph was releasing a new album and need a full refresh: new logo, photos and website. It was time to build."
+text = "The heading above is a lyric from STL emcee and activist Nato Caliph. Making it in the music business is not for the faint of heart, neither is building and running your business — no matter what it is — from the ground up.\n\n## The Build\n\nNato Caliph was releasing a new album and needed a full refresh: new logo, photos and website. It was time to build."
 [[layers]]
 template = "fm_layer_quote"
 text = "Ben FTW!"
@@ -44,4 +44,5 @@ template = "fm_layer_browser"
 [[layers]]
 image = "/uploads/clients/nato-caliph/nato-9.jpg"
 template = "fm_layer_image"
+
 +++
