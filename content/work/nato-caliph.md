@@ -21,7 +21,7 @@ text = "Ben FTW!"
 [[layers]]
 head = "Handwritten"
 template = "fm_layer_content"
-text = "We started by creating a handwritten signature style logo.\n\n![](/uploads/clients/nato-caliph/nato-signature.jpg)"
+text = "We started by creating a handwritten, signature-style logo.\n\n![](/uploads/clients/nato-caliph/nato-signature.jpg)"
 [[layers]]
 head = "Photography"
 template = "fm_layer_content"
