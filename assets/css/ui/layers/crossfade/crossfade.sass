@@ -80,7 +80,7 @@
     +media('<1600px')
       font-size: 6rem
 
-    +media('<1024px')
+    +media('<1080px')
       font-size: 4rem
 
     +media('<750px')
@@ -89,8 +89,54 @@
     +media('<400px')
       font-size: 2.5rem
 
-    // +media('<650px')
-    //   font-size: 2rem
+    +media('height<850px')
+      font-size: 4rem
+      // color: red
+
+    +media('height<600px')
+      font-size: 3rem
+      // color: pink
+
+    +media('height<450px')
+      font-size: 2rem
+      // color: pink
+
+    // +media('aspect16/9', 'height<750px')
+    //   font-size: 4rem
+    //   color: blue
+
+.svg-logo
+  display: grid
+  align-items: center
+  justify-content: center
+  // margin-top: 1.5rem
+  width: 100%
+
+  // +media('<sm')
+  //   margin-top: 1.5rem
+
+  svg
+    width: 100px
+
+    +media('height<600px')
+      width: 50px
+
+    // fill: white
+    // height: 20rem
+    //
+    // +media('<md')
+    //   height: 10rem
+    //
+    // +media('<sm')
+    //   height: 5rem
+    //   margin-top: 0
+
+  // width: 50%
+  // z-index: 1
+
+  // +media('<md')
+  //   width: 100%
+
 
 // Keyframes for crossfading 3 images
 @keyframes crossfade
@@ -108,31 +154,3 @@
 
   100%
     opacity: 0
-
-.svg-logo
-  display: grid
-  align-items: center
-  justify-content: center
-  margin-top: 1.5rem
-  width: 100%
-
-  +media('<sm')
-    margin-top: 1.5rem
-
-  svg
-    width: 100px
-    // fill: white
-    // height: 20rem
-    //
-    // +media('<md')
-    //   height: 10rem
-    //
-    // +media('<sm')
-    //   height: 5rem
-    //   margin-top: 0
-
-  // width: 50%
-  // z-index: 1
-
-  // +media('<md')
-  //   width: 100%
