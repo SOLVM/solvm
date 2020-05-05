@@ -26,7 +26,7 @@ template = "fm_layer_browser"
 [[layers]]
 head = "Results"
 template = "fm_layer_content"
-text = "Paul has been proud and confident in using this site to represent his work. He was able to use the new site to help secure a book deal. Though he apologized for being so detail oriented, Paul's specificity guided the project to a swift and accurate completion.\n\n## Also...\n\nThe site happens to be crazy fast!\n\n![](/uploads/clients/museum-gateway/museum-gateway-performance.png)"
+text = "Paul has been proud and confident in using this site to represent his work. He was able to use the new site to help secure a book deal. Though he apologized for being so detail oriented, Paul's specificity guided the project to a swift and accurate completion.\n\n## Also...\n\nThe site happens to perform incredibly fast!\n\n![](/uploads/clients/museum-gateway/museum-gateway-performance.png)"
 [[layers]]
 image = "/uploads/clients/paul-shank/still-050.jpg"
 template = "fm_layer_image"
