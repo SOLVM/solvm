@@ -20,7 +20,7 @@ alt = "Screenshot of new Paul Shank website"
 image = "/uploads/clients/paul-shank/paul-shank-homepage.jpg"
 template = "fm_layer_browser"
 [[layers]]
-alt = "Screen shot of new Paul Shank website"
+alt = "Screenshot of new Paul Shank website"
 image = "/uploads/clients/paul-shank/paul-shank-website.jpg"
 template = "fm_layer_browser"
 [[layers]]
