@@ -16,7 +16,7 @@ head = "Endgame"
 template = "fm_layer_content"
 text = "The Contemporary Art Museum St. Louis needed help completing their Museum Gateway project. This project aimed to inform students, parents and teachers that museums offered job opportunities in varying careers. Museum Gateway worked with Maplewood Richmond Heights School District and the American Alliance of Museums to create a video and a book to present these opportunities. They just needed the final part, the website."
 [[layers]]
-alt = "Screen shot of new Museum Gateway website"
+alt = "Screenshot of new Museum Gateway website"
 image = "/uploads/clients/museum-gateway/museum-gateway-website.jpg"
 template = "fm_layer_browser"
 [[layers]]
