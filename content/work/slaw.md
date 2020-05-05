@@ -20,7 +20,7 @@ alt = "Screenshot of new SLAW website"
 image = "/uploads/clients/slaw/slaw-website.jpg"
 template = "fm_layer_browser"
 [[layers]]
-alt = "Screen shot of new slaw website"
+alt = "Screenshot of new SLAW website"
 image = "/uploads/clients/slaw/slaw-nav.jpg"
 template = "fm_layer_browser"
 [[layers]]
