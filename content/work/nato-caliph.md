@@ -32,7 +32,7 @@ template = "fm_layer_image"
 [[layers]]
 head = "CD"
 template = "fm_layer_content"
-text = "The next phase was to design and layout the album.\n\n![](/uploads/clients/nato-caliph/cover.jpg)\n\n![](/uploads/clients/nato-caliph/disc.jpg)\n\n![](/uploads/clients/nato-caliph/back-cover.jpg)"
+text = "The next phase was to design and lay out the album cover.\n\n![](/uploads/clients/nato-caliph/cover.jpg)\n\n![](/uploads/clients/nato-caliph/disc.jpg)\n\n![](/uploads/clients/nato-caliph/back-cover.jpg)"
 [[layers]]
 head = "Website"
 template = "fm_layer_content"
