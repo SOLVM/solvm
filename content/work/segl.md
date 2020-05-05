@@ -5,7 +5,7 @@ client_location = "D.C."
 client_logo = "/uploads/clients/logos/white/segl-rectangle-white.svg"
 client_type = "Semester School"
 client_website = "https://schoolforethics.org/"
-date = 2020-01-17T05:28:00Z
+date = "2020-01-17T05:28:00.000+00:00"
 layout = "work/single"
 seo_page_description = "The School for Ethics and Global Leadership and SOLVM"
 seo_page_title = ""
@@ -21,7 +21,7 @@ template = "fm_layer_image"
 [[layers]]
 head = "Shapes"
 template = "fm_layer_content"
-text = "We made subtle changes to the new logo to fix it up, yet still keep it respected and familiar for SEGL's community. We ditched the lowercase letters as that was more popular in the early 2000s. We also changed the font from Garamond to Museo Slab. We wanted to keep the traditional look of serif letters, yet use a more modern serif. We got rid of the Kodak like side cuts that pointed to the map of the world. Instead, we set the logo to several geometric shapes that made it timeless and stable. Also, logo design today requires a mark that can work across a rectangular, square and circular space. Social media accounts require square or circular profile images, while websites and bumper stickers like rectangular dimensions."
+text = "We made subtle changes to the new logo to fix it up but made sure it looked familiar to SEGL's community. We ditched the lowercase letters as that was more popular in the early 2000s. We also changed the font from Garamond to Museo Slab. We wanted to keep the traditional look of serif letters yet use a more modern serif. We got rid of the Kodak like side cuts that pointed to the map of the world. Instead, we set the logo to several geometric shapes that made it timeless and stable. Also, logo design today requires a mark that can work across a rectangular, square and circular space. Social media accounts require square or circular profile images, while websites and bumper stickers like rectangular dimensions."
 [[layers]]
 template = "fm_layer_quote"
 text = "Change Yourself Change the World"
