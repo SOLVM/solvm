@@ -24,9 +24,9 @@ alt = "Screenshot of new SLAW website"
 image = "/uploads/clients/slaw/slaw-nav.jpg"
 template = "fm_layer_browser"
 [[layers]]
-head = "Fixup"
+head = "The Fix"
 template = "fm_layer_content"
-text = "As you can see, we killed the columns and used layers instead. Using layers enable the viewer to focus on one thing at a time. This helps the viewer interact with your site at a comfortable pace without competing content.\n\nWe put the entire navigation under a menu button at the top of the screen. This navigation disappears when you scroll downwards, but it instanly appears once you start to scroll back up. This way, the visitor never needs to scroll all the way back to the top of the site to navigate.\n\n## Google Analytics\n\nWe used Google Analytics to tell which pages in the website recieved the most traffic. We found that Apply page and the About page were the two most popular pages in the site by far. As a result, we designed the homepage to allow teens to apply to the program, and we included an info section about SLAW for those looking for quick info about the program. Google analytics is a great tool for making informend decisions when redesigning a website."
+text = "As you can see, we killed the columns and used layers instead. Using layers allows viewers to focus on one thing at a time and helps them interact with your site at a comfortable pace without competing content.\n\nWe put the entire navigation under a menu button at the top of the screen. This navigation disappears when you scroll down, but it instantly appears once you start to scroll back up, thereby adding convenience.\n\n## Google Analytics\n\nWe used Google Analytics to tell us which pages of the old website received the most traffic. After finding that the \"Apply\" and \"About\" pages were most popular, we designed the homepage to allow teens to apply to the program, and we included a section about SLAW that provided high-level info about the program. With the help of Google Analytics, we were able to make informed decisions that guided the website redesign."
 [[layers]]
 image = "/uploads/clients/slaw/slaw-bldg.jpg"
 template = "fm_layer_image"
