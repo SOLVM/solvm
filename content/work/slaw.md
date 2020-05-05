@@ -16,7 +16,7 @@ head = "V3"
 template = "fm_layer_content"
 text = "St. Louis Artworks (SLAW) is a program that offers job training to underserved STL teens by employing them as apprentices to professional artists. SLAW wanted to completely redesign their website, and this would be its third iteration.\n\n## Old Website\n\n![](/uploads/clients/slaw/slaw-old.jpg)\n\nThe old website had all the issues of websites made in the early 2000s. First, it had the three-column layout, which meant the main, center column of content is sandwiched between a left and right column. The idea behind this layout is to present as much information as possible. However, it makes for a visually busy look that competes for visitors' attention. Furthermore, it can cause some to ignore the content on the left and right columns. We wanted to do away with the three-column format.\n\nThe second issue is that the navigation is broken into three areas — top, main, and left. Again, competing elements. We wanted the redesign to only have one spot for navigation."
 [[layers]]
-alt = "Screen shot of new slaw website"
+alt = "Screenshot of new SLAW website"
 image = "/uploads/clients/slaw/slaw-website.jpg"
 template = "fm_layer_browser"
 [[layers]]
