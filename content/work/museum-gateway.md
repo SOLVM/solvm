@@ -22,7 +22,7 @@ template = "fm_layer_browser"
 [[layers]]
 head = "Kind words"
 template = "fm_layer_content"
-text = "Thank you for patience, short-term/fast-track work, and many/many voices. You have been really impressive in the work, design, and execution of the project. Overall, really appreciated!\n\n## Quickness\n\nThe site happens to be super fast BTW!\n\n![](/uploads/clients/museum-gateway/museum-gateway-performance.png)"
+text = "Thank you for patience, short-term/fast-track work, and many/many voices. You have been really impressive in the work, design, and execution of the project. Overall, really appreciated!\n\n## Quickness\n\nThe new site happens to be super fast, by the way!\n\n![](/uploads/clients/museum-gateway/museum-gateway-performance.png)"
 [[layers]]
 image = "/uploads/clients/museum-gateway/teachers.jpg"
 template = "fm_layer_image"
