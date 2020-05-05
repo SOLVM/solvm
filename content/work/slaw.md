@@ -14,7 +14,7 @@ title = "St. Louis Artworks"
 [[layers]]
 head = "V3"
 template = "fm_layer_content"
-text = "St. Louis Artworks (SLAW) is a super cool program that offers job training to underserved STL teen by employing them as apprentices to professional artists. At the time, SLAW had an old stale website and they wanted a full redesign. This would be their third version of their webiste.\n\n## Old Webiste\n\n![](/uploads/clients/slaw/slaw-old.jpg)\n\nThe old website had all the classic popular issues of websites made in the early 2000s. First, it had that old school 3-column layout which is when a main center column of content is sandwiched between a left and right column. The idea of this layout was to show as much as possible to the viewer. However, these layoust are visual busy and it forced the view to ignore the content on the left and right, thus conditioning the view to always ignore the side bars. We didn't want to keep the 3-column look nor it's issues.\n\nThe second issue is the navigation is broken into 3 areas. Their is a top most navigation, a main navigation and a left column navigation. Again, this causes confusion and blindness to any navigation that isn't the main navigation. We wanted the redesign to only have one spot for navigation."
+text = "St. Louis Artworks (SLAW) is a program that offers job training to underserved STL teens by employing them as apprentices to professional artists. SLAW wanted to completely redesign their website, and this would be its third iteration.\n\n## Old Website\n\n![](/uploads/clients/slaw/slaw-old.jpg)\n\nThe old website had all the issues of websites made in the early 2000s. First, it had the three-column layout, which meant the main, center column of content is sandwiched between a left and right column. The idea behind this layout is to present as much information as possible. However, it makes for a visually busy look that competes for visitors' attention. Furthermore, it can cause some to ignore the content on the left and right columns. We wanted to do away with the three-column format.\n\nThe second issue is that the navigation is broken into three areas — top, main, and left. Again, competing elements. We wanted the redesign to only have one spot for navigation."
 [[layers]]
 alt = "Screen shot of new slaw website"
 image = "/uploads/clients/slaw/slaw-website.jpg"
@@ -30,4 +30,5 @@ text = "As you can see, we killed the columns and used layers instead. Using lay
 [[layers]]
 image = "/uploads/clients/slaw/slaw-bldg.jpg"
 template = "fm_layer_image"
+
 +++
