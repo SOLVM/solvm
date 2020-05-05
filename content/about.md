@@ -16,7 +16,7 @@ weight = 1
 [[layers]]
 head = "OG"
 template = "fm_layer_content"
-text = "SOLVM is a one-man-show website and logo redesign business run by Benjamin Gandhi-Shepard. Ben got his brake in 2006 when he redesigned and redeveloped anheuser-busch.com by himself. He has seen many practices and styles come and go. His many years of experience make him a fast, effective and reliable redesigner."
+text = "SOLVM is a one-man show for website and logo redesign. It's run by Benjamin Gandhi-Shepard, who got his break in 2006 when he redesigned and redeveloped anheuser-busch.com by himself. Ben has seen many web practices and styles come and go in the past 15 years. His experience makes him a fast, effective and reliable redesigner."
 [[layers]]
 head = "3 Forces"
 template = "fm_layer_content"
@@ -31,5 +31,6 @@ text = "WOW!\n\nIf you read down this far, then I commend you. In closing, I'll 
 [[layers]]
 image = "/uploads/close-up-2.jpg"
 template = "fm_layer_image"
+
 +++
 ```
