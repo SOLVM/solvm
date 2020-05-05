@@ -38,7 +38,7 @@ head = "Website"
 template = "fm_layer_content"
 text = "We used the photos, new logos and music to create a new website."
 [[layers]]
-alt = "Screen shot of new Nato Caliph website"
+alt = "Screenshot of new Nato Caliph website"
 image = "/uploads/clients/nato-caliph/nato-caliph-website.jpg"
 template = "fm_layer_browser"
 [[layers]]
