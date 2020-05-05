@@ -16,7 +16,7 @@ head = "Vision"
 template = "fm_layer_content"
 text = "Artist Paul Shank had a specific vision for a website that would display his life's work. He had strong convictions about its design and stated he would be very detail-oriented. These clear-cut expectations make for a great client.\n\n## Paul's sketches.\n\n![](/uploads/clients/paul-shank/sketch.jpg)"
 [[layers]]
-alt = "Screen shot of new Paul Shank website"
+alt = "Screenshot of new Paul Shank website"
 image = "/uploads/clients/paul-shank/paul-shank-homepage.jpg"
 template = "fm_layer_browser"
 [[layers]]
