@@ -28,7 +28,7 @@ text = "Change Yourself Change the World"
 [[layers]]
 head = "Website"
 template = "fm_layer_content"
-text = "Although their current website had been serving them well, it was time for a redesign as well. SEGL wanted a fresh look and the ability to better manage the content in the site, especially the home page. We designed the site to function as a stack of movable layers. Each layer serves a single purpose for clarity, and can be updated and repositioned anywhere on the homepage.\n\nWe also converted their website from WordPress to Hugo and Forestry. We wanted to take advantage of static site technology for speed and security. We also wanted a content management system with less bloat. Just by moving to this new stack we were able to delete 20GB of cruft! That's insane, and it will also help to keep their hosting bill low."
+text = "Although their original website had been serving them fine, it was time for a redesign. SEGL wanted to both freshen the site and have the ability to better manage the content in the site, especially the home page. We redesigned the site to function as a stack of movable layers. Each layer serves a single purpose for clarity and can be updated and repositioned anywhere on the homepage.\n\nWe also converted the website from WordPress to Hugo and Forestry. We wanted to take advantage of static site technology for speed and security. Additionally, we wanted a content management system with less bloat. Just by moving to the new platforms, we will be able to delete 20GB of cruft. And the bonus? It will  help keep their hosting costs low."
 [[layers]]
 alt = "Screen shot of new Metric Lab website"
 image = "/uploads/clients/segl/segl-website.jpg"
