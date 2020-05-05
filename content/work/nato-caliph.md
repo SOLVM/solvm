@@ -25,7 +25,7 @@ text = "We started by creating a handwritten, signature-style logo.\n\n![](/uplo
 [[layers]]
 head = "Photography"
 template = "fm_layer_content"
-text = "It was then time to get some bangin photos. I am a photographer as well, I just don't like to advertise my services. For other photo nerds out there, all photos were taken with the amazing Fuji X-T3 with the gorgeous 56mm f1.2 and 90mm f2 lenses."
+text = "It was then time for photography. All images were captured by me using the amazing Fuji X-T3 and gorgeous 56mm f1.2 and 90mm f2 lenses."
 [[layers]]
 image = "/uploads/clients/nato-caliph/nato-13.jpg"
 template = "fm_layer_image"
