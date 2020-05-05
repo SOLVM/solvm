@@ -36,7 +36,7 @@ text = "The next phase was to design and lay out the album cover.\n\n![](/upload
 [[layers]]
 head = "Website"
 template = "fm_layer_content"
-text = "We used the photos and new logos and music to create a new website."
+text = "We used the photos, new logos and music to create a new website."
 [[layers]]
 alt = "Screen shot of new Nato Caliph website"
 image = "/uploads/clients/nato-caliph/nato-caliph-website.jpg"
