@@ -5,7 +5,7 @@ client_location = "D.C."
 client_logo = "/uploads/clients/logos/white/segl-rectangle-white.svg"
 client_type = "Semester School"
 client_website = "https://schoolforethics.org/"
-date = "2020-01-16T23:28:00-06:00"
+date = 2020-01-17T05:28:00Z
 layout = "work/single"
 seo_page_description = "The School for Ethics and Global Leadership and SOLVM"
 seo_page_title = ""
@@ -14,7 +14,7 @@ title = "The School for Ethics and Global Leadership"
 [[layers]]
 head = "Change"
 template = "fm_layer_content"
-text = "The School for Ethics and Global Leadership (SEGL) has been a great client throughout the years. But more importantly, they have been doing some serious GOOD in the world. After the 911 bombing, SEGL Founder, Noah Bopp decided that he could help make a change in the world. SEGL is a semester school for high school students that want to learn how to become ethical leaders that create positive change in the world. SEGL is awesome and it’s been an honor to work with them.\n\nBack in 2008, SEGL came to me for help with building a lasting idntity and website for their school. So we did that. Now, they were ready for their next big change. They wanted a new fresh look to thier website and they wanted to touch up the logo if possible. Here’s the thing about logos, when they are bad, and no one knows you, then you just need to tear it down and start fresh. However, when poeple have lived with and embraced your identity, it’s best to make little steps forward. [Remeber how bad the Gap’s massive rebranding went](https://medium.com/@gfraikin/gap-worse-rebrand-ever-even-6-years-later-4a883d0cc736u)? So here’s what we did.\n\n## Current Logo\n\n![](/uploads/clients/segl/segl-v2-brown.png)\n\n## New Logo"
+text = "The School for Ethics and Global Leadership (SEGL) is a semester school for high school students who want to learn how to become ethical leaders who create positive change in the world.\n\nIn 2008, SEGL sought to build a lasting identity and website for the school. The staff wanted to refresh their site and were kicking around the idea of a new logo. \n\nLogo redesign shouldn't be taken lightly — after all, it's your business's identity. For a lesser-known organization with a bad logo, it's best to start anew. But in cases where people recognize and embrace your logo, it’s smarter to make little steps forward. Remember how bad the Gap’s massive rebranding went?(https://medium.com/@gfraikin/gap-worse-rebrand-ever-even-6-years-later-4a883d0cc736u)? So here’s what we did.\n\n## Current Logo\n\n![](/uploads/clients/segl/segl-v2-brown.png)\n\n## New Logo"
 [[layers]]
 image = "/uploads/clients/segl/segl-trio-green.png"
 template = "fm_layer_image"
@@ -40,4 +40,5 @@ text = "This project is still a work in progress. COVID-19 has slowed the comple
 [[layers]]
 image = "/uploads/clients/segl/segl-bg.png"
 template = "fm_layer_image"
+
 +++
