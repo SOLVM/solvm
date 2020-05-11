@@ -12,16 +12,16 @@ seo_page_title = ""
 subtitle = ""
 title = "Afriky Lolo"
 [[layers]]
-head = "Star"
+head = "Everything"
 template = "fm_layer_content"
-text = "Afriky Lolo means African Star, in Diadie (pronounced Jah-Jay) Bathily's native tongue, Bambara. Diadie came to the United States to teach West African Dance without knowing a lick of English. Now he runs his dance company Afriky Lolo and teaches and performs all over the world.\n\nAfriky Lolo needed help with graphic design, logo design, web design and photography. Pretty much every thing. The goal was to create an identity that was unique, representative of West African culture and professional. We wanted to strongly avoid popular but cheap identitry work of all things African that used distressed letters and faux-tribal looking treatments. Afriky Lolo wanted to be authentic, professional and classy.\n\n## The logo\n\nThe first goal was to create a logo. Diadie wanted a logo derived from one of his characters in the performance THe Mask."
+text = "Afriky Lolo needed help with graphic design, logo design, web design and photography-pretty much everything. The goal was to create an identity that was unique, representative of West African culture and professional. Afriky Lolo wanted to be authentic, professional and classy. We wanted to completely avoid that fake tribal lettering look that you typically see in the states.\n\n## The logo\n\nThe first goal was to create a logo. Afriky Lolo wanted a logo derived from one of their central characters in the performance, The Mask. This enabled us to create a powerful mark that grabs attent and hints at the energy of West African Dance."
 [[layers]]
 image = "/uploads/clients/afriky-lolo/afriky-lolo-jump-logo.png"
 template = "fm_layer_image"
 [[layers]]
 head = "Website"
 template = "fm_layer_content"
-text = "We wanted to carry the energy and culture of Afriky Lolo into the site as well. We used a geometric backgound derived from West African bogolan patterns thoughout the site to achieve this. We also used as many images as we could to help visitors feel the culture of Afriky Lolo."
+text = "We wanted to carry the energy and culture of Afriky Lolo into the site as well. We used a geometric backgound derived from West African textile decoration called, Bogolan to literaly wrap the site in their culture. We also used as many images as we could to help visitors feel the culture of Afriky Lolo."
 [[layers]]
 alt = "Screen shot of new Afriky Lolo website"
 image = "/uploads/clients/afriky-lolo/afriky-lolo-website.jpg"
@@ -29,8 +29,12 @@ template = "fm_layer_browser"
 [[layers]]
 head = "Posters"
 template = "fm_layer_content"
-text = "We also needed to design posters for propmoting their upcoming show, The Goddess Zaouli. Fortunately, I was able to photograph their performance from the year before, so we had many awesome photos to use for the posters.\n\n![](/uploads/clients/afriky-lolo/zaouli-1.jpg)\n\n![](/uploads/clients/afriky-lolo/zaouli-2.jpg)\n\n![](/uploads/clients/afriky-lolo/zaouli-3.jpg)\n\n![](/uploads/clients/afriky-lolo/zaouli-4.jpg)\n\n![](/uploads/clients/afriky-lolo/zaouli-5.jpg)"
+text = "We also needed to design posters to propmote their upcoming show, The Goddess Zaouli. Fortunately, SOLVM was able to photograph their performance from the year before, so we had many powerful photos to use throughout the posters.\n\n![](/uploads/clients/afriky-lolo/zaouli-1.jpg)\n\n![](/uploads/clients/afriky-lolo/zaouli-2.jpg)\n\n![](/uploads/clients/afriky-lolo/zaouli-3.jpg)\n\n![](/uploads/clients/afriky-lolo/zaouli-4.jpg)\n\n![](/uploads/clients/afriky-lolo/zaouli-5.jpg)"
 [[layers]]
 image = "/uploads/clients/afriky-lolo/diadie-1-full.jpg"
 template = "fm_layer_image"
+[[layers]]
+head = "Results"
+template = "fm_layer_content"
+text = "It's rare that complete redesign projects happen, but when they do, there exists an opportunity to create excitement and value throughout all parts of the identity. Afriky Lolo has use these new resources to sell out their shows, merch and book performances around the world."
 +++
