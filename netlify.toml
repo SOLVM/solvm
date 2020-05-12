@@ -9,7 +9,7 @@ command = "hugo --gc --minify"
 
 # Production context ENVIRONMENT variable settings
 [context.production.environment]
-HUGO_VERSION = "0.69.2"
+HUGO_VERSION = "0.70.0"
 HUGO_ENV = "production"
 HUGO_ENABLEGITINFO = "true"
 
@@ -18,7 +18,7 @@ command = "hugo --gc --minify --enableGitInfo"
 
 # Split1 Context ENVIRONMENT variable settings
 # [context.split1.environment]
-# HUGO_VERSION = "0.69.2"
+# HUGO_VERSION = "0.70.0"
 # HUGO_ENV = "production"
 
 # Deploy Preview context: all deploys generated from a pull/merge request will inherit these settings.
@@ -27,7 +27,7 @@ command = "hugo --gc --minify --buildFuture -b $DEPLOY_PRIME_URL"
 
 # Deploy Preview ENVIRONMENT variable settings
 [context.deploy-preview.environment]
-HUGO_VERSION = "0.69.2"
+HUGO_VERSION = "0.70.0"
 
 # Branch Deploy context: all deploys that are not from a pull/merge request or from the Production branch will inherit these settings.
 [context.branch-deploy]
@@ -35,17 +35,12 @@ command = "hugo --gc --minify -b $DEPLOY_PRIME_URL"
 
 # Branch Deploy ENVIRONMENT variable settings
 [context.branch-deploy.environment]
-HUGO_VERSION = "0.69.2"
+HUGO_VERSION = "0.70.0"
 
 # Next ENVIRONMENT variable settings
 # I might be able to delete this
 # [context.next.environment]
 # HUGO_ENABLEGITINFO = "true"
-
-# Redirects
-[[redirects]]
-  from = "/work/dare-to-be-square"
-  to = "/work/metric-lab"
 
 [[headers]]
   # Define which paths this specific [[headers]] block will cover.
@@ -77,3 +72,159 @@ HUGO_VERSION = "0.69.2"
     X-XSS-Protection = "1; mode=block"
     X-Content-Type-Options = "nosniff"
 
+# REDIRECTS
+# Pages
+[[redirects]]
+  from = "/advice/"
+  to = "/"
+[[redirects]]
+  from = "/services/"
+  to = "/"
+[[redirects]]
+  from = "/contact/"
+  to = "/"
+
+# Work
+[[redirects]]
+  from = "/work/new-dimensions/"
+  to = "/work/"
+[[redirects]]
+  from = "/work/style-matters/"
+  to = "/work/"
+[[redirects]]
+  from = "/work/start-a-better-life-today-dr-dorsey-dysart/"
+  to = "/work/"
+[[redirects]]
+  from = "/work/metric-lab-makeover/"
+  to = "/work"
+[[redirects]]
+  from = "/work/for-a-cause/"
+  to = "/work/"
+[[redirects]]
+  from = "/work/lets-make-a-deal/"
+  to = "/work/"
+[[redirects]]
+  from = "/work/the-good-the-bad-and-the-ugly/"
+  to = "/work/"
+[[redirects]]
+  from = "/work/djs/"
+  to = "/work/"
+[[redirects]]
+  from = "/work/unique-and-simple/"
+  to = "/work/"
+[[redirects]]
+  from = "/work/a-star-is-born/"
+  to = "/work/"
+[[redirects]]
+  from = "/work/hey-mister-dj/"
+  to = "/work/"
+[[redirects]]
+  from = "/work/at-the-crossorads-on-deadline/"
+  to = "/work/"
+[[redirects]]
+  from = "/work/our-favorite-posters/"
+ to = "/work/"
+[[redirects]]
+  from = "/work/debora-hayden-is-awesome/"
+  to = "/work/"
+[[redirects]]
+  from = "/work/power-to-the-people/"
+  to = "/work/"
+[[redirects]]
+  from = "/work/repurposing-success/"
+  to = "/work/"
+[[redirects]]
+  from = "/work/read-this/"
+  to = "/work/"
+[[redirects]]
+  from = "/work/dare-to-be-square/"
+  to = "/work/"
+[[redirects]]
+  from = "/work/if-logos-could-talk-what-would-yours-say/"
+  to = "/work/"
+[[redirects]]
+  from = "/work/sk8stl/"
+  to = "/work/"
+[[redirects]]
+  from = "/work/capturing-the-spirit/"
+  to = "/work/"
+[[redirects]]
+  from = "/work/umission-business-cards/"
+  to = "/work/"
+[[redirects]]
+  from = "/work/new-logo-for-plugfile/"
+  to = "/work/"
+[[redirects]]
+  from = "/work/kid-droid-logo/"
+  to = "/work/"
+[[redirects]]
+  from = "/work/redefining-and-refining-a-logo/"
+  to = "/work/"
+[[redirects]]
+  from = "/work/the-frozen-food-section/"
+  to = "/work/"
+[[redirects]]
+  from = "/work/collabo-with-kid-droid/"
+  to = "/"
+[[redirects]]
+  from = "/work/making-the-grade/"
+  to = "/work/"
+[[redirects]]
+  from = "/work/academy-air/"
+  to = "/work/"
+[[redirects]]
+  from = "/work/easy-does-it-the-gramophone/"
+  to = "/work/"
+[[redirects]]
+  from = "/work/timbuk-identity/"
+  to = "/work/"
+[[redirects]]
+  from = "/work/f5-records-refresh/"
+  to = "/work/"
+[[redirects]]
+  from = "/work/find-stuff-from-here-to-there/"
+  to = "/work/"
+[[redirects]]
+  from = "/work/umission-has-a-new-face/"
+  to = "/work/"
+[[redirects]]
+  from = "/work/f5-records-logo/"
+  to = "/work/"
+
+# Blog
+[[redirects]]
+  from = "/10-amazing-tips-for-therapists-to-help-more-people-and-do-better-business-online/"
+  to = "/"
+[[redirects]]
+  from = "/why-business-owners-distrust-web-professionals/"
+  to = "/"
+[[redirects]]
+  from = "/learn-how-to-do-better-business-online-its-so-easy/"
+  to = "/"
+[[redirects]]
+  from = "/why-is-web-strategy-all-the-rage/"
+  to = "/"
+[[redirects]]
+  from = "/is-your-website-dressed-for-success/"
+  to = "/"
+[[redirects]]
+  from = "/how-can-i-increase-my-rankings-in-google/"
+  to = "/"
+[[redirects]]
+  from = "/when-do-i-need-a-new-website/"
+  to = "/"
+[[redirects]]
+  from = "/how-can-i-increase-traffic-to-my-website/"
+  to = "/"
+[[redirects]]
+  from = "/do-i-really-even-need-a-website/"
+  to = "/"
+[[redirects]]
+  from = "/how-much-does-a-great-website-cost/
+  to = "/"
+[[redirects]]
+  from = "/top-5-reasons-why-everybody-hates-your-website/"
+  to = "/"
+[[redirects]]
+  from = "/how-do-you-tell-good-design-from-bad-design/"
+  to = "/"
