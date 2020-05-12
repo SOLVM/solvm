@@ -1,7 +1,4 @@
-Sitemap: https://www.solvm.com/sitemap.xml
-
-User-agent: Googlebot
-Allow:
-
 User-agent: *
-Allow:
+Allow: /
+
+Sitemap: https://www.solvm.com/sitemap.xml
