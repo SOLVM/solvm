@@ -64,7 +64,7 @@ HUGO_VERSION = "0.70.0"
     # The settings below are very restrictive and might produce undesiderable results
     Feature-Policy = "geolocation 'none'; midi 'none'; sync-xhr 'none'; microphone 'none'; camera 'none'; magnetometer 'none'; gyroscope 'none'; speaker 'self'; fullscreen 'self'; payment 'none';"
 
-    Referrer-Policy = "strict-origin-when-cross-origin;"
+    # Referrer-Policy = "strict-origin-when-cross-origin;"
     # Server = "yomama"
     Strict-Transport-Security = "max-age=63072000; includeSubDomains; preload"
 
