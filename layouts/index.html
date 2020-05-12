@@ -36,9 +36,12 @@
 
       {{ range .Params.reasons }}
       <div class="zipper__item">
-        <div class="zipper__image resize">
+        <p>{{.image}}</p>
+        <picture class="zipper__image resize">
+          <source type="image/webp" srcset="{{ printf "%s.webp" .image }}" alt="{{ .alt }}" loading="lazy">
+          <source type="image/jpeg" srcset="{{ .image }}" alt="{{ .alt }}" loading="lazy">
           <img src="{{ .image }}" alt="{{ .alt }}" loading="lazy" />
-        </div>
+        </picture>
         <div class="zipper__text">
           <h2 class="zipper__heading">{{ .title }}</h2>
           <p class="zipper__teaser">{{ .text }}</p>
@@ -116,9 +119,11 @@
 
       {{ range .Params.message }}
       <div class="zipper__item">
-        <div class="zipper__image resize">
-          <img src="{{ .image }}" alt="{{ .alt }}" loading="lazy"/>
-        </div>
+        <picture class="zipper__image resize">
+          <source type="image/webp" srcset="{{ printf "%s.webp" .image }}" alt="{{ .alt }}" loading="lazy">
+          <source type="image/jpeg" srcset="{{ .image }}" alt="{{ .alt }}" loading="lazy">
+          <img src="{{ .image }}" alt="{{ .alt }}" loading="lazy" />
+        </picture>
         <div class="zipper__text">
           <h2 class="zipper__heading">{{ .title }}</h2>
           <p class="zipper__teaser">{{ .text }}</p>

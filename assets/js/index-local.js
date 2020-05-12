@@ -29,44 +29,8 @@ var headroom = new Headroom(headr, {
 // initialise
 headroom.init();
 
-// https://www.jamestease.co.uk/blether/add-remove-or-toggle-classes-using-vanilla-javascript
 
 var webpage = webpage || {};
-
-// same functions as above
-webpage.nav = (function() {
-  function mobileMenu() {
-    var burgerBtn = document.querySelector(".hamburger");
-    var burgerIcon = burgerBtn.getElementsByTagName("div")[0];
-    var closeIcon = burgerBtn.getElementsByTagName("div")[1];
-    var manageScroll = document.getElementById("manageScroll");
-
-    // querySelector returns the first element it finds with the correct selector
-    // addEventListener is roughly analogous to $.on()
-    burgerBtn.addEventListener("click", function(e) {
-      e.preventDefault();
-
-      // querySelectorAll returns all the nodes it finds with the selector
-      // however, you can't iterate over querySelectorAll results (!!)
-      // so this is a workaround - call Array.map and pass in the
-      // list of nodes along with a function
-      // technically querySelectorAll returns a NodeList not an Array so
-      /// doesn't have standard array functions
-      [].map.call(document.querySelectorAll(".nav__layer"), function(el) {
-        // classList is the key here - contains functions to manipulate
-        // classes on an element
-        el.classList.toggle("nav--active");
-      });
-      burgerIcon.classList.toggle("hidemenu");
-      closeIcon.classList.toggle("hidemenu");
-      manageScroll.classList.toggle("manageScroll");
-    });
-  }
-
-  return {
-    mobileMenu: mobileMenu
-  };
-})();
 
 webpage.helpers = (function() {
   function jsCheck() {
@@ -84,4 +48,3 @@ webpage.helpers = (function() {
 // start everything
 // this isn't in a doc.ready - loaded at the bottom of the page so the DOM is already ready
 webpage.helpers.jsCheck();
-webpage.nav.mobileMenu();
