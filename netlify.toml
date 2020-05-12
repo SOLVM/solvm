@@ -220,7 +220,7 @@ HUGO_VERSION = "0.70.0"
   from = "/do-i-really-even-need-a-website/"
   to = "/"
 [[redirects]]
-  from = "/how-much-does-a-great-website-cost/
+  from = "/how-much-does-a-great-website-cost/"
   to = "/"
 [[redirects]]
   from = "/top-5-reasons-why-everybody-hates-your-website/"
