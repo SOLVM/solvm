@@ -21,7 +21,7 @@
       max-width: 80vw
 
     +media('<660px')
-      max-width: 98vw
+      max-width: 100vw
 
   &__item
     background-color: transparent
@@ -52,10 +52,12 @@
         padding: 1.5rem
 
     +media('<660px')
-      grid-template-rows: 12rem 1fr
+      grid-template-rows: auto auto
+      padding: 1.5rem .5rem
 
       &:nth-of-type(even)
-        grid-template-rows: 12rem 1fr
+        grid-template-rows: auto auto
+        padding: 1.5rem .5rem
 
   &__image
     grid-area: image
@@ -77,8 +79,8 @@
     grid-area: text
     align-self: center
 
-    +media('<md')
-      padding-top: 1.5rem
+    +media('<460px')
+      padding-top: 0
 
     p:last-of-type
       margin-bottom: 0
