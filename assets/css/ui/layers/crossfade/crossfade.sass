@@ -71,24 +71,6 @@
     line-height: 1
     text-shadow: 3px 3px 3px hsla(0,0,0,0.2)
 
-    +media('>2600px')
-      font-size: 12rem
-
-    +media('<2600px')
-      font-size: 8rem
-
-    +media('<1600px')
-      font-size: 6rem
-
-    +media('<1080px')
-      font-size: 4rem
-
-    +media('<750px')
-      font-size: 3rem
-
-    +media('<400px')
-      font-size: 2.5rem
-
     +media('height<850px')
       font-size: 4rem
       // color: red
@@ -100,6 +82,27 @@
     +media('height<450px')
       font-size: 2rem
       // color: pink
+
+    +media('>2600px')
+      font-size: 12rem
+
+    +media('<2600px')
+      font-size: 8rem
+
+    +media('<1600px')
+      font-size: 6rem
+
+    +media('<1400px')
+      font-size: 5rem
+
+    +media('<1080px')
+      font-size: 4rem
+
+    +media('<750px')
+      font-size: 3rem
+
+    +media('<400px')
+      font-size: 2.5rem
 
     // +media('aspect16/9', 'height<750px')
     //   font-size: 4rem
@@ -121,6 +124,8 @@
     +media('height<600px')
       width: 50px
 
+    +media('<750px')
+      width: 50px
     // fill: white
     // height: 20rem
     //

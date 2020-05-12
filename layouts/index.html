@@ -36,7 +36,6 @@
 
       {{ range .Params.reasons }}
       <div class="zipper__item">
-        <p>{{.image}}</p>
         <picture class="zipper__image resize">
           <source type="image/webp" srcset="{{ printf "%s.webp" .image }}" alt="{{ .alt }}" loading="lazy">
           <source type="image/jpeg" srcset="{{ .image }}" alt="{{ .alt }}" loading="lazy">
