@@ -76,7 +76,7 @@
     <div class="imageGallery__container">
       {{ $pages :=  where .Site.RegularPages "Section" "work" }}
 
-      {{ range sort $pages "Params.date" "desc" }}
+      {{ range first 4 (sort $pages "Params.date" "desc") }}
 
         <a
           class="imageGallery__card"
@@ -100,7 +100,7 @@
     <div class="logoGallery__container">
 
         {{ $files := readDir "/layouts/partials/logos/" }}
-        {{ range $files }}
+        {{ range first 20 $files }}
 
           {{ if ne .Name ".DS_Store" }}
           <figure>
