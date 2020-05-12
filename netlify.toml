@@ -228,3 +228,6 @@ HUGO_VERSION = "0.70.0"
 [[redirects]]
   from = "/how-do-you-tell-good-design-from-bad-design/"
   to = "/"
+[[redirects]]
+  from = "https://solvm.com"
+  to = "https://www.solvm.com"
