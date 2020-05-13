@@ -56,7 +56,8 @@
             <div class="browser__circles"></div>
           </div>
           <div class="browser__image">
-            <img src="{{ .image }}" alt="Screenshot of a website">
+            {{ $img := imageConfig ( printf "/static/%s" .image ) }}
+            <img src="{{ .image }}" alt="Screenshot of a website" height="{{ $img.Height }}" width="{{ $img.Width }}" loading="lazy">
           </div>
           {{ with $.Params.client_website }}
             <div class="">
@@ -69,7 +70,8 @@
 
     {{ if eq "fm_layer_image" .template }}
       <div class="fullImage__layer resize">
-        <img src="{{ .image }}" alt="design/image by SOLVM" loading="lazy">
+        {{ $img := imageConfig ( printf "/static/%s" .image ) }}
+        <img src="{{ .image }}" alt="design/image by SOLVM" loading="lazy" height="{{ $img.Height }}" width="{{ $img.Width }}">
       </div>
     {{ end }}
 
