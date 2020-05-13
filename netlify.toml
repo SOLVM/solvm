@@ -235,3 +235,6 @@ HUGO_VERSION = "0.70.0"
 [[redirects]]
   from = "http://solvm.com"
   to = "https://www.solvm.com"
+[[redirects]]
+  from = "https://solvm.com"
+  to = "https://www.solvm.com"
