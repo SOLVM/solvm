@@ -232,9 +232,15 @@ HUGO_VERSION = "0.70.0"
   from = "/*"
   to = "/404.html"
   status = 404
-[[redirects]]
-  from = "http://solvm.com"
-  to = "https://www.solvm.com"
-[[redirects]]
-  from = "https://solvm.com"
-  to = "https://www.solvm.com"
+
+# It seems like this is an error due to Provisioning an SSL Cert before DNS
+# has finished propagating.
+# Solution is to wait a while, and then provision another Cert.
+# Trying that now.
+
+# [[redirects]]
+#   from = "http://solvm.com"
+#   to = "https://www.solvm.com"
+# [[redirects]]
+#   from = "https://solvm.com"
+#   to = "https://www.solvm.com"
