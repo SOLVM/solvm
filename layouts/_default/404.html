@@ -1,7 +1,39 @@
 {{ define "main" }}
 
-  <div class="fullpageimage__layer" style="background-image: url('{{ .Params.feature_layer.image }}')">
-    <h2 class="fof__heading">404</h2>
+  {{ $noop := .Content }}
+
+  <div class="workIntro__layer">
+    <div class="workIntro__container">
+      <hgroup class="workIntro__hgroup">
+        <h1 class="workIntro__title"><span class="workIntro__mask">{{ .Title }}</span></h1>
+        <h2 class="workIntro__meta"><span class="workIntro__mask">{{ .Params.client_type }} {{ .Params.client_location }}</span></h2>
+      </hgroup>
+    </div>
   </div>
 
+  <div class="workIntro__layer resize">
+    <div class="workIntro__billboard" style="background-image: url({{ .Params.client_image }});">
+      <img src="{{ .Params.client_logo }}" alt="{{ .Title }} logo">
+    </div>
+  </div>
+
+  <div class="workIntro__layer">
+    <div class="workIntro__container">
+      <h2 class="workIntro__headline resize">{{ .Params.client_heading }}</h2>
+    </div>
+  </div>
+
+  {{ range .Params.layers }}
+    {{ if eq "fm_layer_content" .template }}
+      <div class="workContent__layer">
+        <div class="workContent__container">
+          <div class="workContent__box">
+            <h3 class="workContent__sidehead">{{ .head }}</h3>
+            <div class="workContent__text">{{ .text | $.Page.RenderString }}</div>
+          </div>
+
+        </div>
+      </div>
+    {{ end }}
+  {{ end }}
 {{ end }}
