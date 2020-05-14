@@ -1,4 +1,9 @@
 function rdm(elements) {
+  // We are storing the width to prevent from
+  // firing when the height resizes
+  // we only want to resize on width changes
+  var currentWidth = document.body.clientWidth;
+
   // resize on load
   resizeElements(elements);
 
@@ -11,10 +16,14 @@ function rdm(elements) {
     "resize",
     debounce(
       () => {
-        // getInitialHeights(elements);
-        resizeElementsOnResize(elements);
-        // console.log("resized");
-        // console.log(initialHeight);
+        if ( document.body.clientWidth != currentWidth ) {
+
+          // getInitialHeights(elements);
+          resizeElementsOnResize(elements);
+          // console.log("resized");
+          // console.log(initialHeight);
+          currentWidth = document.body.clientWidth;
+        }
       },
       1000,
       true
