@@ -18,7 +18,7 @@ text = "Masala was opening up a new restaurant and wanted a website that was fas
 [[layers]]
 head = "Solution"
 template = "fm_layer_content"
-text = "The first step we made was to make the navigation easy and obvious to navigate. Touching any of the food categories in the navigation scrolls you down to the corresponding menu items. This is a single-page, static website, so everything the user needs is already in the page. No need to click and wait for the page to load the results, it's already there."
+text = "The first step we made was to make the navigation easy and obvious to navigate. Touching any of the food categories in the navigation scrolls you down to the corresponding menu item. This is a single-page, static website, so everything the user needs is already loaded into the page. No need to click and wait for the page to reload with the results."
 [[layers]]
 alt = "Screen shot of Masala website"
 image = "/uploads/clients/masala/masala-ss.jpg"

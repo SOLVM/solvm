@@ -19,5 +19,4 @@ text = "Keep It Simple, Stupid. This was the whole plan. It’s all about the ar
 alt = "Screenshot of new Regards website"
 image = "/uploads/clients/regards/regards-website.jpg"
 template = "fm_layer_browser"
-
 +++

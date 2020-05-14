@@ -14,14 +14,14 @@ title = "Afriky Lolo"
 [[layers]]
 head = "Everything"
 template = "fm_layer_content"
-text = "Afriky Lolo needed help with graphic design, logo design, web design and photography-pretty much everything. The goal was to create an identity that was unique, representative of West African culture and professional. Afriky Lolo wanted to be authentic, professional and classy. We wanted to completely avoid that fake tribal lettering look that you typically see in the states.\n\n## The logo\n\nThe first goal was to create a logo. Afriky Lolo wanted a logo derived from one of their central characters in the performance, The Mask. This enabled us to create a powerful mark that grabs attent and hints at the energy of West African Dance."
+text = "Afriky Lolo needed help with graphic design, logo design, web design and photography—pretty much everything. The goal was to create an identity that was unique, classy, professional and representative of West African culture.\n\n## The logo\n\nThe first goal was to create a logo. Afriky Lolo wanted a logo derived from one of their central characters in the performance, The Mask. This enabled us to create a powerful mark that grabs attention and hints at the energy of West African Dance."
 [[layers]]
 image = "/uploads/clients/afriky-lolo/afriky-lolo-jump-logo.png"
 template = "fm_layer_image"
 [[layers]]
 head = "Website"
 template = "fm_layer_content"
-text = "We wanted to carry the energy and culture of Afriky Lolo into the site as well. We used a geometric backgound derived from West African textile decoration called, Bogolan to literaly wrap the site in their culture. We also used as many images as we could to help visitors feel the culture of Afriky Lolo."
+text = "We wanted to carry the energy and culture of Afriky Lolo into the site as well. We used a geometric backgound derived from West African textile decoration called, Bogolan to literaly wrap the site in West African culture. We also used as many images as we could to help visitors feel the energy and excitement within Afriky Lolo."
 [[layers]]
 alt = "Screen shot of new Afriky Lolo website"
 image = "/uploads/clients/afriky-lolo/afriky-lolo-website.jpg"

@@ -1,5 +1,5 @@
 +++
-client_heading = "A great client with a great cause"
+client_heading = "You will know when it's time for a redesign"
 client_image = "/uploads/clients/segl/students8.jpg"
 client_location = "D.C."
 client_logo = "/uploads/clients/logos/white/segl-rectangle-white.svg"
@@ -12,23 +12,23 @@ seo_page_title = ""
 subtitle = ""
 title = "The School for Ethics and Global Leadership"
 [[layers]]
-head = "Change"
+head = "Problems"
 template = "fm_layer_content"
-text = "The School for Ethics and Global Leadership (SEGL) is a semester school for high school students who want to learn how to become ethical leaders and create positive change in the world.\n\nIn 2008, SEGL sought to build a lasting identity and website for the school. The staff wanted to refresh their site and were kicking around the idea of a new logo. \n\nLogo redesign shouldn't be taken lightly — after all, it's your business's identity. For a lesser-known organization with a bad logo, it's best to start anew. But in cases where people recognize and embrace your logo, it’s smarter to make little steps forward. Remember how bad the Gap’s massive rebranding went?(https://medium.com/@gfraikin/gap-worse-rebrand-ever-even-6-years-later-4a883d0cc736u)? \n\nSo here’s what we did.\n\n## Old Logo\n\n![](/uploads/clients/segl/segl-v2-brown.png)\n\n## New Logo"
-[[layers]]
-image = "/uploads/clients/segl/segl-trio-green.png"
-template = "fm_layer_image"
+text = "The School for Ethics and Global Leadership(SEGL) was starting to have problems with their website and their logo. Business had been good, but they noticed that their dated website and logo were starting to make them look behind the times compared to other schools. Also, they were having problems with their long rectangular logo fitting into small square or circular social media profile images."
 [[layers]]
 head = "Shapes"
 template = "fm_layer_content"
-text = "We made subtle changes to the new logo to fix it up but made sure it looked familiar to SEGL's community. We ditched the lowercase letters as that was more popular in the early 2000s. We also changed the font from Garamond to Museo Slab. We wanted to keep the traditional look of serif letters yet use a more modern serif. We got rid of the Kodak like side cuts that pointed to the map of the world. Instead, we set the logo to several geometric shapes that made it timeless and stable. Also, logo design today requires a mark that can work across a rectangular, square and circular space. Social media accounts require square or circular profile images, while websites and bumper stickers like rectangular dimensions."
+text = "We improved the old logo by making subtle yet cool changes to it. First, we ditched the lowercase letters. Lowercase lettering was more popular in the early 2000s. Second, also changed the font from Garamond to Museo Slab. We wanted to keep the traditional look of serif letters yet use a more modern serif. Third, we got rid of the Kodak like side cuts that pointed to the map of the world. Instead, we set the logo to several geometric shapes that made it timeless and stable. Lastly, we made a rectangular, square and circular version of the logo. This enables SEGL to effectively use their logo in round social media profile images, rectangular website layouts and client logo grids. Overall, it was important to keep the new logo familiar to SEGL's community-and we did that.\n\n## Old Logo\n\n![](/uploads/clients/segl/segl-v2-brown.png)\n## New Logo(s)\n![](/uploads/clients/segl/new.png)"
+[[layers]]
+image = "/uploads/clients/segl/segl-bg.png"
+template = "fm_layer_image"
 [[layers]]
 template = "fm_layer_quote"
-text = "Change Yourself Change the World"
+text = "You made our logo even better!"
 [[layers]]
 head = "Website"
 template = "fm_layer_content"
-text = "Although their original website had been serving them fine, it was time for a redesign. SEGL wanted to both freshen the site and have the ability to better manage the content in the site, especially the home page. We redesigned the site to function as a stack of movable layers. Each layer serves a single purpose for clarity and can be updated and repositioned anywhere on the homepage.\n\nWe also converted the website from WordPress to Hugo and Forestry. We wanted to take advantage of static site technology for speed and security. Additionally, we wanted a content management system with less bloat. Just by moving to the new platforms, we will be able to delete 20GB of cruft. And the bonus? It will  help keep their hosting costs low."
+text = "SEGL's current website was thriteen years old and was showing signs of againg. The image slider at the top is a relic of the past, and so is the gradient background. The old site wasn't responsive either-it wasn't optimized for viewing on mobile devices.\n\n## Old Website\n\n![](/uploads/clients/segl/segl-old-site.jpg)\n\n## New website\n\nSEGL wanted to both improve the look of their website and their ability to manage the content in the site, especially the home page. To achieve this, we redesigned the site to function as a stack of movable layers. Each layer serves a single purpose for clarity and can be updated and repositioned anywhere on the homepage.\n\nWe also converted the website from WordPress to Hugo and Forestry. We wanted to take advantage of static site technology for speed, security and fast customization. Making this change also enabled SEGL to delete 20GB of bloated WordPress nonsense. This further allowed them to save on hosting fees too."
 [[layers]]
 alt = "Screen shot of new Metric Lab website"
 image = "/uploads/clients/segl/segl-website.jpg"
