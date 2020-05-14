@@ -83,8 +83,8 @@
   &__logobox
     max-width: 100px
 
-    +media('<400px')
-      max-width: 50px
+    // +media('<400px')
+    //   max-width: 50px
 
     .svg-logo
       display: grid
@@ -93,10 +93,29 @@
       margin-top: 1.5rem
       width: 100%
 
-      +media('<sm')
-        margin-top: 1.5rem
+      // +media('<sm')
+        // margin-top: 1.5rem
 
     svg
       height: 100%
       width: 100px
       // fill: white
+
+// .svg-logo
+//   display: grid
+//   align-items: center
+//   justify-content: center
+//   // margin-top: 1.5rem
+//   width: 100%
+
+//   // +media('<sm')
+//   //   margin-top: 1.5rem
+
+//   svg
+//     width: 100px
+
+//     +media('height<600px')
+//       width: 50px
+
+//     +media('<750px')
+//       width: 50px
