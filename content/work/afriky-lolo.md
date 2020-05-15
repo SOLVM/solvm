@@ -27,14 +27,14 @@ alt = "Screen shot of new Afriky Lolo website"
 image = "/uploads/clients/afriky-lolo/afriky-lolo-website.jpg"
 template = "fm_layer_browser"
 [[layers]]
-head = "Posters"
+head = "Print"
 template = "fm_layer_content"
-text = "We also needed to design posters to propmote their upcoming show, The Goddess Zaouli. Fortunately, SOLVM was able to photograph their performance from the year before, so we had many powerful photos to use throughout the posters.\n\n![](/uploads/clients/afriky-lolo/zaouli-1.jpg)\n\n![](/uploads/clients/afriky-lolo/zaouli-2.jpg)\n\n![](/uploads/clients/afriky-lolo/zaouli-3.jpg)\n\n![](/uploads/clients/afriky-lolo/zaouli-4.jpg)\n\n![](/uploads/clients/afriky-lolo/zaouli-5.jpg)"
-[[layers]]
-image = "/uploads/clients/afriky-lolo/diadie-1-full.jpg"
-template = "fm_layer_image"
+text = "We also needed to design posters to propmote their upcoming show, The Goddess Zaouli. Fortunately, SOLVM was able to photograph their performance from the year before, so we had many powerful photos to use throughout the posters.\n\n![](/uploads/clients/afriky-lolo/zaouli-1.jpg)\n\n![](/uploads/clients/afriky-lolo/zaouli-2.jpg)\n\n![](/uploads/clients/afriky-lolo/zaouli-3.jpg)\n\n![](/uploads/clients/afriky-lolo/zaouli-4.jpg)\n\n![](/uploads/clients/afriky-lolo/zaouli-5.jpg)\n\n## Business cards\n\nWith all the great photos we captured, we were able to incorporate them into business cards as well. It is a huge bonus to have stong images to use to promote your business. We use a service called MOO.com for printing these awesome cards.\n\n![](/uploads/clients/afriky-lolo/afriky-lolo-business-cards-solvm.jpg)"
 [[layers]]
 head = "Results"
 template = "fm_layer_content"
-text = "It's rare that complete redesign projects happen, but when they do, there exists an opportunity to create excitement and value throughout all parts of the identity. Afriky Lolo has use these new resources to sell out their shows, merch and book performances around the world."
+text = "It's rare that complete redesign projects happen, but when they do, there exists an opportunity to create excitement and value throughout all parts of the identity. Afriky Lolo has used these new resources to sell out their shows, merch and book performances around the world."
+[[layers]]
+image = "/uploads/clients/afriky-lolo/diadie-1-full.jpg"
+template = "fm_layer_image"
 +++
