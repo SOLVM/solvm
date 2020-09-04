@@ -6,8 +6,9 @@ Notes for later
 hugos
 
 ## WEBP
-- Site is using webp in crossfade feature area now
-- manage crossfade images from crossfade.sass
+- I'm not useing .webp because it's not supported by Safari yet
+- Once the iPhone supports .webp, I will make the switch
+- modernizr is already installed  
 
 
 

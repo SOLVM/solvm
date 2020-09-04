@@ -34,7 +34,7 @@
 		{{ $vrt := resources.Get "js/vrt.js" }}
 		{{ $rdm := resources.Get "js/rdm.js" }}
 
-		{{ $js := slice $modernizr $imgloaded $headroom $rdm $vrt $cpl $mzr $indexjs | resources.Concat "js/bundle.js" | resources.Minify }}
+		{{ $js := slice $imgloaded $headroom $rdm $vrt $cpl $mzr $indexjs | resources.Concat "js/bundle.js" | resources.Minify }}
 		<script src="{{ $js.Permalink }}" async></script>
 	{{ else }}
 	    <!-- PRODUCTION -->
@@ -46,7 +46,7 @@
 		{{ $vrt := resources.Get "js/vrt.js" }}
 		{{ $rdm := resources.Get "js/rdm.js" }}
 
-    {{ $js := slice $modernizr $imgloaded $headroom $rdm $vrt $indexjs | resources.Concat "js/bundle.js" | resources.Minify }}
+    {{ $js := slice $imgloaded $headroom $rdm $vrt $indexjs | resources.Concat "js/bundle.js" | resources.Minify }}
 		<script src="{{ $js.Permalink }}" integrity="{{ $js.Data.Integrity }}" async></script>
 
 		<!-- google -->
