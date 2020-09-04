@@ -48,6 +48,9 @@
 
     {{ $js := slice $modernizr $imgloaded $headroom $rdm $vrt $indexjs | resources.Concat "js/bundle.js" | resources.Minify }}
 		<script src="{{ $js.Permalink }}" integrity="{{ $js.Data.Integrity }}" async></script>
+
+		<!-- google -->
+		{{ partial "google.html" . }}
 	{{ end }}
 
 </body>
