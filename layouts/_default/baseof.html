@@ -27,24 +27,26 @@
 		{{ $indexjs := resources.Get "js/index-local.js" }}
 		{{ $imgloaded := resources.Get "js/vendor/imageLoaded.js" }}
 		{{ $headroom := resources.Get "js/vendor/headroom.js" }}
+		{{ $modernizr := resources.Get "js/vendor/modernizr.js" }}
 
 		{{ $mzr := resources.Get "js/mzr.js" }}
 		{{ $cpl := resources.Get "js/cpl.js" }}
 		{{ $vrt := resources.Get "js/vrt.js" }}
 		{{ $rdm := resources.Get "js/rdm.js" }}
 
-		{{ $js := slice $imgloaded $headroom $rdm $vrt $cpl $mzr $indexjs | resources.Concat "js/bundle.js" | resources.Minify }}
+		{{ $js := slice $modernizr $imgloaded $headroom $rdm $vrt $cpl $mzr $indexjs | resources.Concat "js/bundle.js" | resources.Minify }}
 		<script src="{{ $js.Permalink }}" async></script>
 	{{ else }}
 	    <!-- PRODUCTION -->
 		{{ $indexjs := resources.Get "js/index.js" }}
 		{{ $imgloaded := resources.Get "js/vendor/imageLoaded.js" }}
 		{{ $headroom := resources.Get "js/vendor/headroom.js" }}
+		{{ $modernizr := resources.Get "js/vendor/modernizr.js" }}
 
 		{{ $vrt := resources.Get "js/vrt.js" }}
 		{{ $rdm := resources.Get "js/rdm.js" }}
 
-    {{ $js := slice $imgloaded $headroom $rdm $vrt $indexjs | resources.Concat "js/bundle.js" | resources.Minify }}
+    {{ $js := slice $modernizr $imgloaded $headroom $rdm $vrt $indexjs | resources.Concat "js/bundle.js" | resources.Minify }}
 		<script src="{{ $js.Permalink }}" integrity="{{ $js.Data.Integrity }}" async></script>
 	{{ end }}
 

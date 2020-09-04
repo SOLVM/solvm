@@ -2,6 +2,15 @@
 
 Notes for later
 
+## Run dev env
+hugos
+
+## WEBP
+- Site is using webp in crossfade feature area now
+- manage crossfade images from crossfade.sass
+
+
+
 ## Create Pages
 
 ```toml
@@ -59,4 +68,3 @@ identifier = "about"
 - [usto](https://www.ustwo.com/join-us/)
 - [huge](https://www.hugeinc.com/work/nike)
 - [blind](https://blind.com/case-study/oles-hakai-fishing-lodge-rebrand/)
-
