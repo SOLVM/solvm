@@ -156,7 +156,13 @@ export default defineConfig({
                 name: "fm_layer_image_w_text",
               },
               {
-                fields: [],
+                fields: [
+                  {
+                    name: "images",
+                    type: "image",
+                    label: "Images",
+                  },
+                ],
                 label: "fm_layer_gallery_images",
                 name: "fm_layer_gallery_images",
               },
@@ -301,7 +307,13 @@ export default defineConfig({
                 name: "fm_layer_image_w_text",
               },
               {
-                fields: [],
+                fields: [
+                  {
+                    name: "images",
+                    type: "image",
+                    label: "Images",
+                  },
+                ],
                 label: "fm_layer_gallery_images",
                 name: "fm_layer_gallery_images",
               },
