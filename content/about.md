@@ -1,3 +1,8 @@
+---
+_template: page_work
+---
+
+
 +++
 client_heading = "Pushing pixels and crafting code since 2005"
 client_image = "/uploads/close-up-5.jpg"
