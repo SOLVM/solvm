@@ -1,0 +1,25 @@
+{
+  "name": "hugo",
+  "version": "1.0.0",
+  "description": "Notes for later",
+  "main": "index.js",
+  "scripts": {
+    "ugh": "npm run tinacms dev -c 'hugo server -D -p 1313'",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SOLVM/solvm.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SOLVM/solvm/issues"
+  },
+  "homepage": "https://github.com/SOLVM/solvm#readme",
+  "dependencies": {
+    "@tinacms/cli": "^1.0.7",
+    "tinacms": "^1.1.4"
+  }
+}
