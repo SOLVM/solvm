@@ -4,6 +4,8 @@
   "description": "Notes for later",
   "main": "index.js",
   "scripts": {
+    "dev": "tinacms dev -c \"hugo server -D\"",
+    "build": "tinacms build && hugo",
     "ugh": "npm run tinacms dev -c 'hugo server -D -p 1313'",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -19,7 +21,7 @@
   },
   "homepage": "https://github.com/SOLVM/solvm#readme",
   "dependencies": {
-    "@tinacms/cli": "^1.0.7",
-    "tinacms": "^1.1.4"
+    "@tinacms/cli": "^1.1.0",
+    "tinacms": "^1.2.0"
   }
 }

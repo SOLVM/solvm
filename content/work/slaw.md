@@ -13,7 +13,7 @@ subtitle: ""
 title: St. Louis Artworks
 layers:
   - head: Opportunity
-    template: fm_layer_content
+    _template: fm_layer_content
     text: >-
       St. Louis Artworks (SLAW) wanted to completely redesign their website. Their old website had become stale and they wanted to improve their look online before a mojor effort to raise money for the program.
       
@@ -29,14 +29,15 @@ layers:
       
       The second issue is that the navigation is broken into three areas — top, main, and left. Again, competing elements that cause confusion. We wanted the redesign to unify these into one navigation bar.
 
+
   - alt: Screenshot of new SLAW website
     image: /uploads/clients/slaw/slaw-website.jpg
-    template: fm_layer_browser
+    _template: fm_layer_browser
   - alt: Screenshot of new SLAW website
     image: /uploads/clients/slaw/slaw-nav.jpg
-    template: fm_layer_browser
+    _template: fm_layer_browser
   - head: The Fix
-    template: fm_layer_content
+    _template: fm_layer_content
     text: >-
       As you can see, we killed the columns and used layers instead. Using layers allows viewers to focus on one thing at a time and helps them interact with your site at a comfortable pace without competing content.
       
@@ -49,9 +50,10 @@ layers:
       
       We used Google Analytics to tell us which pages of the old website received the most traffic. After finding that the "Apply" and "About" pages were most popular, we designed the homepage to allow teens to apply to the program, and we included a section about SLAW that provided high-level info about the program. With the help of Google Analytics, we were able to make informed decisions that guided the website redesign.
 
+
   - head: Awards
-    template: fm_layer_content
+    _template: fm_layer_content
     text: Overall, it just so happened that completing this redesign coincided with the White House's research into outstanding youth programs in the nation. It's not that this redesign was the best in the world, but it surely was one of the best looking websites for youth programs in 2016. SLAW surely won the National Arts and Humanities Award on their on merit, but it surely supports your cause when you look as good as you say you are online.
   - image: /uploads/clients/slaw/slaw-bldg.jpg
-    template: fm_layer_image
+    _template: fm_layer_image
 ---
