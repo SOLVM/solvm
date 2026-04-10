@@ -1,6 +1,6 @@
 # SOLVM
 
-Notes for later
+Notes for later.
 
 ## Run dev env
 hugos
