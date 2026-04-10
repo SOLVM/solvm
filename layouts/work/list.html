@@ -32,22 +32,25 @@
     </div>
 
 
-    <div class="logoGallery__layer">
-      <div class="logoGallery__container">
+  <div class="logoGallery__layer">
+    <div class="logoGallery__container">
 
-        {{ $url := "/uploads/clients/logos/" }}
-        {{ $files := readDir "/static/uploads/clients/logos/" }}
+        {{ $files := readDir "/layouts/partials/logos/" }}
         {{ range $files }}
-        {{/* do not include .DS_Store file NOR the directory named white */}}
-        {{ if not (eq .Name ".DS_Store") | and (ne .Name "white") }}
+
+          {{ if ne .Name ".DS_Store" }}
           <figure>
-            <img src="{{$url}}/{{.Name | urlize }}">
+            {{ partial (printf "logos/%s" .Name) }}
           </figure>
           {{ end }}
+
         {{ end }}
 
-      </div>
     </div>
+  </div>
+
+
+
 
   {{/* partial "pagination.html" . */}}
 

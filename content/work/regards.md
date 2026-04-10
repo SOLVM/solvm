@@ -13,10 +13,10 @@ subtitle = ""
 title = "Regards"
 [[layers]]
 head = "K.I.S.S."
-template = "fm_layer_content"
+_template = "fm_layer_content"
 text = "Keep It Simple, Stupid. This was the whole plan. It’s all about the artwork. Just like an art gallery’s walls, the point is not to have the environment compete with the artwork. So we made a website with a minimalist design."
 [[layers]]
 alt = "Screenshot of new Regards website"
 image = "/uploads/clients/regards/regards-website.jpg"
-template = "fm_layer_browser"
+_template = "fm_layer_browser"
 +++

@@ -29,7 +29,7 @@
   </div>
 
   {{ range .Params.layers }}
-    {{ if eq "fm_layer_content" .template }}
+    {{ if eq "fm_layer_content" ._template }}
       <div class="workContent__layer">
         <div class="workContent__container">
           <div class="workContent__box">
@@ -41,7 +41,7 @@
       </div>
     {{ end }}
 
-    {{ if eq "fm_layer_quote" .template }}
+    {{ if eq "fm_layer_quote" ._template }}
       <div class="quote__layer resize bgx">
         <div class="quote__container">
           <h2 class="quote__text">“{{ .text }}”</h2>
@@ -49,7 +49,7 @@
       </div>
     {{ end }}
 
-    {{ if eq "fm_layer_browser" .template }}
+    {{ if eq "fm_layer_browser" ._template }}
       <div class="browser__layer resize">
         <div class="browser__container">
           <div class="browser__bar">
@@ -68,14 +68,14 @@
       </div>
     {{ end }}
 
-    {{ if eq "fm_layer_image" .template }}
+    {{ if eq "fm_layer_image" ._template }}
       <div class="fullImage__layer resize">
         {{ $img := imageConfig ( printf "/static/%s" .image ) }}
         <img src="{{ .image }}" alt="design/image by SOLVM" loading="lazy" height="{{ $img.Height }}" width="{{ $img.Width }}">
       </div>
     {{ end }}
 
-    {{ if eq "fm_layer_code" .template }}
+    {{ if eq "fm_layer_code" ._template }}
       <div class="code__layer">
         <div class="code__container">
 

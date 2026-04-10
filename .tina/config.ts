@@ -23,6 +23,8 @@ export default defineConfig({
         label: "Work",
         name: "work",
         path: "content/work",
+        frontmatterFormat: "toml",
+        frontmatterDelimiters: "+++",
         format: "md",
         fields: [
           {
@@ -155,17 +157,11 @@ export default defineConfig({
                 label: "fm_layer_image_w_text",
                 name: "fm_layer_image_w_text",
               },
-              {
-                fields: [
-                  {
-                    name: "images",
-                    type: "image",
-                    label: "Images",
-                  },
-                ],
-                label: "fm_layer_gallery_images",
-                name: "fm_layer_gallery_images",
-              },
+              // {
+              //   fields: [],
+              //   label: "fm_layer_gallery_images",
+              //   name: "fm_layer_gallery_images",
+              // },
             ],
           },
         ],
@@ -174,6 +170,8 @@ export default defineConfig({
         label: "Pages",
         name: "pages",
         path: "content",
+        frontmatterFormat: "toml",
+        frontmatterDelimiters: "+++",
         format: "md",
         fields: [
           {
@@ -306,17 +304,11 @@ export default defineConfig({
                 label: "fm_layer_image_w_text",
                 name: "fm_layer_image_w_text",
               },
-              {
-                fields: [
-                  {
-                    name: "images",
-                    type: "image",
-                    label: "Images",
-                  },
-                ],
-                label: "fm_layer_gallery_images",
-                name: "fm_layer_gallery_images",
-              },
+              // {
+              //   fields: [],
+              //   label: "fm_layer_gallery_images",
+              //   name: "fm_layer_gallery_images",
+              // },
             ],
           },
         ],

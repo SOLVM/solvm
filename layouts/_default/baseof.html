@@ -22,7 +22,7 @@
 	</div>
 	{{ partial "footer.html" . }}
 
-	{{ if .Site.IsServer }}
+  {{ if hugo.IsServer }}
 	    <!-- DEVELOPMENT -->
 		{{ $indexjs := resources.Get "js/index-local.js" }}
 		{{ $imgloaded := resources.Get "js/vendor/imageLoaded.js" }}
@@ -34,7 +34,7 @@
 		{{ $vrt := resources.Get "js/vrt.js" }}
 		{{ $rdm := resources.Get "js/rdm.js" }}
 
-		{{ $js := slice $imgloaded $headroom $rdm $vrt $cpl $mzr $indexjs | resources.Concat "js/bundle.js" | resources.Minify }}
+		{{ $js := slice $imgloaded $headroom $rdm $vrt $indexjs | resources.Concat "js/bundle.js" | resources.Minify }}
 		<script src="{{ $js.Permalink }}" async></script>
 	{{ else }}
 	    <!-- PRODUCTION -->

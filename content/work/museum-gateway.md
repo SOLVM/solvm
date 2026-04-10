@@ -13,18 +13,18 @@ subtitle = ""
 title = "Museum Gateway"
 [[layers]]
 head = "Endgame"
-template = "fm_layer_content"
+_template = "fm_layer_content"
 text = "The Contemporary Art Museum St. Louis needed help completing their Museum Gateway project. This project aimed to inform students, parents and teachers that museums offered job opportunities in varying careers. Museum Gateway worked with Maplewood Richmond Heights School District and the American Alliance of Museums to create a video and a book to present these opportunities. They just needed the final part, the website.\n\n## New website\n\nThe project had several fun facts to convey. We displayed each fun fact with a feature that would reveal each factoid as the visitor scrolled down the site."
 [[layers]]
 alt = "Screenshot of new Museum Gateway website"
 image = "/uploads/clients/museum-gateway/museum-gateway-website.jpg"
-template = "fm_layer_browser"
+_template = "fm_layer_browser"
 [[layers]]
 head = "Fast"
-template = "fm_layer_content"
+_template = "fm_layer_content"
 text = "The new site is super fast too.\n\n![](/uploads/clients/museum-gateway/museum-gateway-performance.png)"
 [[layers]]
 image = "/uploads/clients/museum-gateway/teachers.jpg"
-template = "fm_layer_image"
+_template = "fm_layer_image"
 
 +++
