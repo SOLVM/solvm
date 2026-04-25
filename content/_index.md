@@ -48,7 +48,7 @@ image = "/uploads/funny.jpg"
 alt = "Funny faces"
 [[message]]
 title = "I'm expensive"
-text = "Like 15,000 to +150,000."
+text = ""
 image = "/uploads/biz.jpg"
 alt = "Benjamin Gandhi-Sheaprd"
 +++
